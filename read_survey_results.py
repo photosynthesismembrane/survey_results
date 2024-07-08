@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Path to the JSON file
-file_path = 'export_1720008724702.json'
+file_path = 'export_1720445297387.json'
 
 llava_wins = 0
 cogvlm_wins = 0
@@ -301,17 +301,20 @@ for item in highlight_data:
 
     # story = data[image_filename][f"{model}_answers"][question]
 
-    hightlight_list = highlights.split('|')
+    if highlights.startswith('<span>') and highlights.endswith('</span>'):
+        story = highlights[6:-7]
+    else:
+        hightlight_list = highlights.split('|')
 
-    print('Story:', story)
-    print('Highlights:', hightlight_list)
-    print('Data Type:', data_type)
+        print('Story:', story)
+        print('Highlights:', hightlight_list)
+        print('Data Type:', data_type)
 
-    for hightlight in hightlight_list:
-        if hightlight in story:
-            if hightlight == '':
-                continue
-            story = story.replace(hightlight, f"<span class='hightlight'>{hightlight}</span>")
+        for hightlight in hightlight_list:
+            if hightlight in story:
+                if hightlight == '':
+                    continue
+                story = story.replace(hightlight, f"<span class='hightlight'>{hightlight}</span>")
 
     highlight_data_processed.append({
         'data_type': data_type,
@@ -356,13 +359,13 @@ for item in highlight_data:
     counts[f"{model}_{question}_{image_filename}"] = counts.get(f"{model}_{question}_{image_filename}", 0) + 1
 
 # Save the data to a JSON file
-read_write_json.write_json('survey_highlight_data.json', highlight_data_processed)
+read_write_json.write_json('survey_highlight_data_updated.json', highlight_data_processed)
 
-read_write_json.write_json('survey_pinterest_data_hightlighted.js', json_data_pinterest)
-read_write_json.write_json('survey_renaissance_data_hightlighted.js', json_data_renaissance)
+read_write_json.write_json('survey_pinterest_data_hightlighted_updated.js', json_data_pinterest)
+read_write_json.write_json('survey_renaissance_data_hightlighted_updated.js', json_data_renaissance)
 
 # Write all the stories to a text file
-with open('survey_highlight_stories.txt', 'w') as file:
+with open('survey_highlight_stories_updated.txt', 'w') as file:
     for item in highlight_data_processed:
         file.write(f"Data Type: {item['data_type']}\n")
         file.write(f"Model: {item['model']}\n")

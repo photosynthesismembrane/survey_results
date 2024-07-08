@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Captions</title>
+    <title>Survey Results</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
@@ -136,13 +136,616 @@
         .hightlight {
             background-color: #ffb7b7;
         }
+        .highlighted {
+            background-color: #ffb7b7;
+        }
         .survey-score {
             font-size: 24px;
             margin-bottom: 20px;
         }
+        .survey-score-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-direction: column;
+        }
+        .survey-comparison-data-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .highlight-percentage-data-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        caption {
+            padding: 30px;
+            font-size: 1.5em;
+            color: #333;
+        }
     </style>
 </head>
 <body>
+    <div class="survey-score-container">
+        <div class="survey-comparison-data-container">
+        <table>
+            <caption>Pinterest Data</caption>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>llava wins</th>
+                    <th>cogvlm wins</th>
+                    <th>deepseek wins</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Composition</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Movement</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Contrast</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Ground</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Symmetry</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Eye</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Focus</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Proportion</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <caption>Renaissance Data</caption>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>llava wins</th>
+                    <th>cogvlm wins</th>
+                    <th>deepseek wins</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total</td>
+                    <td>15</td>
+                    <td>19</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Composition</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Movement</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Contrast</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Ground</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Symmetry</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Eye</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Focus</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Proportion</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="highlight-percentage-data-container">
+            <table>
+                <caption>Pinterest Data</caption>
+                <thead>
+                    <tr>
+                        <th>Highlighted Length</th>
+                        <th>Total Length</th>
+                        <th>Model</th>
+                        <th>Task</th>
+                        <th>Highlight Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>205</td>
+                        <td>1723</td>
+                        <td>llava</td>
+                        <td>composition</td>
+                        <td>11.90%</td>
+                    </tr>
+                    <tr>
+                        <td>281</td>
+                        <td>4097</td>
+                        <td>llava</td>
+                        <td>balance_elements</td>
+                        <td>6.86%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>llava</td>
+                        <td>movement</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>521</td>
+                        <td>llava</td>
+                        <td>focus_point</td>
+                        <td>7.10%</td>
+                    </tr>
+                    <tr>
+                        <td>190</td>
+                        <td>1187</td>
+                        <td>llava</td>
+                        <td>contrast_elements</td>
+                        <td>16.01%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>llava</td>
+                        <td>proportion</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>llava</td>
+                        <td>foreground_background_4</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>189</td>
+                        <td>2706</td>
+                        <td>llava</td>
+                        <td>symmetry_asymmetry_1</td>
+                        <td>6.98%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>llava</td>
+                        <td>eye_movement_2</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>91</td>
+                        <td>1334</td>
+                        <td>cogvlm</td>
+                        <td>composition</td>
+                        <td>6.82%</td>
+                    </tr>
+                    <tr>
+                        <td>292</td>
+                        <td>3241</td>
+                        <td>cogvlm</td>
+                        <td>balance_elements</td>
+                        <td>9.01%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>cogvlm</td>
+                        <td>movement</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>261</td>
+                        <td>cogvlm</td>
+                        <td>focus_point</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>731</td>
+                        <td>cogvlm</td>
+                        <td>contrast_elements</td>
+                        <td>1.37%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>cogvlm</td>
+                        <td>proportion</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>cogvlm</td>
+                        <td>foreground_background_4</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>93</td>
+                        <td>1358</td>
+                        <td>cogvlm</td>
+                        <td>symmetry_asymmetry_1</td>
+                        <td>6.85%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>cogvlm</td>
+                        <td>eye_movement_2</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>191</td>
+                        <td>4138</td>
+                        <td>deepseek</td>
+                        <td>composition</td>
+                        <td>4.62%</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>11009</td>
+                        <td>deepseek</td>
+                        <td>balance_elements</td>
+                        <td>0.93%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>deepseek</td>
+                        <td>movement</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>92</td>
+                        <td>1302</td>
+                        <td>deepseek</td>
+                        <td>focus_point</td>
+                        <td>7.07%</td>
+                    </tr>
+                    <tr>
+                        <td>195</td>
+                        <td>3917</td>
+                        <td>deepseek</td>
+                        <td>contrast_elements</td>
+                        <td>4.98%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>deepseek</td>
+                        <td>proportion</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>deepseek</td>
+                        <td>foreground_background_4</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>134</td>
+                        <td>8733</td>
+                        <td>deepseek</td>
+                        <td>symmetry_asymmetry_1</td>
+                        <td>1.53%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>deepseek</td>
+                        <td>eye_movement_2</td>
+                        <td>0.00%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>Renaissance Data</caption>
+                <thead>
+                    <tr>
+                        <th>Highlighted Length</th>
+                        <th>Total Length</th>
+                        <th>Model</th>
+                        <th>Task</th>
+                        <th>Highlight Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>451</td>
+                        <td>2534</td>
+                        <td>llava</td>
+                        <td>composition</td>
+                        <td>17.80%</td>
+                    </tr>
+                    <tr>
+                        <td>609</td>
+                        <td>3255</td>
+                        <td>llava</td>
+                        <td>balance_elements</td>
+                        <td>18.71%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>llava</td>
+                        <td>movement</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>332</td>
+                        <td>3959</td>
+                        <td>llava</td>
+                        <td>focus_point</td>
+                        <td>8.39%</td>
+                    </tr>
+                    <tr>
+                        <td>165</td>
+                        <td>1929</td>
+                        <td>llava</td>
+                        <td>contrast_elements</td>
+                        <td>8.55%</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>1702</td>
+                        <td>llava</td>
+                        <td>proportion</td>
+                        <td>1.82%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>llava</td>
+                        <td>foreground_background_4</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>376</td>
+                        <td>3642</td>
+                        <td>llava</td>
+                        <td>symmetry_asymmetry_1</td>
+                        <td>10.32%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>llava</td>
+                        <td>eye_movement_2</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>157</td>
+                        <td>1709</td>
+                        <td>cogvlm</td>
+                        <td>composition</td>
+                        <td>9.19%</td>
+                    </tr>
+                    <tr>
+                        <td>193</td>
+                        <td>1697</td>
+                        <td>cogvlm</td>
+                        <td>balance_elements</td>
+                        <td>11.37%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>cogvlm</td>
+                        <td>movement</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>271</td>
+                        <td>2166</td>
+                        <td>cogvlm</td>
+                        <td>focus_point</td>
+                        <td>12.51%</td>
+                    </tr>
+                    <tr>
+                        <td>76</td>
+                        <td>1333</td>
+                        <td>cogvlm</td>
+                        <td>contrast_elements</td>
+                        <td>5.70%</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>1244</td>
+                        <td>cogvlm</td>
+                        <td>proportion</td>
+                        <td>1.53%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>cogvlm</td>
+                        <td>foreground_background_4</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>143</td>
+                        <td>1944</td>
+                        <td>cogvlm</td>
+                        <td>symmetry_asymmetry_1</td>
+                        <td>7.36%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>cogvlm</td>
+                        <td>eye_movement_2</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>149</td>
+                        <td>4620</td>
+                        <td>deepseek</td>
+                        <td>composition</td>
+                        <td>3.23%</td>
+                    </tr>
+                    <tr>
+                        <td>248</td>
+                        <td>6017</td>
+                        <td>deepseek</td>
+                        <td>balance_elements</td>
+                        <td>4.12%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>deepseek</td>
+                        <td>movement</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>1707</td>
+                        <td>6795</td>
+                        <td>deepseek</td>
+                        <td>focus_point</td>
+                        <td>25.12%</td>
+                    </tr>
+                    <tr>
+                        <td>306</td>
+                        <td>3908</td>
+                        <td>deepseek</td>
+                        <td>contrast_elements</td>
+                        <td>7.83%</td>
+                    </tr>
+                    <tr>
+                        <td>115</td>
+                        <td>3843</td>
+                        <td>deepseek</td>
+                        <td>proportion</td>
+                        <td>2.99%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>deepseek</td>
+                        <td>foreground_background_4</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>367</td>
+                        <td>9515</td>
+                        <td>deepseek</td>
+                        <td>symmetry_asymmetry_1</td>
+                        <td>3.86%</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>deepseek</td>
+                        <td>eye_movement_2</td>
+                        <td>0.00%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <div id="controls">
         <div class="dropdown-container">
             <select id="data-source" onchange="changeDataSource()">
@@ -169,10 +772,10 @@
         <button onclick="loadPrevious()">Previous</button>
         <button onclick="loadNext()">Next</button>
     </div>
-    <script src="survey_renaissance_data_two_options.js"></script>
-    <script src="survey_pinterest_data_two_options.js"></script>
-    <script src="survey_renaissance_data_hightlighted.js"></script>
-    <script src="survey_pinterest_data_hightlighted.js"></script>
+    <script src="survey_renaissance_data_two_options_updated.js"></script>
+    <script src="survey_pinterest_data_two_options_updates.js"></script>
+    <script src="survey_renaissance_data_hightlighted_updated.js"></script>
+    <script src="survey_pinterest_data_hightlighted_updated.js"></script>
     <script src="questions_for_survey.js"></script>
     <script src="script.js"></script>
 </body>

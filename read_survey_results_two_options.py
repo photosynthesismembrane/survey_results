@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Path to the JSON file
-file_path = 'export_1720008724702.json'
+file_path = 'export_1720445297387.json'
 
 llava_wins = 0
 cogvlm_wins = 0
@@ -47,6 +47,11 @@ proportion_llava = 0
 proportion_cogvlm = 0
 proportion_deepseek = 0
 
+import read_write_json
+
+pinterest_data = read_write_json.read_json('survey_pinterest_data.js')
+renaissance_data = read_write_json.read_json('survey_renaissance_data.js')
+
 # Read the JSON file
 with open(file_path, 'r') as file:
     data = json.load(file)
@@ -83,48 +88,59 @@ for item in data:
             elif 'proportion' in key:
                 question = 'proportion'
 
+                
+            key = key.replace('composition_', '').replace('balance_elements_', '').replace('movement_', '').replace('contrast_elements_', '').replace('for_eground_background_4_', '').replace('symmetry_asymmetry_1_', '').replace('eye_movement_2_', '').replace('focus_point_', '').replace('proportion_', '')
+
+            if key in pinterest_data:
+                data_type = 'pinterest'
+                continue
+            elif key in renaissance_data:
+                data_type = 'renaissance'
+            else:
+                continue
+
             # Find out what kind of field this is
-            if 'composition' in key:
+            if question == 'composition':
                 composition_llava += value.count('llava')
                 composition_cogvlm += value.count('cogvlm')
                 composition_deepseek += value.count('deepseek')
 
-            if 'balance' in key:
+            if question == 'balance_elements':
                 balance_llava += value.count('llava')
                 balance_cogvlm += value.count('cogvlm')
                 balance_deepseek += value.count('deepseek')
 
-            if 'movement' in key:
+            if question == 'movement':
                 movement_llava += value.count('llava')
                 movement_cogvlm += value.count('cogvlm')
                 movement_deepseek += value.count('deepseek')
 
-            if 'contrast' in key:
+            if question == 'contrast_elements':
                 contrast_llava += value.count('llava')
                 contrast_cogvlm += value.count('cogvlm')
                 contrast_deepseek += value.count('deepseek')
 
-            if 'ground' in key:
+            if question == 'ground':
                 ground_llava += value.count('llava')
                 ground_cogvlm += value.count('cogvlm')
                 ground_deepseek += value.count('deepseek')
 
-            if 'symmetry' in key:
+            if question == 'symmetry_asymmetry_1':
                 symmetry_llava += value.count('llava')
                 symmetry_cogvlm += value.count('cogvlm')
                 symmetry_deepseek += value.count('deepseek')
 
-            if 'eye' in key:
+            if question == 'eye_movement_2':
                 eye_llava += value.count('llava')
                 eye_cogvlm += value.count('cogvlm')
                 eye_deepseek += value.count('deepseek')
 
-            if 'focus' in key:
+            if question == 'focus_point':
                 focus_llava += value.count('llava')
                 focus_cogvlm += value.count('cogvlm')
                 focus_deepseek += value.count('deepseek')
 
-            if 'proportion' in key:
+            if  question == 'proportion':
                 proportion_llava += value.count('llava')
                 proportion_cogvlm += value.count('cogvlm')
                 proportion_deepseek += value.count('deepseek')
@@ -151,7 +167,6 @@ for item in data:
             print('deepseek wins:', deepseek_wins_image)
             print('\n')
 
-            key = key.replace('composition_', '').replace('balance_elements_', '').replace('movement_', '').replace('contrast_elements_', '').replace('for_eground_background_4_', '').replace('symmetry_asymmetry_1_', '').replace('eye_movement_2_', '').replace('focus_point_', '').replace('proportion_', '')
 
             two_options_data.append({
                 'image_filename': key,
@@ -244,139 +259,139 @@ print('cogvlm wins:', proportion_cogvlm)
 print('deepseek wins:', proportion_deepseek)
 
 
-import read_write_json
+# import read_write_json
 
-pinterest_data = read_write_json.read_json('survey_pinterest_data.js')
-renaissance_data = read_write_json.read_json('survey_renaissance_data.js')
+# pinterest_data = read_write_json.read_json('survey_pinterest_data.js')
+# renaissance_data = read_write_json.read_json('survey_renaissance_data.js')
 
-two_options_data_processed = []
-counts = {}
+# two_options_data_processed = []
+# counts = {}
 
-json_data_pinterest = {}
-json_data_renaissance = {}
+# json_data_pinterest = {}
+# json_data_renaissance = {}
 
-print('Two Options Data')
-for item in two_options_data:
-    print('Item')
+# # print('Two Options Data')
+# for item in two_options_data:
+#     # print('Item')
 
-    image_filename = item['image_filename']
-    question = item['question']
-    model = item['model']
-    highlights = item['highlight']
-    score = item['score']
+#     image_filename = item['image_filename']
+#     question = item['question']
+#     model = item['model']
+#     highlights = item['highlight']
+#     score = item['score']
 
-    print('Image Filename:', image_filename)
-    print('Question:', question)
-    print('Model:', model)
-    print('Highlights:', highlights)
-    print('Score:', score)
+#     # print('Image Filename:', image_filename)
+#     # print('Question:', question)
+#     # print('Model:', model)
+#     # print('Highlights:', highlights)
+#     # print('Score:', score)
 
-    if model == '':
-        continue
+#     if model == '':
+#         continue
 
-    story = ''
-    data_type = ''
+#     story = ''
+#     data_type = ''
 
-    # print(pinterest_data)
-    # print(renaissance_data)
+#     # print(pinterest_data)
+#     # print(renaissance_data)
 
-    if image_filename in pinterest_data:
-        print('Pinterest item found')
-        story = pinterest_data[image_filename][f"{model}_answers"][question]
-        data_type = 'pinterest'
-    elif image_filename in renaissance_data:
-        print('Renaissance item found')
-        story = renaissance_data[image_filename][f"{model}_answers"][question]
-        data_type = 'renaissance'
-    else:
-        print(f"Item not found: {image_filename} {model} {question}")
-        continue
+#     if image_filename in pinterest_data:
+#         # print('Pinterest item found')
+#         story = pinterest_data[image_filename][f"{model}_answers"][question]
+#         data_type = 'pinterest'
+#     elif image_filename in renaissance_data:
+#         # print('Renaissance item found')
+#         story = renaissance_data[image_filename][f"{model}_answers"][question]
+#         data_type = 'renaissance'
+#     else:
+#         # print(f"Item not found: {image_filename} {model} {question}")
+#         continue
 
-    # story = data[image_filename][f"{model}_answers"][question]
+#     # story = data[image_filename][f"{model}_answers"][question]
 
-    hightlight_list = highlights.split('|')
+#     hightlight_list = highlights.split('|')
 
-    print('Story:', story)
-    print('Highlights:', hightlight_list)
-    print('Data Type:', data_type)
+#     # print('Story:', story)
+#     # print('Highlights:', hightlight_list)
+#     # print('Data Type:', data_type)
 
-    if (score == 1):
-        story = f'<<voted>>' + story
+#     if (score == 1):
+#         story = f'<<voted>>' + story
 
-    two_options_data_processed.append({
-        'data_type': data_type,
-        'model': model,
-        'question': question,
-        'image_filename': image_filename,
-        'highlight': story
-    })
+#     two_options_data_processed.append({
+#         'data_type': data_type,
+#         'model': model,
+#         'question': question,
+#         'image_filename': image_filename,
+#         'highlight': story
+#     })
 
-    if data_type == 'pinterest':
-        # Check if the image filename is in the data, if not, add it
-        if image_filename not in json_data_pinterest:
-            json_data_pinterest[image_filename] = {f"{model}_answers": {}}
+#     if data_type == 'pinterest':
+#         # Check if the image filename is in the data, if not, add it
+#         if image_filename not in json_data_pinterest:
+#             json_data_pinterest[image_filename] = {f"{model}_answers": {}}
 
-        # Check if the model is not yet in the data structure
-        if f"{model}_answers" not in json_data_pinterest[image_filename]:
-            json_data_pinterest[image_filename][f"{model}_answers"] = {}
+#         # Check if the model is not yet in the data structure
+#         if f"{model}_answers" not in json_data_pinterest[image_filename]:
+#             json_data_pinterest[image_filename][f"{model}_answers"] = {}
 
-        # Check if the question is already answered
-        if question in json_data_pinterest[image_filename][f"{model}_answers"]:
-            json_data_pinterest[image_filename][f"{model}_answers"][question] = json_data_pinterest[image_filename][f"{model}_answers"][question] + "<br\><br\>" + story
-        else:
-            # Answer the question and update the data
-            json_data_pinterest[image_filename][f"{model}_answers"][question] = story
-    elif data_type == 'renaissance':
-        # Check if the image filename is in the data, if not, add it
-        if image_filename not in json_data_renaissance:
-            json_data_renaissance[image_filename] = {f"{model}_answers": {}}
+#         # Check if the question is already answered
+#         if question in json_data_pinterest[image_filename][f"{model}_answers"]:
+#             json_data_pinterest[image_filename][f"{model}_answers"][question] = json_data_pinterest[image_filename][f"{model}_answers"][question] + "<br\><br\>" + story
+#         else:
+#             # Answer the question and update the data
+#             json_data_pinterest[image_filename][f"{model}_answers"][question] = story
+#     elif data_type == 'renaissance':
+#         # Check if the image filename is in the data, if not, add it
+#         if image_filename not in json_data_renaissance:
+#             json_data_renaissance[image_filename] = {f"{model}_answers": {}}
 
-        # Check if the model is not yet in the data structure
-        if f"{model}_answers" not in json_data_renaissance[image_filename]:
-            json_data_renaissance[image_filename][f"{model}_answers"] = {}
+#         # Check if the model is not yet in the data structure
+#         if f"{model}_answers" not in json_data_renaissance[image_filename]:
+#             json_data_renaissance[image_filename][f"{model}_answers"] = {}
 
-        # Check if the question is already answered
-        if question in json_data_renaissance[image_filename][f"{model}_answers"]:
-            json_data_renaissance[image_filename][f"{model}_answers"][question] = json_data_renaissance[image_filename][f"{model}_answers"][question] + "<br\><br\>" + story
-        else:
-            # Answer the question and update the data
-            json_data_renaissance[image_filename][f"{model}_answers"][question] = story
+#         # Check if the question is already answered
+#         if question in json_data_renaissance[image_filename][f"{model}_answers"]:
+#             json_data_renaissance[image_filename][f"{model}_answers"][question] = json_data_renaissance[image_filename][f"{model}_answers"][question] + "<br\><br\>" + story
+#         else:
+#             # Answer the question and update the data
+#             json_data_renaissance[image_filename][f"{model}_answers"][question] = story
 
 
-    counts[f"{model}_{question}_{image_filename}"] = counts.get(f"{model}_{question}_{image_filename}", 0) + 1
+#     counts[f"{model}_{question}_{image_filename}"] = counts.get(f"{model}_{question}_{image_filename}", 0) + 1
 
-# Save the data to a JSON file
-read_write_json.write_json('survey_two_options_data.json', two_options_data_processed)
+# # Save the data to a JSON file
+# read_write_json.write_json('survey_two_options_data_updated.json', two_options_data_processed)
 
-read_write_json.write_json('survey_pinterest_data_two_options.js', json_data_pinterest)
-read_write_json.write_json('survey_renaissance_data_two_options.js', json_data_renaissance)
+# read_write_json.write_json('survey_pinterest_data_two_options_updates.js', json_data_pinterest)
+# read_write_json.write_json('survey_renaissance_data_two_options_updated.js', json_data_renaissance)
 
-# Write all the stories to a text file
-with open('survey_two_options_stories.txt', 'w') as file:
-    for item in two_options_data_processed:
-        file.write(f"Data Type: {item['data_type']}\n")
-        file.write(f"Model: {item['model']}\n")
-        file.write(f"Question: {item['question']}\n")
-        file.write(f"Image Filename: {item['image_filename']}\n")
-        file.write(f"Highlight: {item['highlight']}\n")
+# # Write all the stories to a text file
+# with open('survey_two_options_stories_updated.txt', 'w') as file:
+#     for item in two_options_data_processed:
+#         file.write(f"Data Type: {item['data_type']}\n")
+#         file.write(f"Model: {item['model']}\n")
+#         file.write(f"Question: {item['question']}\n")
+#         file.write(f"Image Filename: {item['image_filename']}\n")
+#         file.write(f"Highlight: {item['highlight']}\n")
 
-ones = 0
-twos = 0
-threes = 0
-fours = 0
+# ones = 0
+# twos = 0
+# threes = 0
+# fours = 0
 
-for count in counts:
-    if counts[count] == 1:
-        ones += 1
-    elif counts[count] == 2:
-        twos += 1
-    elif counts[count] == 3:
-        threes += 1
-    elif counts[count] == 4:
-        fours += 1
+# for count in counts:
+#     if counts[count] == 1:
+#         ones += 1
+#     elif counts[count] == 2:
+#         twos += 1
+#     elif counts[count] == 3:
+#         threes += 1
+#     elif counts[count] == 4:
+#         fours += 1
 
-print('Counts')
-print('Ones:', ones)
-print('Twos:', twos)
-print('Threes:', threes)
-print('Fours:', fours)
+# print('Counts')
+# print('Ones:', ones)
+# print('Twos:', twos)
+# print('Threes:', threes)
+# print('Fours:', fours)
