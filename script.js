@@ -58,13 +58,27 @@ function handleQuestionClick(questionItem, questionLabel) {
 }
 
 function changeDataSource() {
+    let task = '';
+    if (document.getElementById('two_options_radio_button').checked) {
+        task = 'two_options';
+    } else if (document.getElementById('highlights_radio_button').checked) {
+        task = 'highlights';
+    }
     const dataSource = document.getElementById('data-source').value;
     if (dataSource === 'pinterest') {
         image_folder = 'pinterest';
-        image_data = survey_pinterest_data;
+        if (task === 'two_options') {
+            image_data = survey_pinterest_two_options_data;
+        } else if (task === 'highlights') {
+            image_data = survey_pinterest_highlighted_data;
+        }
     } else if (dataSource === 'renaissance') {
         image_folder = 'renaissance';
-        image_data = survey_renaissance_data;
+        if (task === 'two_options') {
+            image_data = survey_renaissance_two_options_data;
+        } else if (task === 'highlights') {
+            image_data = survey_renaissance_highlighted_data;
+        }
     }
     populateQuestions();
     loadImages(currentIndex);
