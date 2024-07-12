@@ -1,0 +1,15 @@
+Anova: Single Factor;;;;;;
+;;;;;;
+SUMMARY;;;;;;
+Groups;Count;Sum;Average;Variance;;
+Column 1;40;643,58;16,0895;176,8121638;;
+Column 2;40;493,14;12,3285;283,1081772;;
+Column 3;40;507,13;12,67825;666,633784;;
+;;;;;;
+;;;;;;
+ANOVA;;;;;;
+Source of Variation;SS;df;MS;F;P-value;F crit
+Between Groups;345,387635;2;172,6938175;0,459881546;0,632494757;3,073762904
+Within Groups;43935,61088;117;375,5180417;;;
+;;;;;;
+Total;44280,99851;119;;;;

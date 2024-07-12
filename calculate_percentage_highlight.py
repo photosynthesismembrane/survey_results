@@ -55,6 +55,64 @@ def analyze_data(data, model, task):
 
     return results
 
+
+def analyze_all_data_items(data):
+    models = ["llava", "cogvlm", "deepseek"]
+    tasks = ["composition", "balance_elements", "movement", "focus_point", "contrast_elements", "proportion", "foreground_background_4", "symmetry_asymmetry_1", "eye_movement_2"]
+
+    results = []
+    for item in data:
+        for model in models:
+            for task in tasks:
+                if f"{model}_answers" in data[item] and f"{task}" in data[item][f"{model}_answers"]:
+                    result = calculate_highlight_percentage(data[item][f"{model}_answers"][f"{task}"])
+                    results.append({
+                            "model": model,
+                            "task": task,
+                            "item": item,
+                            "highlighted_length": result["highlighted_length"],
+                            "total_length": result["total_length"],
+                            "percentage": result["percentage"]
+                    })
+                
+    return results
+
+def analyze_model_data_items(data, model):
+    tasks = ["composition", "balance_elements", "movement", "focus_point", "contrast_elements", "proportion", "foreground_background_4", "symmetry_asymmetry_1", "eye_movement_2"]
+
+    results = []
+    for item in data:
+        for task in tasks:
+            if f"{model}_answers" in data[item] and f"{task}" in data[item][f"{model}_answers"]:
+                result = calculate_highlight_percentage(data[item][f"{model}_answers"][f"{task}"])
+                results.append({
+                        "model": model,
+                        "task": task,
+                        "item": item,
+                        "highlighted_length": result["highlighted_length"],
+                        "total_length": result["total_length"],
+                        "percentage": result["percentage"]
+                })
+
+    return results
+
+def analyze_data_items(data, model, task):
+
+    results = []
+    for item in data:
+        if f"{model}_answers" in data[item] and f"{task}" in data[item][f"{model}_answers"]:
+            result = calculate_highlight_percentage(data[item][f"{model}_answers"][f"{task}"])
+            results.append({
+                    "model": model,
+                    "task": task,
+                    "item": item,
+                    "highlighted_length": result["highlighted_length"],
+                    "total_length": result["total_length"],
+                    "percentage": result["percentage"]
+            })
+
+    return results
+
 def create_html_latex(data, header):
     models = ["llava", "cogvlm", "deepseek"]
     tasks = ["composition", "balance_elements", "movement", "focus_point", "contrast_elements", "proportion", "foreground_background_4", "symmetry_asymmetry_1", "eye_movement_2"]
@@ -134,7 +192,35 @@ def create_html_latex(data, header):
     return html, latex
 
 
+def create_csv(data, header):
+    models = ["llava", "cogvlm", "deepseek"]
+    tasks = ["composition", "balance_elements", "movement", "focus_point", "contrast_elements", "proportion", "foreground_background_4", "symmetry_asymmetry_1", "eye_movement_2"]
 
+    csv = f"Model;Task;Item;highlight;total;percentage\n"
+
+    result = analyze_all_data_items(data)
+    for item in result:
+        csv += f"{item['model']};{item['task']};{item['item']};{item['highlighted_length']};{item['total_length']};{str(item['percentage']).replace('.',',')}\n"
+
+    csv += "\n\n\n"
+    
+    for model in models:
+        result = analyze_model_data_items(data, model)
+        for item in result:
+            csv += f"{item['model']};{item['task']};{item['item']};{item['highlighted_length']};{item['total_length']};{str(item['percentage']).replace('.',',')}\n"
+        csv += "\n\n\n"
+
+    csv += "\n\n\n"
+
+    for model in models:
+        for task in tasks:
+            result = analyze_data_items(data, model, task)
+            for item in result:
+                csv += f"{item['model']};{item['task']};{item['item']};{item['highlighted_length']};{item['total_length']};{str(item['percentage']).replace('.',',')}\n"
+            csv += "\n\n\n"
+        csv += "\n\n\n"
+
+    return csv
 
 import read_write_json
 
@@ -154,37 +240,49 @@ import read_write_json
 # Load the Pinterest data
 pinterest_data = read_write_json.read_json("survey_pinterest_data_hightlighted_updated_v2 copy.js")
 
-# write html to file
-html, latex = create_html_latex(pinterest_data, "Pinterest Data")
+# # write html to file
+# html, latex = create_html_latex(pinterest_data, "Pinterest Data")
 
-with open('survey_highlight_html_table_pinterest.txt', 'w') as file:
-    file.write(html)
+# with open('survey_highlight_html_table_pinterest.txt', 'w') as file:
+#     file.write(html)
 
-with open('survey_highlight_latex_table_pinterest.txt', 'w') as file:
-    file.write(latex)
+# with open('survey_highlight_latex_table_pinterest.txt', 'w') as file:
+#     file.write(latex)
 
 
 # Load the Renaissance data
 renaissance_data = read_write_json.read_json("survey_renaissance_data_hightlighted_updated_v2 copy.js")
 
-# write html to file
-html, latex = create_html_latex(renaissance_data, "Renaissance Data")
+# # write html to file
+# html, latex = create_html_latex(renaissance_data, "Renaissance Data")
 
-with open('survey_highlight_html_table_renaissance.txt', 'w') as file:
-    file.write(html)
+# with open('survey_highlight_html_table_renaissance.txt', 'w') as file:
+#     file.write(html)
 
-with open('survey_highlight_latex_table_renaissance.txt', 'w') as file: 
-    file.write(latex)
+# with open('survey_highlight_latex_table_renaissance.txt', 'w') as file: 
+#     file.write(latex)
 
 
 all_data = read_write_json.read_json("survey_all_data_hightlighted_updated_v2 copy.js")
 
-# write html to file
-html, latex = create_html_latex(all_data, "All Data")
+# # write html to file
+# html, latex = create_html_latex(all_data, "All Data")
 
-with open('survey_highlight_html_table_all.txt', 'w') as file:
-    file.write(html)
+# with open('survey_highlight_html_table_all.txt', 'w') as file:
+#     file.write(html)
 
-with open('survey_highlight_latex_table_all.txt', 'w') as file:
-    file.write(latex)
+# with open('survey_highlight_latex_table_all.txt', 'w') as file:
+#     file.write(latex)
 
+csv_pinterest = create_csv(pinterest_data, "Pinterest Data")
+csv_renaissance = create_csv(renaissance_data, "Renaissance Data")
+csv_all = create_csv(all_data, "All Data")
+
+with open('survey_highlight_csv_pinterest.csv', 'w') as file:
+    file.write(csv_pinterest)
+
+with open('survey_highlight_csv_renaissance.csv', 'w') as file:
+    file.write(csv_renaissance)
+
+with open('survey_highlight_csv_all.csv', 'w') as file:
+    file.write(csv_all)
