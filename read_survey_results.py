@@ -306,6 +306,7 @@ for item in highlight_data:
         hightlight_list = [story]
     else:
         hightlight_list = highlights.split(' | ')
+        hightlight_list.sort(key=len, reverse=True)
 
         print('Story:', story)
         print('Highlights:', hightlight_list)
@@ -362,10 +363,10 @@ for item in highlight_data:
     counts[f"{model}_{question}_{image_filename}"] = counts.get(f"{model}_{question}_{image_filename}", 0) + 1
 
 # Save the data to a JSON file
-read_write_json.write_json('survey_highlight_data_updated_v2.json', highlight_data_processed)
+read_write_json.write_json('survey_highlight_data_updated_v3.json', highlight_data_processed)
 
-read_write_json.write_json('survey_pinterest_data_hightlighted_updated_v2.js', json_data_pinterest)
-read_write_json.write_json('survey_renaissance_data_hightlighted_updated_v2.js', json_data_renaissance)
+read_write_json.write_json('survey_pinterest_data_hightlighted_updated_v3.js', json_data_pinterest)
+read_write_json.write_json('survey_renaissance_data_hightlighted_updated_v3.js', json_data_renaissance)
 
 # Write all the stories to a text file
 # with open('survey_highlight_stories_updated.txt', 'w') as file:

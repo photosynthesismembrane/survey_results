@@ -238,51 +238,51 @@ import read_write_json
 # ];
 
 # Load the Pinterest data
-pinterest_data = read_write_json.read_json("survey_pinterest_data_hightlighted_updated_v2 copy.js")
+pinterest_data = read_write_json.read_json("survey_pinterest_data_hightlighted_updated_v3 copy.js")
 
-# # write html to file
-# html, latex = create_html_latex(pinterest_data, "Pinterest Data")
+# write html to file
+html, latex = create_html_latex(pinterest_data, "Pinterest Data")
 
-# with open('survey_highlight_html_table_pinterest.txt', 'w') as file:
-#     file.write(html)
+with open('survey_highlight_html_table_pinterest_v3.txt', 'w') as file:
+    file.write(html)
 
-# with open('survey_highlight_latex_table_pinterest.txt', 'w') as file:
-#     file.write(latex)
+with open('survey_highlight_latex_table_pinterest_v3.txt', 'w') as file:
+    file.write(latex)
 
 
 # Load the Renaissance data
-renaissance_data = read_write_json.read_json("survey_renaissance_data_hightlighted_updated_v2 copy.js")
+renaissance_data = read_write_json.read_json("survey_renaissance_data_hightlighted_updated_v3 copy.js")
 
-# # write html to file
-# html, latex = create_html_latex(renaissance_data, "Renaissance Data")
+# write html to file
+html, latex = create_html_latex(renaissance_data, "Renaissance Data")
 
-# with open('survey_highlight_html_table_renaissance.txt', 'w') as file:
-#     file.write(html)
+with open('survey_highlight_html_table_renaissance_v3.txt', 'w') as file:
+    file.write(html)
 
-# with open('survey_highlight_latex_table_renaissance.txt', 'w') as file: 
-#     file.write(latex)
+with open('survey_highlight_latex_table_renaissance_v3.txt', 'w') as file: 
+    file.write(latex)
 
 
-all_data = read_write_json.read_json("survey_all_data_hightlighted_updated_v2 copy.js")
+all_data = read_write_json.read_json("survey_all_data_hightlighted_updated_v3 copy.js")
 
-# # write html to file
-# html, latex = create_html_latex(all_data, "All Data")
+# write html to file
+html, latex = create_html_latex(all_data, "All Data")
 
-# with open('survey_highlight_html_table_all.txt', 'w') as file:
-#     file.write(html)
+with open('survey_highlight_html_table_all_v3.txt', 'w') as file:
+    file.write(html)
 
-# with open('survey_highlight_latex_table_all.txt', 'w') as file:
-#     file.write(latex)
+with open('survey_highlight_latex_table_all_v3.txt', 'w') as file:
+    file.write(latex)
 
 csv_pinterest = create_csv(pinterest_data, "Pinterest Data")
 csv_renaissance = create_csv(renaissance_data, "Renaissance Data")
 csv_all = create_csv(all_data, "All Data")
 
-with open('survey_highlight_csv_pinterest.csv', 'w') as file:
+with open('survey_highlight_csv_pinterest_v3.csv', 'w') as file:
     file.write(csv_pinterest)
 
-with open('survey_highlight_csv_renaissance.csv', 'w') as file:
+with open('survey_highlight_csv_renaissance_v3.csv', 'w') as file:
     file.write(csv_renaissance)
 
-with open('survey_highlight_csv_all.csv', 'w') as file:
+with open('survey_highlight_csv_all_v3.csv', 'w') as file:
     file.write(csv_all)
