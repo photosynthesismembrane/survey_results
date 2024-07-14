@@ -215,6 +215,23 @@ function scrollToFirstImage() {
     }
 }
 
+function openMainTab(tabId) {
+    var i, tabContent, tabButtons;
+
+    tabContent = document.getElementsByClassName("main-tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+
+    tabButtons = document.getElementsByClassName("main-tab-button");
+    for (i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+
+    document.getElementById(tabId).style.display = "block";
+    event.currentTarget.classList.add("active");
+}
+
 
 // Initialize
 populateQuestions();

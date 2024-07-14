@@ -11,6 +11,42 @@
             margin: 0;
             padding: 20px;
         }
+        
+        .main-tabs {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .main-tab-button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: larger;
+            padding: 14px 16px;
+            width: 33%;
+            color: #333;
+        }
+
+        .main-tab-button:hover {
+            background-color: #ddd;
+        }
+
+        .main-tab-button.active {
+            background-color: #ccc;
+        }
+
+        .main-tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .main-tab-content.active {
+            display: block;
+        }
         #controls {
             margin-bottom: 20px;
             display: flex;
@@ -212,7 +248,14 @@
     </style>
 </head>
 <body>
-    
+    <div class="main-tabs">
+        <button class="main-tab-button" onclick="openMainTab('main-tab1')">Comparison</button>
+        <button class="main-tab-button" onclick="openMainTab('main-tab2')">Highlight</button>
+        <button class="main-tab-button" onclick="openMainTab('main-tab3')">Individual data points</button>
+    </div>
+
+    <div id="main-tab1" class="main-tab-content">
+        
     <div class="survey-score-container">
 
         <div class="survey-comparison-data-container">
@@ -269,22 +312,22 @@
                     </tr>
                 </thead>
                 <tbody>
-        <tr><td>all</td><td>10/20</td><td>9/20</td><td>11/20</td><td>26.36</td><td>1.97</td><td>25.41</td><td>1.94</td><td>24.89</td><td>1.97</td></tr><tr><td>composition</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>balance_elements</td><td>3/6</td><td>3/6</td><td>3/6</td><td>27.15</td><td>4.06</td><td>22.47</td><td>3.91</td><td>22.94</td><td>3.96</td></tr><tr><td>eye_movement_2</td><td>3/6</td><td>2/6</td><td>4/6</td><td>26.19</td><td>3.82</td><td>23.58</td><td>3.84</td><td>28.56</td><td>3.81</td></tr><tr><td>movement</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>contrast_elements</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>foreground_background_4</td><td>0/2</td><td>1/2</td><td>2/2</td><td>19.03</td><td>6.57</td><td>24.95</td><td>6.27</td><td>32.44</td><td>6.34</td></tr><tr><td>symmetry_asymmetry_1</td><td>4/6</td><td>3/6</td><td>2/6</td><td>26.35</td><td>3.92</td><td>27.44</td><td>3.94</td><td>21.54</td><td>3.98</td></tr><tr><td>focus_point</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>proportion</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr></tbody></table>"
-                <div class="main-plot-container">
-                    <img src="pinterest_all_ratings.png" alt="pinterest all ratings">
-                </div>
+        <tr><td>all</td><td>10/20</td><td>9/20</td><td>11/20</td><td>26.36</td><td>1.97</td><td>25.41</td><td>1.94</td><td>24.89</td><td>1.97</td></tr><tr><td>composition</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>balance_elements</td><td>3/6</td><td>3/6</td><td>3/6</td><td>27.15</td><td>4.06</td><td>22.47</td><td>3.91</td><td>22.94</td><td>3.96</td></tr><tr><td>eye_movement_2</td><td>3/6</td><td>2/6</td><td>4/6</td><td>26.19</td><td>3.82</td><td>23.58</td><td>3.84</td><td>28.56</td><td>3.81</td></tr><tr><td>movement</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>contrast_elements</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>foreground_background_4</td><td>0/2</td><td>1/2</td><td>2/2</td><td>19.03</td><td>6.57</td><td>24.95</td><td>6.27</td><td>32.44</td><td>6.34</td></tr><tr><td>symmetry_asymmetry_1</td><td>4/6</td><td>3/6</td><td>2/6</td><td>26.35</td><td>3.92</td><td>27.44</td><td>3.94</td><td>21.54</td><td>3.98</td></tr><tr><td>focus_point</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>proportion</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr></tbody>
+            </table>
+            <div class="main-plot-container">
+                <img src="pinterest_all_ratings.png" alt="pinterest all ratings">
             </div>
-            <div class="sub-plot-container">
-                <img src="pinterest_composition_ratings.png" alt="pinterest composition ratings">
-                <img src="pinterest_balance_elements_ratings.png" alt="pinterest balance elements ratings">
-                <img src="pinterest_eye_movement_2_ratings.png" alt="pinterest eye movement 2 ratings">
-                <img src="pinterest_movement_ratings.png" alt="pinterest movement ratings">
-                <img src="pinterest_contrast_elements_ratings.png" alt="pinterest contrast elements ratings">
-                <img src="pinterest_foreground_background_4_ratings.png" alt="pinterest foreground background 4 ratings">
-                <img src="pinterest_symmetry_asymmetry_1_ratings.png" alt="pinterest symmetry asymmetry 1 ratings">
-                <img src="pinterest_focus_point_ratings.png" alt="pinterest focus point ratings">
-                <img src="pinterest_proportion_ratings.png" alt="pinterest proportion ratings">
-            </div>
+        </div>
+        <div class="sub-plot-container">
+            <img src="pinterest_composition_ratings.png" alt="pinterest composition ratings">
+            <img src="pinterest_balance_elements_ratings.png" alt="pinterest balance elements ratings">
+            <img src="pinterest_eye_movement_2_ratings.png" alt="pinterest eye movement 2 ratings">
+            <img src="pinterest_movement_ratings.png" alt="pinterest movement ratings">
+            <img src="pinterest_contrast_elements_ratings.png" alt="pinterest contrast elements ratings">
+            <img src="pinterest_foreground_background_4_ratings.png" alt="pinterest foreground background 4 ratings">
+            <img src="pinterest_symmetry_asymmetry_1_ratings.png" alt="pinterest symmetry asymmetry 1 ratings">
+            <img src="pinterest_focus_point_ratings.png" alt="pinterest focus point ratings">
+            <img src="pinterest_proportion_ratings.png" alt="pinterest proportion ratings">
         </div>
         
         <div class="survey-comparison-data-container">
@@ -305,24 +348,27 @@
                     </tr>
                 </thead>
                 <tbody>
-        <tr><td>all</td><td>7/24</td><td>12/24</td><td>17/24</td><td>20.62</td><td>1.84</td><td>24.46</td><td>1.77</td><td>28.39</td><td>1.82</td></tr><tr><td>composition</td><td>2/4</td><td>3/4</td><td>1/4</td><td>24.55</td><td>4.94</td><td>29.80</td><td>4.70</td><td>18.72</td><td>4.91</td></tr><tr><td>balance_elements</td><td>1/4</td><td>2/4</td><td>3/4</td><td>21.38</td><td>4.64</td><td>24.96</td><td>4.80</td><td>29.89</td><td>4.71</td></tr><tr><td>eye_movement_2</td><td>1/2</td><td>0/2</td><td>2/2</td><td>24.98</td><td>6.29</td><td>18.04</td><td>6.46</td><td>32.84</td><td>6.27</td></tr><tr><td>movement</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>contrast_elements</td><td>2/6</td><td>4/6</td><td>3/6</td><td>18.87</td><td>4.07</td><td>28.02</td><td>4.03</td><td>25.45</td><td>3.97</td></tr><tr><td>foreground_background_4</td><td>0/4</td><td>2/4</td><td>4/4</td><td>15.55</td><td>5.55</td><td>25.38</td><td>5.23</td><td>34.56</td><td>5.45</td></tr><tr><td>symmetry_asymmetry_1</td><td>1/2</td><td>0/2</td><td>2/2</td><td>24.95</td><td>6.27</td><td>19.03</td><td>6.57</td><td>32.44</td><td>6.34</td></tr><tr><td>focus_point</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>proportion</td><td>0/2</td><td>1/2</td><td>2/2</td><td>19.03</td><td>6.57</td><td>24.95</td><td>6.27</td><td>32.44</td><td>6.34</td></tr></tbody></table>"
-                <div class="main-plot-container">
-                    <img src="renaissance_all_ratings.png" alt="renaissance all ratings">
-                </div>
-            </div>
-            <div class="sub-plot-container">
-                <img src="renaissance_composition_ratings.png" alt="renaissance composition ratings">
-                <img src="renaissance_balance_elements_ratings.png" alt="renaissance balance elements ratings">
-                <img src="renaissance_eye_movement_2_ratings.png" alt="renaissance eye movement 2 ratings">
-                <img src="renaissance_movement_ratings.png" alt="renaissance movement ratings">
-                <img src="renaissance_contrast_elements_ratings.png" alt="renaissance contrast elements ratings">
-                <img src="renaissance_foreground_background_4_ratings.png" alt="renaissance foreground background 4 ratings">
-                <img src="renaissance_symmetry_asymmetry_1_ratings.png" alt="renaissance symmetry asymmetry 1 ratings">
-                <img src="renaissance_focus_point_ratings.png" alt="renaissance focus point ratings">
-                <img src="renaissance_proportion_ratings.png" alt="renaissance proportion ratings">
+        <tr><td>all</td><td>7/24</td><td>12/24</td><td>17/24</td><td>20.62</td><td>1.84</td><td>24.46</td><td>1.77</td><td>28.39</td><td>1.82</td></tr><tr><td>composition</td><td>2/4</td><td>3/4</td><td>1/4</td><td>24.55</td><td>4.94</td><td>29.80</td><td>4.70</td><td>18.72</td><td>4.91</td></tr><tr><td>balance_elements</td><td>1/4</td><td>2/4</td><td>3/4</td><td>21.38</td><td>4.64</td><td>24.96</td><td>4.80</td><td>29.89</td><td>4.71</td></tr><tr><td>eye_movement_2</td><td>1/2</td><td>0/2</td><td>2/2</td><td>24.98</td><td>6.29</td><td>18.04</td><td>6.46</td><td>32.84</td><td>6.27</td></tr><tr><td>movement</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>contrast_elements</td><td>2/6</td><td>4/6</td><td>3/6</td><td>18.87</td><td>4.07</td><td>28.02</td><td>4.03</td><td>25.45</td><td>3.97</td></tr><tr><td>foreground_background_4</td><td>0/4</td><td>2/4</td><td>4/4</td><td>15.55</td><td>5.55</td><td>25.38</td><td>5.23</td><td>34.56</td><td>5.45</td></tr><tr><td>symmetry_asymmetry_1</td><td>1/2</td><td>0/2</td><td>2/2</td><td>24.95</td><td>6.27</td><td>19.03</td><td>6.57</td><td>32.44</td><td>6.34</td></tr><tr><td>focus_point</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>proportion</td><td>0/2</td><td>1/2</td><td>2/2</td><td>19.03</td><td>6.57</td><td>24.95</td><td>6.27</td><td>32.44</td><td>6.34</td></tr></tbody>
+            </table>
+            <div class="main-plot-container">
+                <img src="renaissance_all_ratings.png" alt="renaissance all ratings">
             </div>
         </div>
+        <div class="sub-plot-container">
+            <img src="renaissance_composition_ratings.png" alt="renaissance composition ratings">
+            <img src="renaissance_balance_elements_ratings.png" alt="renaissance balance elements ratings">
+            <img src="renaissance_eye_movement_2_ratings.png" alt="renaissance eye movement 2 ratings">
+            <img src="renaissance_movement_ratings.png" alt="renaissance movement ratings">
+            <img src="renaissance_contrast_elements_ratings.png" alt="renaissance contrast elements ratings">
+            <img src="renaissance_foreground_background_4_ratings.png" alt="renaissance foreground background 4 ratings">
+            <img src="renaissance_symmetry_asymmetry_1_ratings.png" alt="renaissance symmetry asymmetry 1 ratings">
+            <img src="renaissance_focus_point_ratings.png" alt="renaissance focus point ratings">
+            <img src="renaissance_proportion_ratings.png" alt="renaissance proportion ratings">
         </div>
+    </div>
+
+    <div id="main-tab2" class="main-tab-content">
+        
         <div class="highlight-percentage-data-container">
         
             <table>
@@ -1074,32 +1120,38 @@
             <img src="renaissance_data_eye_movement_2_gaussians.png" alt="Renaissance data eye movement gaussians">
         </div>
     
-    <div id="controls">
-        <div class="dropdown-container">
-            <select id="data-source" onchange="changeDataSource()">
-                <option value="pinterest">Pinterest</option>
-                <option value="renaissance">Renaissance</option>
-            </select>
-        </div>
-        <div id="checkboxes">
-            <div class="checkbox-container">
-                <input type="radio" id="two_options_radio_button" name="task" value="two_options" checked>
-                <label for="two_options">Two options</label>
+    </div>
+
+    <div id="main-tab3" class="main-tab-content">
+        <div id="controls">
+            <div class="dropdown-container">
+                <select id="data-source" onchange="changeDataSource()">
+                    <option value="pinterest">Pinterest</option>
+                    <option value="renaissance">Renaissance</option>
+                </select>
             </div>
-            <div class="checkbox-container">
-                <input type="radio" id="highlights_radio_button" name="task" value="highlights">
-                <label for="highlights">Highlights</label>
+            <div id="checkboxes">
+                <div class="checkbox-container">
+                    <input type="radio" id="two_options_radio_button" name="task" value="two_options" checked>
+                    <label for="two_options">Two options</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="radio" id="highlights_radio_button" name="task" value="highlights">
+                    <label for="highlights">Highlights</label>
+                </div>
+            </div>
+            <div id="questions-container">
+                <!-- Questions will be populated here -->
             </div>
         </div>
-        <div id="questions-container">
-            <!-- Questions will be populated here -->
+        <div id="image-container"></div>
+        <div id="navigation-buttons" class="navigation">
+            <button onclick="loadPrevious()">Previous</button>
+            <button onclick="loadNext()">Next</button>
         </div>
     </div>
-    <div id="image-container"></div>
-    <div id="navigation-buttons" class="navigation">
-        <button onclick="loadPrevious()">Previous</button>
-        <button onclick="loadNext()">Next</button>
-    </div>
+    
+    
     <script src="survey_renaissance_data_two_options_updated_v2.js"></script>
     <script src="survey_pinterest_data_two_options_updates_v2.js"></script>
     <script src="survey_renaissance_data_hightlighted_updated_v4.js"></script>
