@@ -1,0 +1,12 @@
+
+        \begin{table}[ht]
+            \centering
+            \caption{Renaissance Data}
+            \begin{tabular}{lllll}
+                \toprule
+                \textbf{Model} & \textbf{Task} & \textbf{Highlighted Length} & \textbf{Total Length} & \textbf{Highlight Percentage} \\
+                \midrule
+        All & All & 11143 & 75717 & 14.72 \\llava & All & 3918 & 22272 & 17.59 \\cogvlm & All & 1546 & 11862 & 13.03 \\deepseek & All & 5679 & 41583 & 13.66 \\llava & composition & 597 & 2534 & 23.56 \\llava & balance & 700 & 3255 & 21.51 \\llava & movement & 0 & 0 & 0 \\llava & focus_point & 386 & 4479 & 8.62 \\llava & contrast & 474 & 1929 & 24.57 \\llava & proportion & 31 & 1074 & 2.89 \\llava & ground & 537 & 4312 & 12.45 \\llava & symmetry & 620 & 3136 & 19.77 \\llava & eye & 573 & 1553 & 36.9 \\cogvlm & composition & 218 & 1709 & 12.76 \\cogvlm & balance & 165 & 1697 & 9.72 \\cogvlm & movement & 0 & 0 & 0 \\cogvlm & focus_point & 309 & 2166 & 14.27 \\cogvlm & contrast & 76 & 1333 & 5.7 \\cogvlm & proportion & 19 & 744 & 2.55 \\cogvlm & ground & 213 & 1658 & 12.85 \\cogvlm & symmetry & 414 & 1717 & 24.11 \\cogvlm & eye & 132 & 838 & 15.75 \\deepseek & composition & 591 & 4620 & 12.79 \\deepseek & balance & 520 & 6017 & 8.64 \\deepseek & movement & 0 & 0 & 0 \\deepseek & focus_point & 2069 & 6795 & 30.45 \\deepseek & contrast & 304 & 3908 & 7.78 \\deepseek & proportion & 136 & 2338 & 5.82 \\deepseek & ground & 541 & 5775 & 9.37 \\deepseek & symmetry & 1201 & 8258 & 14.54 \\deepseek & eye & 317 & 3872 & 8.19 \\
+            \bottomrule
+            \end{tabular}
+        \end{table}

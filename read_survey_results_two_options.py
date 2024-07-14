@@ -63,6 +63,7 @@ for item in data:
     for key, value in item.items():
         # print(f'{key}: {value}')
         if '.jpg' in key and 'highlight' not in key:
+
             print('Field:', key)
             print('Value:', value)
             print('\n')
@@ -71,32 +72,45 @@ for item in data:
             # Find out what kind of field this is
             if 'composition' in key:
                 question = 'composition'
-            elif 'balance' in key:
+            elif 'balance_elements' in key:
                 question = 'balance_elements'
+            elif 'eye_movement_2' in key:
+                question = 'eye_movement_2'
             elif 'movement' in key:
                 question = 'movement'
-            elif 'contrast' in key:
+            elif 'contrast_elements' in key:
                 question = 'contrast_elements'
             elif 'foreground_background_4' in key:
-                question = 'ground'
-            elif 'symmetry' in key:
+                question = 'foreground_background_4'
+            elif 'symmetry_asymmetry_1' in key:
                 question = 'symmetry_asymmetry_1'
-            elif 'eye' in key:
-                question = 'eye_movement_2'
-            elif 'focus' in key:
+            elif 'focus_point' in key:
                 question = 'focus_point'
             elif 'proportion' in key:
                 question = 'proportion'
 
                 
-            key = key.replace('composition_', '').replace('balance_elements_', '').replace('movement_', '').replace('contrast_elements_', '').replace('for_eground_background_4_', '').replace('symmetry_asymmetry_1_', '').replace('eye_movement_2_', '').replace('focus_point_', '').replace('proportion_', '')
+            key = key.replace(f"{question}_", '')
+
+            match_contestants = []
+            if 'llava' in key:
+                key = key.replace('llava_', '')
+                match_contestants.append('llava')
+            if 'cogvlm' in key:
+                key = key.replace('cogvlm_', '')
+                match_contestants.append('cogvlm')
+            if 'deepseek' in key:
+                key = key.replace('deepseek_', '')
+                match_contestants.append('deepseek')
 
             if key in pinterest_data:
+                print('Pinterest item found: ', key)
                 data_type = 'pinterest'
-                continue
             elif key in renaissance_data:
+                print('Renaissance item found: ', key)
                 data_type = 'renaissance'
             else:
+                print(f'Item not found: {key}')
                 continue
 
             # Find out what kind of field this is
@@ -120,7 +134,7 @@ for item in data:
                 contrast_cogvlm += value.count('cogvlm')
                 contrast_deepseek += value.count('deepseek')
 
-            if question == 'ground':
+            if question == 'foreground_background_4':
                 ground_llava += value.count('llava')
                 ground_cogvlm += value.count('cogvlm')
                 ground_deepseek += value.count('deepseek')
@@ -150,6 +164,15 @@ for item in data:
             cogvlm_wins_image = value.count('cogvlm')
             deepseek_wins_image = value.count('deepseek')
 
+            two_options_data.append({
+                'image_filename': key,
+                'question': question,
+                'model': value,
+                'contestant_1': match_contestants[0] if len(match_contestants) > 0 else '',
+                'contestant_2': match_contestants[1] if len(match_contestants) > 1 else '',
+                'data_type': data_type
+            })
+
             if llava_wins_image + cogvlm_wins_image + deepseek_wins_image == 0:
                 print('No votes for this image')
                 no_votes += 1
@@ -162,102 +185,110 @@ for item in data:
             cogvlm_wins += cogvlm_wins_image
             deepseek_wins += deepseek_wins_image
 
-            print('llava wins:', llava_wins_image)
-            print('cogvlm wins:', cogvlm_wins_image)
-            print('deepseek wins:', deepseek_wins_image)
-            print('\n')
+            # print('llava wins:', llava_wins_image)
+            # print('cogvlm wins:', cogvlm_wins_image)
+            # print('deepseek wins:', deepseek_wins_image)
+            # print('\n')
 
 
-            two_options_data.append({
-                'image_filename': key,
-                'question': question,
-                'model': 'llava',
-                'highlight': value,
-                'score': llava_wins_image
-            })
 
-            two_options_data.append({
-                'image_filename': key,
-                'question': question,
-                'model': 'cogvlm',
-                'highlight': value,
-                'score': cogvlm_wins_image
-            })
+            # two_options_data.append({
+            #     'image_filename': key,
+            #     'question': question,
+            #     'model': 'llava',
+            #     'highlight': value,
+            #     'score': llava_wins_image
+            # })
 
-            two_options_data.append({
-                'image_filename': key,
-                'question': question,
-                'model': 'deepseek',
-                'highlight': value,
-                'score': deepseek_wins_image
-            })
+            # two_options_data.append({
+            #     'image_filename': key,
+            #     'question': question,
+            #     'model': 'cogvlm',
+            #     'highlight': value,
+            #     'score': cogvlm_wins_image
+            # })
+
+            # two_options_data.append({
+            #     'image_filename': key,
+            #     'question': question,
+            #     'model': 'deepseek',
+            #     'highlight': value,
+            #     'score': deepseek_wins_image
+            # })
 
     print('\n')  # Print a new line for better readability between items
 
-# Print the results
-print('llava wins:', llava_wins)
-print('cogvlm wins:', cogvlm_wins)
-print('deepseek wins:', deepseek_wins)
+# # Print the results
+# print('llava wins:', llava_wins)
+# print('cogvlm wins:', cogvlm_wins)
+# print('deepseek wins:', deepseek_wins)
 
-print('No votes:', no_votes)
-print('With votes:', with_votes)
+# print('No votes:', no_votes)
+# print('With votes:', with_votes)
 
-print('\n')
+# print('\n')
 
-# Print the results for each field
-print('Composition:')
-print('llava wins:', composition_llava)
-print('cogvlm wins:', composition_cogvlm)
-print('deepseek wins:', composition_deepseek)
+# # Print the results for each field
+# print('Composition:')
+# print('llava wins:', composition_llava)
+# print('cogvlm wins:', composition_cogvlm)
+# print('deepseek wins:', composition_deepseek)
 
-print('\n')
-print('Balance:')
-print('llava wins:', balance_llava)
-print('cogvlm wins:', balance_cogvlm)
-print('deepseek wins:', balance_deepseek)
+# print('\n')
+# print('Balance:')
+# print('llava wins:', balance_llava)
+# print('cogvlm wins:', balance_cogvlm)
+# print('deepseek wins:', balance_deepseek)
 
-print('\n')
-print('Movement:')
-print('llava wins:', movement_llava)
-print('cogvlm wins:', movement_cogvlm)
-print('deepseek wins:', movement_deepseek)
+# print('\n')
+# print('Movement:')
+# print('llava wins:', movement_llava)
+# print('cogvlm wins:', movement_cogvlm)
+# print('deepseek wins:', movement_deepseek)
 
-print('\n')
-print('Contrast:')
-print('llava wins:', contrast_llava)
-print('cogvlm wins:', contrast_cogvlm)
-print('deepseek wins:', contrast_deepseek)
+# print('\n')
+# print('Contrast:')
+# print('llava wins:', contrast_llava)
+# print('cogvlm wins:', contrast_cogvlm)
+# print('deepseek wins:', contrast_deepseek)
 
-print('\n')
-print('Ground:')
-print('llava wins:', ground_llava)
-print('cogvlm wins:', ground_cogvlm)
-print('deepseek wins:', ground_deepseek)
+# print('\n')
+# print('Ground:')
+# print('llava wins:', ground_llava)
+# print('cogvlm wins:', ground_cogvlm)
+# print('deepseek wins:', ground_deepseek)
 
-print('\n')
-print('Symmetry:')
-print('llava wins:', symmetry_llava)
-print('cogvlm wins:', symmetry_cogvlm)
-print('deepseek wins:', symmetry_deepseek)
+# print('\n')
+# print('Symmetry:')
+# print('llava wins:', symmetry_llava)
+# print('cogvlm wins:', symmetry_cogvlm)
+# print('deepseek wins:', symmetry_deepseek)
 
-print('\n')
-print('Eye:')
-print('llava wins:', eye_llava)
-print('cogvlm wins:', eye_cogvlm)
-print('deepseek wins:', eye_deepseek)
+# print('\n')
+# print('Eye:')
+# print('llava wins:', eye_llava)
+# print('cogvlm wins:', eye_cogvlm)
+# print('deepseek wins:', eye_deepseek)
 
-print('\n')
-print('Focus:')
-print('llava wins:', focus_llava)
-print('cogvlm wins:', focus_cogvlm)
-print('deepseek wins:', focus_deepseek)
+# print('\n')
+# print('Focus:')
+# print('llava wins:', focus_llava)
+# print('cogvlm wins:', focus_cogvlm)
+# print('deepseek wins:', focus_deepseek)
 
-print('\n')
-print('Proportion:')
-print('llava wins:', proportion_llava)
-print('cogvlm wins:', proportion_cogvlm)
-print('deepseek wins:', proportion_deepseek)
+# print('\n')
+# print('Proportion:')
+# print('llava wins:', proportion_llava)
+# print('cogvlm wins:', proportion_cogvlm)
+# print('deepseek wins:', proportion_deepseek)
 
+# Create csv file
+csv = "image_filename;question;model;contestant_1;contestant_2;data_type\n"
+for item in two_options_data:
+    csv += f"{item['image_filename']};{item['question']};{item['model']};{item['contestant_1']};{item['contestant_2']};{item['data_type']}\n"
+
+# with open('survey_two_options_csv.csv', 'w') as file:
+#     file.write(csv)
 
 # import read_write_json
 
@@ -395,3 +426,108 @@ print('deepseek wins:', proportion_deepseek)
 # print('Twos:', twos)
 # print('Threes:', threes)
 # print('Fours:', fours)
+
+from trueskill import Rating, quality_1vs1, rate_1vs1
+
+# Give all the models a default rating
+llava = Rating()
+cogvlm = Rating()
+deepseek = Rating()
+
+csv = "llava;cogvlm;deepseek\n"
+
+for item in two_options_data:
+    if item['contestant_1'] != '' and item['contestant_2'] != '' and item['model'] != '':
+        csv += f"{llava};{cogvlm};{deepseek}\n"
+
+        concat = item['contestant_1'] + item['contestant_2']
+        winner = item['model']
+        loser = concat.replace(winner, '')
+
+        if winner == 'llava':
+            winner_ts = llava
+        elif winner == 'cogvlm':
+            winner_ts = cogvlm
+        elif winner == 'deepseek':
+            winner_ts = deepseek
+
+        if loser == 'llava':
+            loser_ts = llava
+        elif loser == 'cogvlm':
+            loser_ts = cogvlm
+        elif loser == 'deepseek':
+            loser_ts = deepseek
+
+        winner_ts, loser_ts = rate_1vs1(winner_ts, loser_ts)
+
+        if winner == 'llava':
+            llava = winner_ts
+        elif winner == 'cogvlm':
+            cogvlm = winner_ts
+        elif winner == 'deepseek':
+            deepseek = winner_ts
+
+        if loser == 'llava':
+            llava = loser_ts
+        elif loser == 'cogvlm':
+            cogvlm = loser_ts
+        elif loser == 'deepseek':
+            deepseek = loser_ts
+
+# csv += "\n\n\n"
+# csv += f"quality_llava_cogvlm: {quality_1vs1(llava, cogvlm)}\n"
+# csv += f"quality_llava_deepseek: {quality_1vs1(llava, deepseek)}\n"
+# csv += f"quality_cogvlm_deepseek: {quality_1vs1(cogvlm, deepseek)}\n"
+# csv += f"quality_cogvlm_llava: {quality_1vs1(cogvlm, llava)}\n"
+# csv += f"quality_deepseek_llava: {quality_1vs1(deepseek, llava)}\n"
+# csv += f"quality_deepseek_cogvlm: {quality_1vs1(deepseek, cogvlm)}\n"
+
+csv += "\n\n\n"
+csv += '{:.1%} chance to draw between llava and cogvlm'.format(quality_1vs1(llava, cogvlm))
+csv += '{:.1%} chance to draw between llava and deepseek'.format(quality_1vs1(llava, deepseek))
+csv += '{:.1%} chance to draw between cogvlm and deepseek'.format(quality_1vs1(cogvlm, deepseek))
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the parameters for the three Gaussians
+
+# Generate x-values
+x = np.linspace(17.5, 32.5, 1000)
+
+# Function to compute the Gaussian distribution
+def gaussian(x, mean, variance):
+    return (1 / np.sqrt(2 * np.pi * variance)) * np.exp(-(x - mean) ** 2 / (2 * variance))
+
+# Generate y-values for each Gaussian
+y1 = gaussian(x, llava.mu, llava.sigma)
+y2 = gaussian(x, cogvlm.mu, cogvlm.sigma)
+y3 = gaussian(x, deepseek.mu, deepseek.sigma)
+
+# Plot the Gaussians
+plt.figure(figsize=(10, 6))
+plt.plot(x, y1, label=f'LLaVA')
+plt.plot(x, y2, label=f'CogVLM')
+plt.plot(x, y3, label=f'Deepseek')
+
+# Add titles and labels
+plt.title('Gaussian Distributions')
+plt.xlabel('TrueSkill Rating')
+plt.ylabel('Probability Density')
+plt.legend()
+
+# Show the plot
+plt.grid(True)
+plt.show()
+
+# Save image to file
+plt.savefig('gaussian_distributions.png')
+
+
+
+# Write the ratings to a csv file
+# with open('survey_two_options_ratings.csv', 'w') as file:
+#     file.write(csv)
+        
+        

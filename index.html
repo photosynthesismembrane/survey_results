@@ -185,159 +185,146 @@
             font-size: 1.5em;
             color: #333;
         }
+        .main-plot-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sub-plot-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .renaissance-plot-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .pinterest-plot-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
+    
     <div class="survey-score-container">
+
         <div class="survey-comparison-data-container">
-        <table>
-            <caption>Pinterest Data</caption>
-            <thead>
-                <tr>
-                    <th>Task</th>
-                    <th>llava wins</th>
-                    <th>cogvlm wins</th>
-                    <th>deepseek wins</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Total</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>Composition</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Balance</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Movement</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Contrast</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Ground</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Symmetry</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Eye</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Focus</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Proportion</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <caption>Renaissance Data</caption>
-            <thead>
-                <tr>
-                    <th>Task</th>
-                    <th>llava wins</th>
-                    <th>cogvlm wins</th>
-                    <th>deepseek wins</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Total</td>
-                    <td>15</td>
-                    <td>19</td>
-                    <td>23</td>
-                </tr>
-                <tr>
-                    <td>Composition</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Balance</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Movement</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Contrast</td>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Ground</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Symmetry</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>Eye</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Focus</td>
-                    <td>5</td>
-                    <td>4</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Proportion</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-            </tbody>
-        </table>
+            <table>
+                <caption>All Ratings</caption>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>llava Wins</th>
+                        <th>cogvlm Wins</th>
+                        <th>deepseek Wins</th>
+                        <th>llava Mean</th>
+                        <th>llava Sigma</th>
+                        <th>cogvlm Mean</th>
+                        <th>cogvlm Sigma</th>
+                        <th>deepseek Mean</th>
+                        <th>deepseek Sigma</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr><td>all</td><td>17/44</td><td>21/44</td><td>28/44</td><td>23.09</td><td>1.27</td><td>24.44</td><td>1.25</td><td>25.87</td><td>1.27</td></tr><tr><td>composition</td><td>2/4</td><td>3/4</td><td>1/4</td><td>24.55</td><td>4.94</td><td>29.80</td><td>4.70</td><td>18.72</td><td>4.91</td></tr><tr><td>balance_elements</td><td>4/10</td><td>5/10</td><td>6/10</td><td>25.05</td><td>2.92</td><td>24.26</td><td>2.92</td><td>26.05</td><td>2.95</td></tr><tr><td>eye_movement_2</td><td>4/8</td><td>2/8</td><td>6/8</td><td>26.30</td><td>3.44</td><td>23.15</td><td>3.51</td><td>28.91</td><td>3.47</td></tr><tr><td>movement</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>contrast_elements</td><td>2/6</td><td>4/6</td><td>3/6</td><td>18.87</td><td>4.07</td><td>28.02</td><td>4.03</td><td>25.45</td><td>3.97</td></tr><tr><td>foreground_background_4</td><td>0/6</td><td>3/6</td><td>6/6</td><td>14.96</td><td>5.10</td><td>25.35</td><td>4.62</td><td>35.99</td><td>5.01</td></tr><tr><td>symmetry_asymmetry_1</td><td>5/8</td><td>3/8</td><td>4/8</td><td>27.07</td><td>3.45</td><td>27.05</td><td>3.56</td><td>23.46</td><td>3.46</td></tr><tr><td>focus_point</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>proportion</td><td>0/2</td><td>1/2</td><td>2/2</td><td>19.03</td><td>6.57</td><td>24.95</td><td>6.27</td><td>32.44</td><td>6.34</td></tr></tbody></table>"
+                <div class="main-plot-container">
+                    <img src="all_all_ratings.png" alt="all all ratings">
+                </div>
+            </div>
+            <div class="sub-plot-container">
+                <img src="all_composition_ratings.png" alt="all composition ratings">
+                <img src="all_balance_elements_ratings.png" alt="all balance elements ratings">
+                <img src="all_eye_movement_2_ratings.png" alt="all eye movement 2 ratings">
+                <img src="all_movement_ratings.png" alt="all movement ratings">
+                <img src="all_contrast_elements_ratings.png" alt="all contrast elements ratings">
+                <img src="all_foreground_background_4_ratings.png" alt="all foreground background 4 ratings">
+                <img src="all_symmetry_asymmetry_1_ratings.png" alt="all symmetry asymmetry 1 ratings">
+                <img src="all_focus_point_ratings.png" alt="all focus point ratings">
+                <img src="all_proportion_ratings.png" alt="all proportion ratings">
+            </div>
+        </div>
+        
+        <div class="survey-comparison-data-container">
+            <table>
+                <caption>Pinterest Ratings</caption>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>llava Wins</th>
+                        <th>cogvlm Wins</th>
+                        <th>deepseek Wins</th>
+                        <th>llava Mean</th>
+                        <th>llava Sigma</th>
+                        <th>cogvlm Mean</th>
+                        <th>cogvlm Sigma</th>
+                        <th>deepseek Mean</th>
+                        <th>deepseek Sigma</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr><td>all</td><td>10/20</td><td>9/20</td><td>11/20</td><td>26.36</td><td>1.97</td><td>25.41</td><td>1.94</td><td>24.89</td><td>1.97</td></tr><tr><td>composition</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>balance_elements</td><td>3/6</td><td>3/6</td><td>3/6</td><td>27.15</td><td>4.06</td><td>22.47</td><td>3.91</td><td>22.94</td><td>3.96</td></tr><tr><td>eye_movement_2</td><td>3/6</td><td>2/6</td><td>4/6</td><td>26.19</td><td>3.82</td><td>23.58</td><td>3.84</td><td>28.56</td><td>3.81</td></tr><tr><td>movement</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>contrast_elements</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>foreground_background_4</td><td>0/2</td><td>1/2</td><td>2/2</td><td>19.03</td><td>6.57</td><td>24.95</td><td>6.27</td><td>32.44</td><td>6.34</td></tr><tr><td>symmetry_asymmetry_1</td><td>4/6</td><td>3/6</td><td>2/6</td><td>26.35</td><td>3.92</td><td>27.44</td><td>3.94</td><td>21.54</td><td>3.98</td></tr><tr><td>focus_point</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>proportion</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr></tbody></table>"
+                <div class="main-plot-container">
+                    <img src="pinterest_all_ratings.png" alt="pinterest all ratings">
+                </div>
+            </div>
+            <div class="sub-plot-container">
+                <img src="pinterest_composition_ratings.png" alt="pinterest composition ratings">
+                <img src="pinterest_balance_elements_ratings.png" alt="pinterest balance elements ratings">
+                <img src="pinterest_eye_movement_2_ratings.png" alt="pinterest eye movement 2 ratings">
+                <img src="pinterest_movement_ratings.png" alt="pinterest movement ratings">
+                <img src="pinterest_contrast_elements_ratings.png" alt="pinterest contrast elements ratings">
+                <img src="pinterest_foreground_background_4_ratings.png" alt="pinterest foreground background 4 ratings">
+                <img src="pinterest_symmetry_asymmetry_1_ratings.png" alt="pinterest symmetry asymmetry 1 ratings">
+                <img src="pinterest_focus_point_ratings.png" alt="pinterest focus point ratings">
+                <img src="pinterest_proportion_ratings.png" alt="pinterest proportion ratings">
+            </div>
+        </div>
+        
+        <div class="survey-comparison-data-container">
+            <table>
+                <caption>Renaissance Ratings</caption>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>llava Wins</th>
+                        <th>cogvlm Wins</th>
+                        <th>deepseek Wins</th>
+                        <th>llava Mean</th>
+                        <th>llava Sigma</th>
+                        <th>cogvlm Mean</th>
+                        <th>cogvlm Sigma</th>
+                        <th>deepseek Mean</th>
+                        <th>deepseek Sigma</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr><td>all</td><td>7/24</td><td>12/24</td><td>17/24</td><td>20.62</td><td>1.84</td><td>24.46</td><td>1.77</td><td>28.39</td><td>1.82</td></tr><tr><td>composition</td><td>2/4</td><td>3/4</td><td>1/4</td><td>24.55</td><td>4.94</td><td>29.80</td><td>4.70</td><td>18.72</td><td>4.91</td></tr><tr><td>balance_elements</td><td>1/4</td><td>2/4</td><td>3/4</td><td>21.38</td><td>4.64</td><td>24.96</td><td>4.80</td><td>29.89</td><td>4.71</td></tr><tr><td>eye_movement_2</td><td>1/2</td><td>0/2</td><td>2/2</td><td>24.98</td><td>6.29</td><td>18.04</td><td>6.46</td><td>32.84</td><td>6.27</td></tr><tr><td>movement</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>contrast_elements</td><td>2/6</td><td>4/6</td><td>3/6</td><td>18.87</td><td>4.07</td><td>28.02</td><td>4.03</td><td>25.45</td><td>3.97</td></tr><tr><td>foreground_background_4</td><td>0/4</td><td>2/4</td><td>4/4</td><td>15.55</td><td>5.55</td><td>25.38</td><td>5.23</td><td>34.56</td><td>5.45</td></tr><tr><td>symmetry_asymmetry_1</td><td>1/2</td><td>0/2</td><td>2/2</td><td>24.95</td><td>6.27</td><td>19.03</td><td>6.57</td><td>32.44</td><td>6.34</td></tr><tr><td>focus_point</td><td>0/0</td><td>0/0</td><td>0/0</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td><td>25.00</td><td>8.33</td></tr><tr><td>proportion</td><td>0/2</td><td>1/2</td><td>2/2</td><td>19.03</td><td>6.57</td><td>24.95</td><td>6.27</td><td>32.44</td><td>6.34</td></tr></tbody></table>"
+                <div class="main-plot-container">
+                    <img src="renaissance_all_ratings.png" alt="renaissance all ratings">
+                </div>
+            </div>
+            <div class="sub-plot-container">
+                <img src="renaissance_composition_ratings.png" alt="renaissance composition ratings">
+                <img src="renaissance_balance_elements_ratings.png" alt="renaissance balance elements ratings">
+                <img src="renaissance_eye_movement_2_ratings.png" alt="renaissance eye movement 2 ratings">
+                <img src="renaissance_movement_ratings.png" alt="renaissance movement ratings">
+                <img src="renaissance_contrast_elements_ratings.png" alt="renaissance contrast elements ratings">
+                <img src="renaissance_foreground_background_4_ratings.png" alt="renaissance foreground background 4 ratings">
+                <img src="renaissance_symmetry_asymmetry_1_ratings.png" alt="renaissance symmetry asymmetry 1 ratings">
+                <img src="renaissance_focus_point_ratings.png" alt="renaissance focus point ratings">
+                <img src="renaissance_proportion_ratings.png" alt="renaissance proportion ratings">
+            </div>
+        </div>
         </div>
         <div class="highlight-percentage-data-container">
+        
             <table>
                 <caption>All Data</caption>
                 <thead>
@@ -352,30 +339,30 @@
                     <tr>
                         <td>All</td>
                         <td>All</td>
-                        <td>12444</td>
-                        <td>98938</td>
-                        <td>12.58%</td>
+                        <td>15728</td>
+                        <td>131241</td>
+                        <td>11.98%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
                         <td>All</td>
-                        <td>4318</td>
-                        <td>25519</td>
-                        <td>16.92%</td>
+                        <td>5939</td>
+                        <td>34620</td>
+                        <td>17.15%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
                         <td>All</td>
-                        <td>1857</td>
-                        <td>15600</td>
-                        <td>11.9%</td>
+                        <td>2376</td>
+                        <td>20080</td>
+                        <td>11.83%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
                         <td>All</td>
-                        <td>6269</td>
-                        <td>57819</td>
-                        <td>10.84%</td>
+                        <td>7413</td>
+                        <td>76541</td>
+                        <td>9.69%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
@@ -422,9 +409,9 @@
                     <tr>
                         <td>llava</td>
                         <td>ground</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>537</td>
+                        <td>4846</td>
+                        <td>11.08%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
@@ -436,9 +423,9 @@
                     <tr>
                         <td>llava</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>1084</td>
+                        <td>4255</td>
+                        <td>25.48%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
@@ -485,9 +472,9 @@
                     <tr>
                         <td>cogvlm</td>
                         <td>ground</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>213</td>
+                        <td>2112</td>
+                        <td>10.09%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
@@ -499,9 +486,9 @@
                     <tr>
                         <td>cogvlm</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>306</td>
+                        <td>2368</td>
+                        <td>12.92%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
@@ -548,9 +535,9 @@
                     <tr>
                         <td>deepseek</td>
                         <td>ground</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>541</td>
+                        <td>7285</td>
+                        <td>7.43%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
@@ -562,14 +549,32 @@
                     <tr>
                         <td>deepseek</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>603</td>
+                        <td>11437</td>
+                        <td>5.27%</td>
                     </tr>
                 </tbody>
             </table>
+            <div class="main-plot-container">
+                <img src="all_data_model_gaussians.png" alt="All data model gaussians">
+                <img src="all_data_llava_gaussians.png" alt="All data llava gaussians">
+                <img src="all_data_cogvlm_gaussians.png" alt="All data cogvlm gaussians">
+                <img src="all_data_deepseek_gaussians.png" alt="All data deepseek gaussians">
+            </div>
+        </div>
+        <div class="sub-plot-container">
+            <img src="all_data_composition_gaussians.png" alt="All data composition gaussians">
+            <img src="all_data_balance_elements_gaussians.png" alt="All data balance elements gaussians">
+            <img src="all_data_movement_gaussians.png" alt="All data movement gaussians">
+            <img src="all_data_focus_point_gaussians.png" alt="All data focus point gaussians">
+            <img src="all_data_contrast_elements_gaussians.png" alt="All data contrast elements gaussians">
+            <img src="all_data_proportion_gaussians.png" alt="All data proportion gaussians">
+            <img src="all_data_foreground_background_4_gaussians.png" alt="All data foreground background gaussians">
+            <img src="all_data_symmetry_asymmetry_1_gaussians.png" alt="All data symmetry asymmetry gaussians">
+            <img src="all_data_eye_movement_2_gaussians.png" alt="All data eye movement gaussians">
         </div>
         <div class="highlight-percentage-data-container">
+            
             <table>
                 <caption>Pinterest Data</caption>
                 <thead>
@@ -584,30 +589,30 @@
                     <tr>
                         <td>All</td>
                         <td>All</td>
-                        <td>3614</td>
-                        <td>41229</td>
-                        <td>8.77%</td>
+                        <td>4585</td>
+                        <td>55524</td>
+                        <td>8.26%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
                         <td>All</td>
-                        <td>1510</td>
-                        <td>9112</td>
-                        <td>16.57%</td>
+                        <td>2021</td>
+                        <td>12348</td>
+                        <td>16.37%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
                         <td>All</td>
-                        <td>656</td>
-                        <td>6234</td>
-                        <td>10.52%</td>
+                        <td>830</td>
+                        <td>8218</td>
+                        <td>10.1%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
                         <td>All</td>
-                        <td>1448</td>
-                        <td>25883</td>
-                        <td>5.59%</td>
+                        <td>1734</td>
+                        <td>34958</td>
+                        <td>4.96%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
@@ -655,8 +660,8 @@
                         <td>llava</td>
                         <td>ground</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>534</td>
+                        <td>0.0%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
@@ -668,9 +673,9 @@
                     <tr>
                         <td>llava</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>511</td>
+                        <td>2702</td>
+                        <td>18.91%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
@@ -718,8 +723,8 @@
                         <td>cogvlm</td>
                         <td>ground</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>454</td>
+                        <td>0.0%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
@@ -731,9 +736,9 @@
                     <tr>
                         <td>cogvlm</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>174</td>
+                        <td>1530</td>
+                        <td>11.37%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
@@ -781,8 +786,8 @@
                         <td>deepseek</td>
                         <td>ground</td>
                         <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>1510</td>
+                        <td>0.0%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
@@ -794,12 +799,32 @@
                     <tr>
                         <td>deepseek</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>286</td>
+                        <td>7565</td>
+                        <td>3.78%</td>
                     </tr>
                 </tbody>
             </table>
+            <div class="main-plot-container">
+                <img src="pinterest_data_model_gaussians.png" alt="Pinterest data model gaussians">
+                <img src="pinterest_data_llava_gaussians.png" alt="Pinterest data llava gaussians">
+                <img src="pinterest_data_cogvlm_gaussians.png" alt="Pinterest data cogvlm gaussians">
+                <img src="pinterest_data_deepseek_gaussians.png" alt="Pinterest data deepseek gaussians">
+            </div>
+        </div>
+        <div class="sub-plot-container">
+            <img src="pinterest_data_composition_gaussians.png" alt="Pinterest data composition gaussians">
+            <img src="pinterest_data_balance_elements_gaussians.png" alt="Pinterest data balance elements gaussians">
+            <img src="pinterest_data_movement_gaussians.png" alt="Pinterest data movement gaussians">
+            <img src="pinterest_data_focus_point_gaussians.png" alt="Pinterest data focus point gaussians">
+            <img src="pinterest_data_contrast_elements_gaussians.png" alt="Pinterest data contrast elements gaussians">
+            <img src="pinterest_data_proportion_gaussians.png" alt="Pinterest data proportion gaussians">
+            <img src="pinterest_data_foreground_background_4_gaussians.png" alt="Pinterest data foreground background gaussians">
+            <img src="pinterest_data_symmetry_asymmetry_1_gaussians.png" alt="Pinterest data symmetry asymmetry gaussians">
+            <img src="pinterest_data_eye_movement_2_gaussians.png" alt="Pinterest data eye movement gaussians">
+        </div>
+        <div class="highlight-percentage-data-container">
+            
             <table>
                 <caption>Renaissance Data</caption>
                 <thead>
@@ -814,30 +839,30 @@
                     <tr>
                         <td>All</td>
                         <td>All</td>
-                        <td>8830</td>
-                        <td>57709</td>
-                        <td>15.3%</td>
+                        <td>11143</td>
+                        <td>75717</td>
+                        <td>14.72%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
                         <td>All</td>
-                        <td>2808</td>
-                        <td>16407</td>
-                        <td>17.11%</td>
+                        <td>3918</td>
+                        <td>22272</td>
+                        <td>17.59%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
                         <td>All</td>
-                        <td>1201</td>
-                        <td>9366</td>
-                        <td>12.82%</td>
+                        <td>1546</td>
+                        <td>11862</td>
+                        <td>13.03%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
                         <td>All</td>
-                        <td>4821</td>
-                        <td>31936</td>
-                        <td>15.1%</td>
+                        <td>5679</td>
+                        <td>41583</td>
+                        <td>13.66%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
@@ -884,9 +909,9 @@
                     <tr>
                         <td>llava</td>
                         <td>ground</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>537</td>
+                        <td>4312</td>
+                        <td>12.45%</td>
                     </tr>
                     <tr>
                         <td>llava</td>
@@ -898,9 +923,9 @@
                     <tr>
                         <td>llava</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>573</td>
+                        <td>1553</td>
+                        <td>36.9%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
@@ -947,9 +972,9 @@
                     <tr>
                         <td>cogvlm</td>
                         <td>ground</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>213</td>
+                        <td>1658</td>
+                        <td>12.85%</td>
                     </tr>
                     <tr>
                         <td>cogvlm</td>
@@ -961,9 +986,9 @@
                     <tr>
                         <td>cogvlm</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>132</td>
+                        <td>838</td>
+                        <td>15.75%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
@@ -1010,9 +1035,9 @@
                     <tr>
                         <td>deepseek</td>
                         <td>ground</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>541</td>
+                        <td>5775</td>
+                        <td>9.37%</td>
                     </tr>
                     <tr>
                         <td>deepseek</td>
@@ -1024,14 +1049,31 @@
                     <tr>
                         <td>deepseek</td>
                         <td>eye</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0%</td>
+                        <td>317</td>
+                        <td>3872</td>
+                        <td>8.19%</td>
                     </tr>
                 </tbody>
             </table>
+            <div class="main-plot-container">
+                <img src="renaissance_data_model_gaussians.png" alt="Renaissance data model gaussians">
+                <img src="renaissance_data_llava_gaussians.png" alt="Renaissance data llava gaussians">
+                <img src="renaissance_data_cogvlm_gaussians.png" alt="Renaissance data cogvlm gaussians">
+                <img src="renaissance_data_deepseek_gaussians.png" alt="Renaissance data deepseek gaussians">
+            </div>
         </div>
-    </div>
+        <div class="sub-plot-container">
+            <img src="renaissance_data_composition_gaussians.png" alt="Renaissance data composition gaussians">
+            <img src="renaissance_data_balance_elements_gaussians.png" alt="Renaissance data balance elements gaussians">
+            <img src="renaissance_data_movement_gaussians.png" alt="Renaissance data movement gaussians">
+            <img src="renaissance_data_focus_point_gaussians.png" alt="Renaissance data focus point gaussians">
+            <img src="renaissance_data_contrast_elements_gaussians.png" alt="Renaissance data contrast elements gaussians">
+            <img src="renaissance_data_proportion_gaussians.png" alt="Renaissance data proportion gaussians">
+            <img src="renaissance_data_foreground_background_4_gaussians.png" alt="Renaissance data foreground background gaussians">
+            <img src="renaissance_data_symmetry_asymmetry_1_gaussians.png" alt="Renaissance data symmetry asymmetry gaussians">
+            <img src="renaissance_data_eye_movement_2_gaussians.png" alt="Renaissance data eye movement gaussians">
+        </div>
+    
     <div id="controls">
         <div class="dropdown-container">
             <select id="data-source" onchange="changeDataSource()">
@@ -1060,8 +1102,8 @@
     </div>
     <script src="survey_renaissance_data_two_options_updated.js"></script>
     <script src="survey_pinterest_data_two_options_updates.js"></script>
-    <script src="survey_renaissance_data_hightlighted_updated_v3.js"></script>
-    <script src="survey_pinterest_data_hightlighted_updated_v3.js"></script>
+    <script src="survey_renaissance_data_hightlighted_updated_v4.js"></script>
+    <script src="survey_pinterest_data_hightlighted_updated_v4.js"></script>
     <script src="questions_for_survey.js"></script>
     <script src="script.js"></script>
 </body>
