@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import time
 
 # Path to the JSON file
 file_path = 'export_1720445297387_refined.json'
@@ -78,6 +79,16 @@ for item in data:
                     'contestant_2': match_contestants[1],
                     'data_type': data_type
                 })
+            else:
+                two_options_data.append({
+                    'image_filename': key,
+                    'question': question,
+                    'model': value,
+                    'contestant_1': '',
+                    'contestant_2': '',
+                    'data_type': data_type
+                })
+
 
 from trueskill import Rating, quality_1vs1, rate_1vs1
 import plot_gaussians
@@ -113,6 +124,7 @@ def create_table_entry(data, task, set):
                     winner_rating = deepseek_rating
 
                 loser = (item['contestant_1'] + item['contestant_2']).replace(item['model'], '')
+
                 if loser == 'llava':
                     winner_rating, llava_rating = rate_1vs1(winner_rating, llava_rating)
                     llava_loses += 1
@@ -202,3 +214,132 @@ html += "</div>"
 with open(f'ratings.html', 'w') as file:
     file.write(html)
         
+
+
+import read_write_json
+
+pinterest_data = read_write_json.read_json('survey_pinterest_data.js')
+renaissance_data = read_write_json.read_json('survey_renaissance_data.js')
+
+two_options_data_processed = []
+
+json_data_pinterest = {}
+json_data_renaissance = {}
+
+# print('Two Options Data')
+for index, item in enumerate(two_options_data):
+    # print('Item')
+
+    image_filename = f"{item['image_filename']}{index}"
+    question = item['question']
+    winner = item['model']
+    loser = (item['contestant_1'] + item['contestant_2']).replace(winner, '')
+    other = ''
+
+    if winner == '':
+        continue
+
+    story_winner = ''
+    story_loser = ''
+    story_other = ''
+    data_type = ''
+
+    if item['image_filename'] in pinterest_data:
+        story_winner = "<<voted>>" + pinterest_data[item['image_filename']][f"{winner}_answers"][question]
+        if loser != '':
+            story_loser = pinterest_data[item['image_filename']][f"{loser}_answers"][question]
+        else:
+            loser = [contestant for contestant in ['llava', 'cogvlm', 'deepseek'] if contestant not in [winner]][0]
+            other = [contestant for contestant in ['llava', 'cogvlm', 'deepseek'] if contestant not in [winner, loser]][0]
+            story_loser = pinterest_data[item['image_filename']][f"{loser}_answers"][question]
+            story_other = pinterest_data[item['image_filename']][f"{other}_answers"][question]
+        data_type = 'pinterest'
+        print(f"Winner {winner} Loser {loser} Other {other}")
+    elif item['image_filename'] in renaissance_data:
+        story_winner = "<<voted>>" + renaissance_data[item['image_filename']][f"{winner}_answers"][question]
+        if loser != '':
+            story_loser = renaissance_data[item['image_filename']][f"{loser}_answers"][question]
+        else:
+            loser = [contestant for contestant in ['llava', 'cogvlm', 'deepseek'] if contestant not in [winner]][0]
+            other = [contestant for contestant in ['llava', 'cogvlm', 'deepseek'] if contestant not in [winner, loser]][0]
+            story_loser = renaissance_data[item['image_filename']][f"{loser}_answers"][question]
+            story_other = renaissance_data[item['image_filename']][f"{other}_answers"][question]
+        data_type = 'renaissance'
+        print(f"Winner {winner} Loser {loser} Other {other}")
+    else:
+        continue
+
+    if data_type == 'pinterest':
+        # Check if the image filename is in the data, if not, add it
+        if image_filename not in json_data_pinterest:
+            json_data_pinterest[image_filename] = {f"{winner}_answers": {}}
+
+        # Check if the model is not yet in the data structure
+        if f"{winner}_answers" not in json_data_pinterest[image_filename]:
+            json_data_pinterest[image_filename][f"{winner}_answers"] = {}
+
+        # Answer the question and update the data
+        json_data_pinterest[image_filename][f"{winner}_answers"][question] = story_winner
+
+        # Check if the image filename is in the data, if not, add it
+        if image_filename not in json_data_pinterest:
+            json_data_pinterest[image_filename] = {f"{loser}_answers": {}}
+
+        # Check if the model is not yet in the data structure
+        if f"{loser}_answers" not in json_data_pinterest[image_filename]:
+            json_data_pinterest[image_filename][f"{loser}_answers"] = {}
+
+        # Answer the question and update the data
+        json_data_pinterest[image_filename][f"{loser}_answers"][question] = story_loser
+
+        if other != '':
+            # Check if the image filename is in the data, if not, add it
+            if image_filename not in json_data_pinterest:
+                json_data_pinterest[image_filename] = {f"{other}_answers": {}}
+
+            # Check if the model is not yet in the data structure
+            if f"{other}_answers" not in json_data_pinterest[image_filename]:
+                json_data_pinterest[image_filename][f"{other}_answers"] = {}
+
+            # Answer the question and update the data
+            json_data_pinterest[image_filename][f"{other}_answers"][question] = story_other
+
+
+    elif data_type == 'renaissance':
+        # Check if the image filename is in the data, if not, add it
+        if image_filename not in json_data_renaissance:
+            json_data_renaissance[image_filename] = {f"{winner}_answers": {}}
+
+        # Check if the model is not yet in the data structure
+        if f"{winner}_answers" not in json_data_renaissance[image_filename]:
+            json_data_renaissance[image_filename][f"{winner}_answers"] = {}
+
+        # Answer the question and update the data
+        json_data_renaissance[image_filename][f"{winner}_answers"][question] = story_winner
+
+        # Check if the image filename is in the data, if not, add it
+        if image_filename not in json_data_renaissance:
+            json_data_renaissance[image_filename] = {f"{loser}_answers": {}}
+
+        # Check if the model is not yet in the data structure
+        if f"{loser}_answers" not in json_data_renaissance[image_filename]:
+            json_data_renaissance[image_filename][f"{loser}_answers"] = {}
+
+        # Answer the question and update the data
+        json_data_renaissance[image_filename][f"{loser}_answers"][question] = story_loser
+
+        if other != '':
+            # Check if the image filename is in the data, if not, add it
+            if image_filename not in json_data_renaissance:
+                json_data_renaissance[image_filename] = {f"{other}_answers": {}}
+
+            # Check if the model is not yet in the data structure
+            if f"{other}_answers" not in json_data_renaissance[image_filename]:
+                json_data_renaissance[image_filename][f"{other}_answers"] = {}
+
+            # Answer the question and update the data
+            json_data_renaissance[image_filename][f"{other}_answers"][question] = story_other
+
+
+read_write_json.write_json('survey_pinterest_data_two_options_updates_v2.js', json_data_pinterest)
+read_write_json.write_json('survey_renaissance_data_two_options_updated_v2.js', json_data_renaissance)

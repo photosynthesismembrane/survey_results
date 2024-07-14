@@ -141,7 +141,7 @@ function loadImages(startIndex) {
         imageWrapper.className = 'image-wrapper';
 
         const imgElement = document.createElement('img');
-        imgElement.src = `${image_folder}/${image.image_filename}`;
+        imgElement.src = `${image_folder}/${image.image_filename.replace(/(\.jpg).*/, '$1')}`;
         imgElement.alt = `Image ${startIndex + index + 1}`;
         imageWrapper.appendChild(imgElement);
 
