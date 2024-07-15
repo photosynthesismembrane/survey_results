@@ -152,9 +152,9 @@ def create_table_entry(data, task, set):
         'llava': llava_rating_list,
         'cogvlm': cogvlm_rating_list,
         'deepseek': deepseek_rating_list
-    }, f'{set.capitalize()} {task} Ratings', 'Rating', 'Density', f'{set}_{task}_ratings')
+    }, f"{task.split('_')[0].capitalize()}", 'Rating', 'Density', f'{set}_{task}_ratings')
 
-    return f"<tr><td>{task}</td><td>{llava_wins}/{llava_wins+llava_loses}</td><td>{cogvlm_wins}/{cogvlm_wins+cogvlm_loses}</td><td>{deepseek_wins}/{deepseek_wins+deepseek_loses}</td><td>{llava_rating.mu:.2f}</td><td>{llava_rating.sigma:.2f}</td><td>{cogvlm_rating.mu:.2f}</td><td>{cogvlm_rating.sigma:.2f}</td><td>{deepseek_rating.mu:.2f}</td><td>{deepseek_rating.sigma:.2f}</td></tr>"
+    return f"<tr><td>{task.split('_')[0]}</td><td>{llava_wins} / {llava_wins+llava_loses}</td><td>{cogvlm_wins} / {cogvlm_wins+cogvlm_loses}</td><td>{deepseek_wins} / {deepseek_wins+deepseek_loses}</td><td>{llava_rating.mu:.2f} &pm; {llava_rating.sigma:.2f}</td><td>{cogvlm_rating.mu:.2f} &pm; {cogvlm_rating.sigma:.2f}</td><td>{deepseek_rating.mu:.2f} &pm; {deepseek_rating.sigma:.2f}</td></tr>"
 
 
 sets = ['all', 'pinterest', 'renaissance']
@@ -168,19 +168,16 @@ for set in sets:
     html += f"""
     <div class="survey-comparison-data-container">
         <table>
-            <caption>{set.capitalize()} Ratings</caption>
+            <caption>{set.capitalize()} wins and ratings</caption>
             <thead>
                 <tr>
                     <th>Task</th>
-                    <th>llava Wins</th>
-                    <th>cogvlm Wins</th>
-                    <th>deepseek Wins</th>
-                    <th>llava Mean</th>
-                    <th>llava Sigma</th>
-                    <th>cogvlm Mean</th>
-                    <th>cogvlm Sigma</th>
-                    <th>deepseek Mean</th>
-                    <th>deepseek Sigma</th>
+                    <th>Llava wins</th>
+                    <th>Cogvlm wins</th>
+                    <th>Deepseek wins</th>
+                    <th>Llava rating</th>
+                    <th>Cogvlm rating</th>
+                    <th>Deepseek rating</th>
                 </tr>
             </thead>
             <tbody>
@@ -206,7 +203,6 @@ for set in sets:
             <img src="{set}_focus_point_ratings.png" alt="{set} focus point ratings">
             <img src="{set}_proportion_ratings.png" alt="{set} proportion ratings">
         </div>
-    </div>
     """
 
 html += "</div>"
@@ -341,5 +337,5 @@ for index, item in enumerate(two_options_data):
             json_data_renaissance[image_filename][f"{other}_answers"][question] = story_other
 
 
-read_write_json.write_json('survey_pinterest_data_two_options_updates_v2.js', json_data_pinterest)
-read_write_json.write_json('survey_renaissance_data_two_options_updated_v2.js', json_data_renaissance)
+# read_write_json.write_json('survey_pinterest_data_two_options_updates_v2.js', json_data_pinterest)
+# read_write_json.write_json('survey_renaissance_data_two_options_updated_v2.js', json_data_renaissance)

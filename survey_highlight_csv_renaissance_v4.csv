@@ -1,7 +1,7 @@
 Model;Task;Item;highlight;total;percentage
 llava;composition;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;208;612;33,99
 llava;balance_elements;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;0;912;0,0
-llava;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;96;1098;8,74
+llava;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;14;578;2,42
 llava;symmetry_asymmetry_1;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;35;445;7,87
 cogvlm;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;63;375;16,8
 cogvlm;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-whateley-in-fact-likely-to-be-girolamo-casio-1495.jpg;0;289;0,0
@@ -37,7 +37,7 @@ deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-sain
 llava;composition;andrea-del-sarto_stories-of-joseph-1.jpg;122;758;16,09
 llava;focus_point;andrea-del-sarto_stories-of-joseph-1.jpg;82;641;12,79
 llava;contrast_elements;andrea-del-sarto_stories-of-joseph-1.jpg;307;661;46,44
-llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;300;2750;10,91
+llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;27;488;5,53
 llava;symmetry_asymmetry_1;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;48;497;9,66
 cogvlm;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;35;246;14,23
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
@@ -94,7 +94,7 @@ llava;symmetry_asymmetry_1;correggio_adoration-of-the-christ-child(2).jpg;229;59
 
 llava;composition;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;208;612;33,99
 llava;balance_elements;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;0;912;0,0
-llava;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;96;1098;8,74
+llava;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;14;578;2,42
 llava;symmetry_asymmetry_1;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;35;445;7,87
 llava;focus_point;pietro-perugino_the-vision-of-st-bernard.jpg;12;539;2,23
 llava;balance_elements;andrea-mantegna_samson-and-delilah-1506.jpg;364;762;47,77
@@ -109,7 +109,7 @@ llava;composition;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;98;591;1
 llava;composition;andrea-del-sarto_stories-of-joseph-1.jpg;122;758;16,09
 llava;focus_point;andrea-del-sarto_stories-of-joseph-1.jpg;82;641;12,79
 llava;contrast_elements;andrea-del-sarto_stories-of-joseph-1.jpg;307;661;46,44
-llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;300;2750;10,91
+llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;27;488;5,53
 llava;symmetry_asymmetry_1;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;48;497;9,66
 llava;balance_elements;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;74;848;8,73
 llava;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;171;715;23,92
@@ -211,7 +211,7 @@ llava;balance_elements;correggio_departure-of-christ-from-mary-with-mary-and-mar
 
 
 
-llava;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;96;1098;8,74
+llava;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;14;578;2,42
 llava;focus_point;pietro-perugino_the-vision-of-st-bernard.jpg;12;539;2,23
 llava;focus_point;andrea-del-sarto_the-annunciation-1513.jpg;196;1112;17,63
 llava;focus_point;andrea-del-sarto_stories-of-joseph-1.jpg;82;641;12,79
@@ -232,7 +232,7 @@ llava;proportion;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;7;577;1,21
 
 
 llava;foreground_background_4;raphael_the-marriage-of-the-virgin-1504-1.jpg;75;520;14,42
-llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;300;2750;10,91
+llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;27;488;5,53
 llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
 llava;foreground_background_4;correggio_the-adoration-of-the-magi-1518(2).jpg;14;531;2,64
 

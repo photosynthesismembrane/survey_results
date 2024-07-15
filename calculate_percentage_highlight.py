@@ -124,7 +124,6 @@ def create_html_latex(data, header):
                 <tr>
                     <th>Model</th>
                     <th>Task</th>
-                    <th>Highlighted Length</th>
                     <th>Total Length</th>
                     <th>Highlight Percentage</th>
                 </tr>
@@ -143,42 +142,39 @@ def create_html_latex(data, header):
     result = analyze_all_data(data)
     html += f"""
                 <tr>
-                    <td>All</td>
-                    <td>All</td>
-                    <td>{result['highlighted_length']}</td>
+                    <td>all</td>
+                    <td>all</td>
                     <td>{result['total_length']}</td>
                     <td>{result['percentage']}%</td>
                 </tr>"""
     
-    latex += f"All & All & {result['highlighted_length']} & {result['total_length']} & {result['percentage']} \\\\"
+    latex += f"all & all & {result['total_length']} & {result['percentage']} \\\\"
 
     for model in models:
         result = analyze_model_data(data, model)
         html += f"""
                 <tr>
                     <td>{model}</td>
-                    <td>All</td>
-                    <td>{result['highlighted_length']}</td>
+                    <td>all</td>
                     <td>{result['total_length']}</td>
                     <td>{result['percentage']}%</td>
                 </tr>"""
 
-        latex += f"{model} & All & {result['highlighted_length']} & {result['total_length']} & {result['percentage']} \\\\"
+        latex += f"{model} & all & {result['total_length']} & {result['percentage']} \\\\"
 
     for model in models:
         for task in tasks:
             result = analyze_data(data, model, task)
-            task_text = task.replace("fore", "").replace("_background_4", "").replace("_elements", "").replace("_asymmetry_1", "").replace("_movement_2", "")
+            task_text = task.split('_')[0]
             html += f"""
                 <tr>
                     <td>{model}</td>
                     <td>{task_text}</td>
-                    <td>{result['highlighted_length']}</td>
                     <td>{result['total_length']}</td>
                     <td>{result['percentage']}%</td>
                 </tr>"""
 
-            latex += f"{model} & {task_text} & {result['highlighted_length']} & {result['total_length']} & {result['percentage']} \\\\"
+            latex += f"{model} & {task_text} & {result['total_length']} & {result['percentage']} \\\\"
 
     html += f"""
             </tbody>
@@ -241,7 +237,7 @@ import read_write_json
 pinterest_data = read_write_json.read_json("survey_pinterest_data_hightlighted_updated_v4 copy.js")
 
 # write html to file
-html_pinterest, latex_pinterest = create_html_latex(pinterest_data, "Pinterest Data")
+html_pinterest, latex_pinterest = create_html_latex(pinterest_data, "Pinterest highlights")
 
 # with open('survey_highlight_html_table_pinterest_v3.txt', 'w') as file:
 #     file.write(html)
@@ -254,7 +250,7 @@ with open('survey_highlight_latex_table_pinterest_v4.txt', 'w') as file:
 renaissance_data = read_write_json.read_json("survey_renaissance_data_hightlighted_updated_v4 copy.js")
 
 # write html to file
-html_renaissance, latex_renaissance = create_html_latex(renaissance_data, "Renaissance Data")
+html_renaissance, latex_renaissance = create_html_latex(renaissance_data, "Renaissance highlights")
 
 # with open('survey_highlight_html_table_renaissance_v3.txt', 'w') as file:
 #     file.write(html)
@@ -266,7 +262,7 @@ with open('survey_highlight_latex_table_renaissance_v4.txt', 'w') as file:
 all_data = read_write_json.read_json("survey_all_data_hightlighted_updated_v4 copy.js")
 
 # write html to file
-html_all, latex_all = create_html_latex(all_data, "All Data")
+html_all, latex_all = create_html_latex(all_data, "All highlights")
 
 # with open('survey_highlight_html_table_all_v3.txt', 'w') as file:
 #     file.write(html)
@@ -291,7 +287,7 @@ with open('survey_highlight_csv_all_v4.csv', 'w') as file:
 
 import plot_gaussians
 
-def create_plots(data, header):
+def create_plots(data, dataset_name):
     models = ["llava", "cogvlm", "deepseek"]
     tasks = ["composition", "balance_elements", "movement", "focus_point", "contrast_elements", "proportion", "foreground_background_4", "symmetry_asymmetry_1", "eye_movement_2"]
     
@@ -305,19 +301,20 @@ def create_plots(data, header):
         for item in result:
             data_dict[model].append(item['percentage'])
             
-    plot_gaussians.plot_gaussians(data_dict, f"{header} model gaussians", "Highlight Percentage", "Density", f"{header.lower().replace(' ', '_')}_model_gaussians")
+    plot_gaussians.plot_gaussians(data_dict, f"Models", "Percentage", "Density", f"{dataset_name.lower().replace(' ', '_')}_model_gaussians")
 
     for model in models:
         data_dict = {
         }
         for task in tasks:
+            task_label = task.split('_')[0]
             if task not in data_dict:
-                data_dict[task] = []
+                data_dict[task_label] = []
             result = analyze_data_items(data, model, task)
             for item in result:
-                data_dict[task].append(item['percentage'])
+                data_dict[task_label].append(item['percentage'])
 
-        plot_gaussians.plot_gaussians(data_dict, f"{header} {model} gaussians", "Highlight Percentage", "Density", f"{header.lower().replace(' ', '_')}_{model}_gaussians")
+        plot_gaussians.plot_gaussians(data_dict, f"{model.capitalize()}", "Percentage", "Density", f"{dataset_name.lower().replace(' ', '_')}_{model}_gaussians")
 
     for task in tasks:
         data_dict = {
@@ -329,72 +326,73 @@ def create_plots(data, header):
             for item in result:
                 data_dict[model].append(item['percentage'])
 
-        plot_gaussians.plot_gaussians(data_dict, f"{header} {task} gaussians", "Highlight Percentage", "Density", f"{header.lower().replace(' ', '_')}_{task}_gaussians")
+        task_label = task.split('_')[0].capitalize()
+        plot_gaussians.plot_gaussians(data_dict, f"{task_label}", "Percentage", "Density", f"{dataset_name.lower().replace(' ', '_')}_{task}_gaussians")
 
-create_plots(pinterest_data, "Pinterest Data")
-create_plots(renaissance_data, "Renaissance Data")
-create_plots(all_data, "All Data")
+create_plots(pinterest_data, "Pinterest")
+create_plots(renaissance_data, "Renaissance")
+create_plots(all_data, "All")
 
 html_full = f"""
     <div class="highlight-percentage-data-container">
         {html_all}
         <div class="main-plot-container">
-            <img src="all_data_model_gaussians.png" alt="All data model gaussians">
-            <img src="all_data_llava_gaussians.png" alt="All data llava gaussians">
-            <img src="all_data_cogvlm_gaussians.png" alt="All data cogvlm gaussians">
-            <img src="all_data_deepseek_gaussians.png" alt="All data deepseek gaussians">
+            <img src="all_model_gaussians.png" alt="All data model gaussians">
+            <img src="all_llava_gaussians.png" alt="All data llava gaussians">
+            <img src="all_cogvlm_gaussians.png" alt="All data cogvlm gaussians">
+            <img src="all_deepseek_gaussians.png" alt="All data deepseek gaussians">
         </div>
     </div>
     <div class="sub-plot-container">
-        <img src="all_data_composition_gaussians.png" alt="All data composition gaussians">
-        <img src="all_data_balance_elements_gaussians.png" alt="All data balance elements gaussians">
-        <img src="all_data_movement_gaussians.png" alt="All data movement gaussians">
-        <img src="all_data_focus_point_gaussians.png" alt="All data focus point gaussians">
-        <img src="all_data_contrast_elements_gaussians.png" alt="All data contrast elements gaussians">
-        <img src="all_data_proportion_gaussians.png" alt="All data proportion gaussians">
-        <img src="all_data_foreground_background_4_gaussians.png" alt="All data foreground background gaussians">
-        <img src="all_data_symmetry_asymmetry_1_gaussians.png" alt="All data symmetry asymmetry gaussians">
-        <img src="all_data_eye_movement_2_gaussians.png" alt="All data eye movement gaussians">
+        <img src="all_composition_gaussians.png" alt="All data composition gaussians">
+        <img src="all_balance_elements_gaussians.png" alt="All data balance elements gaussians">
+        <img src="all_movement_gaussians.png" alt="All data movement gaussians">
+        <img src="all_focus_point_gaussians.png" alt="All data focus point gaussians">
+        <img src="all_contrast_elements_gaussians.png" alt="All data contrast elements gaussians">
+        <img src="all_proportion_gaussians.png" alt="All data proportion gaussians">
+        <img src="all_foreground_background_4_gaussians.png" alt="All data foreground background gaussians">
+        <img src="all_symmetry_asymmetry_1_gaussians.png" alt="All data symmetry asymmetry gaussians">
+        <img src="all_eye_movement_2_gaussians.png" alt="All data eye movement gaussians">
     </div>
     <div class="highlight-percentage-data-container">
         {html_pinterest}
         <div class="main-plot-container">
-            <img src="pinterest_data_model_gaussians.png" alt="Pinterest data model gaussians">
-            <img src="pinterest_data_llava_gaussians.png" alt="Pinterest data llava gaussians">
-            <img src="pinterest_data_cogvlm_gaussians.png" alt="Pinterest data cogvlm gaussians">
-            <img src="pinterest_data_deepseek_gaussians.png" alt="Pinterest data deepseek gaussians">
+            <img src="pinterest_model_gaussians.png" alt="Pinterest data model gaussians">
+            <img src="pinterest_llava_gaussians.png" alt="Pinterest data llava gaussians">
+            <img src="pinterest_cogvlm_gaussians.png" alt="Pinterest data cogvlm gaussians">
+            <img src="pinterest_deepseek_gaussians.png" alt="Pinterest data deepseek gaussians">
         </div>
     </div>
     <div class="sub-plot-container">
-        <img src="pinterest_data_composition_gaussians.png" alt="Pinterest data composition gaussians">
-        <img src="pinterest_data_balance_elements_gaussians.png" alt="Pinterest data balance elements gaussians">
-        <img src="pinterest_data_movement_gaussians.png" alt="Pinterest data movement gaussians">
-        <img src="pinterest_data_focus_point_gaussians.png" alt="Pinterest data focus point gaussians">
-        <img src="pinterest_data_contrast_elements_gaussians.png" alt="Pinterest data contrast elements gaussians">
-        <img src="pinterest_data_proportion_gaussians.png" alt="Pinterest data proportion gaussians">
-        <img src="pinterest_data_foreground_background_4_gaussians.png" alt="Pinterest data foreground background gaussians">
-        <img src="pinterest_data_symmetry_asymmetry_1_gaussians.png" alt="Pinterest data symmetry asymmetry gaussians">
-        <img src="pinterest_data_eye_movement_2_gaussians.png" alt="Pinterest data eye movement gaussians">
+        <img src="pinterest_composition_gaussians.png" alt="Pinterest data composition gaussians">
+        <img src="pinterest_balance_elements_gaussians.png" alt="Pinterest data balance elements gaussians">
+        <img src="pinterest_movement_gaussians.png" alt="Pinterest data movement gaussians">
+        <img src="pinterest_focus_point_gaussians.png" alt="Pinterest data focus point gaussians">
+        <img src="pinterest_contrast_elements_gaussians.png" alt="Pinterest data contrast elements gaussians">
+        <img src="pinterest_proportion_gaussians.png" alt="Pinterest data proportion gaussians">
+        <img src="pinterest_foreground_background_4_gaussians.png" alt="Pinterest data foreground background gaussians">
+        <img src="pinterest_symmetry_asymmetry_1_gaussians.png" alt="Pinterest data symmetry asymmetry gaussians">
+        <img src="pinterest_eye_movement_2_gaussians.png" alt="Pinterest data eye movement gaussians">
     </div>
     <div class="highlight-percentage-data-container">
         {html_renaissance}
         <div class="main-plot-container">
-            <img src="renaissance_data_model_gaussians.png" alt="Renaissance data model gaussians">
-            <img src="renaissance_data_llava_gaussians.png" alt="Renaissance data llava gaussians">
-            <img src="renaissance_data_cogvlm_gaussians.png" alt="Renaissance data cogvlm gaussians">
-            <img src="renaissance_data_deepseek_gaussians.png" alt="Renaissance data deepseek gaussians">
+            <img src="renaissance_model_gaussians.png" alt="Renaissance data model gaussians">
+            <img src="renaissance_llava_gaussians.png" alt="Renaissance data llava gaussians">
+            <img src="renaissance_cogvlm_gaussians.png" alt="Renaissance data cogvlm gaussians">
+            <img src="renaissance_deepseek_gaussians.png" alt="Renaissance data deepseek gaussians">
         </div>
     </div>
     <div class="sub-plot-container">
-        <img src="renaissance_data_composition_gaussians.png" alt="Renaissance data composition gaussians">
-        <img src="renaissance_data_balance_elements_gaussians.png" alt="Renaissance data balance elements gaussians">
-        <img src="renaissance_data_movement_gaussians.png" alt="Renaissance data movement gaussians">
-        <img src="renaissance_data_focus_point_gaussians.png" alt="Renaissance data focus point gaussians">
-        <img src="renaissance_data_contrast_elements_gaussians.png" alt="Renaissance data contrast elements gaussians">
-        <img src="renaissance_data_proportion_gaussians.png" alt="Renaissance data proportion gaussians">
-        <img src="renaissance_data_foreground_background_4_gaussians.png" alt="Renaissance data foreground background gaussians">
-        <img src="renaissance_data_symmetry_asymmetry_1_gaussians.png" alt="Renaissance data symmetry asymmetry gaussians">
-        <img src="renaissance_data_eye_movement_2_gaussians.png" alt="Renaissance data eye movement gaussians">
+        <img src="renaissance_composition_gaussians.png" alt="Renaissance data composition gaussians">
+        <img src="renaissance_balance_elements_gaussians.png" alt="Renaissance data balance elements gaussians">
+        <img src="renaissance_movement_gaussians.png" alt="Renaissance data movement gaussians">
+        <img src="renaissance_focus_point_gaussians.png" alt="Renaissance data focus point gaussians">
+        <img src="renaissance_contrast_elements_gaussians.png" alt="Renaissance data contrast elements gaussians">
+        <img src="renaissance_proportion_gaussians.png" alt="Renaissance data proportion gaussians">
+        <img src="renaissance_foreground_background_4_gaussians.png" alt="Renaissance data foreground background gaussians">
+        <img src="renaissance_symmetry_asymmetry_1_gaussians.png" alt="Renaissance data symmetry asymmetry gaussians">
+        <img src="renaissance_eye_movement_2_gaussians.png" alt="Renaissance data eye movement gaussians">
     </div>
 """
 

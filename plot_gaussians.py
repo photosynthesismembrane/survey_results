@@ -56,15 +56,15 @@ def plot_gaussians(data_dict, plot_title, x_label, y_label, file_name):
             plt.plot(x, y, label=f'{group}')
 
         # Add ANOVA results outside the plot
-        plt.figtext(0.88, 0.4, f'One-way ANOVA:\nF-statistic: {F_statistic:.2f}\np-value: {p_value:.4f}',
-                    horizontalalignment='right', fontsize=12,
-                    bbox=dict(boxstyle='round', facecolor='white', alpha=0.5))
+        plt.figtext(0.91, 0.1, f'One-way ANOVA:\np-value: {p_value:.4f}',
+                    horizontalalignment='right', fontsize=20,
+                    bbox=dict(boxstyle='round', facecolor='white', alpha=0.9))
 
         # Add titles and labels
-        plt.title(f"{plot_title}")
-        plt.xlabel(f"{x_label}")
-        plt.ylabel(f"{y_label}")
-        plt.legend()
+        plt.title(f"{plot_title}", fontsize=20)
+        plt.xlabel(f"{x_label}", fontsize=20)
+        plt.ylabel(f"{y_label}", fontsize=20)
+        plt.legend(fontsize=20)
 
         # Show the plot
         plt.grid(True)
@@ -75,7 +75,7 @@ def plot_gaussians(data_dict, plot_title, x_label, y_label, file_name):
     except Exception as e:
         # Generate an empty plot with error message
         plt.figure(figsize=(10, 6))
-        plt.text(0.5, 0.5, f'{str(e)}', fontsize=14, ha='center')
+        plt.text(0.5, 0.5, f'{str(e)}', fontsize=20, ha='center')
         # plt.title('Error in Plot Generation')
         plt.grid(False)
         plt.axis('off')
