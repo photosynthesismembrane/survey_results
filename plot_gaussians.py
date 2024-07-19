@@ -15,7 +15,7 @@ def plot_gaussians(data_dict, plot_title, x_label, y_label, file_name):
         # Filter out groups with insufficient data or NaN variances
         filtered_data_dict = {k: v for k, v in data_dict.items() if len(v) > 1 and pd.Series(v).var() > 0}
 
-        if not filtered_data_dict:
+        if not filtered_data_dict or len(filtered_data_dict) < 2:
             raise ValueError(f"Not enough data to plot distributions for {plot_title}.")
 
         # Create a DataFrame from the data dictionary

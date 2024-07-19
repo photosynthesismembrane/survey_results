@@ -232,6 +232,23 @@ function openMainTab(tabId) {
     event.currentTarget.classList.add("active");
 }
 
+function openSubTab(tabId) {
+    var i, tabContent, tabButtons;
+
+    tabContent = document.getElementsByClassName("sub-tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+
+    tabButtons = document.getElementsByClassName("sub-tab-button");
+    for (i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+
+    document.getElementById(tabId).style.display = "block";
+    event.currentTarget.classList.add("active");
+}
+
 
 // Initialize
 populateQuestions();

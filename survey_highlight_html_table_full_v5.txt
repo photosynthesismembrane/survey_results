@@ -1,8 +1,15 @@
 
-    <div class="highlight-percentage-data-container">
-        
+    <div class="sub-tabs">
+        <button class="sub-tab-button active" onclick="openSubTab('sub-tab5')">All</button>
+        <button class="sub-tab-button" onclick="openSubTab('sub-tab6')">Pinterest</button>
+        <button class="sub-tab-button" onclick="openSubTab('sub-tab7')">Renaissance</button>
+        <button class="sub-tab-button" onclick="openSubTab('sub-tab8')">Sets</button>
+    </div>
+
+    <div id="sub-tab5" class="sub-tab-content" style="display: block;">
+        <div class="highlight-percentage-data-container">
+            
         <table>
-            <caption>All highlights</caption>
             <thead>
                 <tr>
                     <th>Model</th>
@@ -199,28 +206,29 @@
                 </tr>
             </tbody>
         </table>
-        <div class="main-plot-container">
-            <img src="all_model_gaussians.png" alt="All data model gaussians">
-            <img src="all_llava_gaussians.png" alt="All data llava gaussians">
-            <img src="all_cogvlm_gaussians.png" alt="All data cogvlm gaussians">
-            <img src="all_deepseek_gaussians.png" alt="All data deepseek gaussians">
+            <div class="main-plot-container">
+                <img src="all_model_gaussians.png" alt="All data model gaussians">
+                <img src="all_llava_gaussians.png" alt="All data llava gaussians">
+                <img src="all_cogvlm_gaussians.png" alt="All data cogvlm gaussians">
+                <img src="all_deepseek_gaussians.png" alt="All data deepseek gaussians">
+            </div>
+        </div>
+        <div class="sub-plot-container">
+            <img src="all_composition_gaussians.png" alt="All data composition gaussians">
+            <img src="all_balance_elements_gaussians.png" alt="All data balance elements gaussians">
+            <img src="all_movement_gaussians.png" alt="All data movement gaussians">
+            <img src="all_focus_point_gaussians.png" alt="All data focus point gaussians">
+            <img src="all_contrast_elements_gaussians.png" alt="All data contrast elements gaussians">
+            <img src="all_proportion_gaussians.png" alt="All data proportion gaussians">
+            <img src="all_foreground_background_4_gaussians.png" alt="All data foreground background gaussians">
+            <img src="all_symmetry_asymmetry_1_gaussians.png" alt="All data symmetry asymmetry gaussians">
+            <img src="all_eye_movement_2_gaussians.png" alt="All data eye movement gaussians">
         </div>
     </div>
-    <div class="sub-plot-container">
-        <img src="all_composition_gaussians.png" alt="All data composition gaussians">
-        <img src="all_balance_elements_gaussians.png" alt="All data balance elements gaussians">
-        <img src="all_movement_gaussians.png" alt="All data movement gaussians">
-        <img src="all_focus_point_gaussians.png" alt="All data focus point gaussians">
-        <img src="all_contrast_elements_gaussians.png" alt="All data contrast elements gaussians">
-        <img src="all_proportion_gaussians.png" alt="All data proportion gaussians">
-        <img src="all_foreground_background_4_gaussians.png" alt="All data foreground background gaussians">
-        <img src="all_symmetry_asymmetry_1_gaussians.png" alt="All data symmetry asymmetry gaussians">
-        <img src="all_eye_movement_2_gaussians.png" alt="All data eye movement gaussians">
-    </div>
-    <div class="highlight-percentage-data-container">
-        
+    <div id="sub-tab6" class="sub-tab-content">
+        <div class="highlight-percentage-data-container">
+            
         <table>
-            <caption>Pinterest highlights</caption>
             <thead>
                 <tr>
                     <th>Model</th>
@@ -417,28 +425,29 @@
                 </tr>
             </tbody>
         </table>
-        <div class="main-plot-container">
-            <img src="pinterest_model_gaussians.png" alt="Pinterest data model gaussians">
-            <img src="pinterest_llava_gaussians.png" alt="Pinterest data llava gaussians">
-            <img src="pinterest_cogvlm_gaussians.png" alt="Pinterest data cogvlm gaussians">
-            <img src="pinterest_deepseek_gaussians.png" alt="Pinterest data deepseek gaussians">
+            <div class="main-plot-container">
+                <img src="pinterest_model_gaussians.png" alt="Pinterest data model gaussians">
+                <img src="pinterest_llava_gaussians.png" alt="Pinterest data llava gaussians">
+                <img src="pinterest_cogvlm_gaussians.png" alt="Pinterest data cogvlm gaussians">
+                <img src="pinterest_deepseek_gaussians.png" alt="Pinterest data deepseek gaussians">
+            </div>
+        </div>
+        <div class="sub-plot-container">
+            <img src="pinterest_composition_gaussians.png" alt="Pinterest data composition gaussians">
+            <img src="pinterest_balance_elements_gaussians.png" alt="Pinterest data balance elements gaussians">
+            <img src="pinterest_movement_gaussians.png" alt="Pinterest data movement gaussians">
+            <img src="pinterest_focus_point_gaussians.png" alt="Pinterest data focus point gaussians">
+            <img src="pinterest_contrast_elements_gaussians.png" alt="Pinterest data contrast elements gaussians">
+            <img src="pinterest_proportion_gaussians.png" alt="Pinterest data proportion gaussians">
+            <img src="pinterest_foreground_background_4_gaussians.png" alt="Pinterest data foreground background gaussians">
+            <img src="pinterest_symmetry_asymmetry_1_gaussians.png" alt="Pinterest data symmetry asymmetry gaussians">
+            <img src="pinterest_eye_movement_2_gaussians.png" alt="Pinterest data eye movement gaussians">
         </div>
     </div>
-    <div class="sub-plot-container">
-        <img src="pinterest_composition_gaussians.png" alt="Pinterest data composition gaussians">
-        <img src="pinterest_balance_elements_gaussians.png" alt="Pinterest data balance elements gaussians">
-        <img src="pinterest_movement_gaussians.png" alt="Pinterest data movement gaussians">
-        <img src="pinterest_focus_point_gaussians.png" alt="Pinterest data focus point gaussians">
-        <img src="pinterest_contrast_elements_gaussians.png" alt="Pinterest data contrast elements gaussians">
-        <img src="pinterest_proportion_gaussians.png" alt="Pinterest data proportion gaussians">
-        <img src="pinterest_foreground_background_4_gaussians.png" alt="Pinterest data foreground background gaussians">
-        <img src="pinterest_symmetry_asymmetry_1_gaussians.png" alt="Pinterest data symmetry asymmetry gaussians">
-        <img src="pinterest_eye_movement_2_gaussians.png" alt="Pinterest data eye movement gaussians">
-    </div>
-    <div class="highlight-percentage-data-container">
-        
+    <div id="sub-tab7" class="sub-tab-content">
+        <div class="highlight-percentage-data-container">
+            
         <table>
-            <caption>Renaissance highlights</caption>
             <thead>
                 <tr>
                     <th>Model</th>
@@ -635,21 +644,53 @@
                 </tr>
             </tbody>
         </table>
-        <div class="main-plot-container">
-            <img src="renaissance_model_gaussians.png" alt="Renaissance data model gaussians">
-            <img src="renaissance_llava_gaussians.png" alt="Renaissance data llava gaussians">
-            <img src="renaissance_cogvlm_gaussians.png" alt="Renaissance data cogvlm gaussians">
-            <img src="renaissance_deepseek_gaussians.png" alt="Renaissance data deepseek gaussians">
+            <div class="main-plot-container">
+                <img src="renaissance_model_gaussians.png" alt="Renaissance data model gaussians">
+                <img src="renaissance_llava_gaussians.png" alt="Renaissance data llava gaussians">
+                <img src="renaissance_cogvlm_gaussians.png" alt="Renaissance data cogvlm gaussians">
+                <img src="renaissance_deepseek_gaussians.png" alt="Renaissance data deepseek gaussians">
+            </div>
+        </div>
+        <div class="sub-plot-container">
+            <img src="renaissance_composition_gaussians.png" alt="Renaissance data composition gaussians">
+            <img src="renaissance_balance_elements_gaussians.png" alt="Renaissance data balance elements gaussians">
+            <img src="renaissance_movement_gaussians.png" alt="Renaissance data movement gaussians">
+            <img src="renaissance_focus_point_gaussians.png" alt="Renaissance data focus point gaussians">
+            <img src="renaissance_contrast_elements_gaussians.png" alt="Renaissance data contrast elements gaussians">
+            <img src="renaissance_proportion_gaussians.png" alt="Renaissance data proportion gaussians">
+            <img src="renaissance_foreground_background_4_gaussians.png" alt="Renaissance data foreground background gaussians">
+            <img src="renaissance_symmetry_asymmetry_1_gaussians.png" alt="Renaissance data symmetry asymmetry gaussians">
+            <img src="renaissance_eye_movement_2_gaussians.png" alt="Renaissance data eye movement gaussians">
         </div>
     </div>
-    <div class="sub-plot-container">
-        <img src="renaissance_composition_gaussians.png" alt="Renaissance data composition gaussians">
-        <img src="renaissance_balance_elements_gaussians.png" alt="Renaissance data balance elements gaussians">
-        <img src="renaissance_movement_gaussians.png" alt="Renaissance data movement gaussians">
-        <img src="renaissance_focus_point_gaussians.png" alt="Renaissance data focus point gaussians">
-        <img src="renaissance_contrast_elements_gaussians.png" alt="Renaissance data contrast elements gaussians">
-        <img src="renaissance_proportion_gaussians.png" alt="Renaissance data proportion gaussians">
-        <img src="renaissance_foreground_background_4_gaussians.png" alt="Renaissance data foreground background gaussians">
-        <img src="renaissance_symmetry_asymmetry_1_gaussians.png" alt="Renaissance data symmetry asymmetry gaussians">
-        <img src="renaissance_eye_movement_2_gaussians.png" alt="Renaissance data eye movement gaussians">
+    <div id="sub-tab8" class="sub-tab-content">
+        <div class="sub-plot-container">
+                <img src="combined_sets_llava_composition_gaussians.png" alt="Combined sets llava composition gaussians">
+                <img src="combined_sets_cogvlm_composition_gaussians.png" alt="Combined sets cogvlm composition gaussians">
+                <img src="combined_sets_deepseek_composition_gaussians.png" alt="Combined sets deepseek composition gaussians">
+                <img src="combined_sets_llava_balance_elements_gaussians.png" alt="Combined sets llava balance elements gaussians">
+                <img src="combined_sets_cogvlm_balance_elements_gaussians.png" alt="Combined sets cogvlm balance elements gaussians">
+                <img src="combined_sets_deepseek_balance_elements_gaussians.png" alt="Combined sets deepseek balance elements gaussians">
+                <img src="combined_sets_llava_movement_gaussians.png" alt="Combined sets llava movement gaussians">
+                <img src="combined_sets_cogvlm_movement_gaussians.png" alt="Combined sets cogvlm movement gaussians">
+                <img src="combined_sets_deepseek_movement_gaussians.png" alt="Combined sets deepseek movement gaussians">
+                <img src="combined_sets_llava_focus_point_gaussians.png" alt="Combined sets llava focus point gaussians">
+                <img src="combined_sets_cogvlm_focus_point_gaussians.png" alt="Combined sets cogvlm focus point gaussians">
+                <img src="combined_sets_deepseek_focus_point_gaussians.png" alt="Combined sets deepseek focus point gaussians">
+                <img src="combined_sets_llava_contrast_elements_gaussians.png" alt="Combined sets llava contrast elements gaussians">
+                <img src="combined_sets_cogvlm_contrast_elements_gaussians.png" alt="Combined sets cogvlm contrast elements gaussians">
+                <img src="combined_sets_deepseek_contrast_elements_gaussians.png" alt="Combined sets deepseek contrast elements gaussians">
+                <img src="combined_sets_llava_proportion_gaussians.png" alt="Combined sets llava proportion gaussians">
+                <img src="combined_sets_cogvlm_proportion_gaussians.png" alt="Combined sets cogvlm proportion gaussians">
+                <img src="combined_sets_deepseek_proportion_gaussians.png" alt="Combined sets deepseek proportion gaussians">
+                <img src="combined_sets_llava_foreground_background_4_gaussians.png" alt="Combined sets llava foreground background gaussians">
+                <img src="combined_sets_cogvlm_foreground_background_4_gaussians.png" alt="Combined sets cogvlm foreground background gaussians">
+                <img src="combined_sets_deepseek_foreground_background_4_gaussians.png" alt="Combined sets deepseek foreground background gaussians">
+                <img src="combined_sets_llava_symmetry_asymmetry_1_gaussians.png" alt="Combined sets llava symmetry asymmetry gaussians">
+                <img src="combined_sets_cogvlm_symmetry_asymmetry_1_gaussians.png" alt="Combined sets cogvlm symmetry asymmetry gaussians">
+                <img src="combined_sets_deepseek_symmetry_asymmetry_1_gaussians.png" alt="Combined sets deepseek symmetry asymmetry gaussians">
+                <img src="combined_sets_llava_eye_movement_2_gaussians.png" alt="Combined sets llava eye movement gaussians">
+                <img src="combined_sets_cogvlm_eye_movement_2_gaussians.png" alt="Combined sets cogvlm eye movement gaussians">
+                <img src="combined_sets_deepseek_eye_movement_2_gaussians.png" alt="Combined sets deepseek eye movement gaussians">
+        </div>
     </div>
