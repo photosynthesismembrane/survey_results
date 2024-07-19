@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Path to the JSON file
-file_path = 'export_1720445297387_refined.json'
+file_path = 'export_1721421209861_refined.json'
 
 # llava_wins = 0
 # cogvlm_wins = 0
@@ -363,10 +363,10 @@ for item in highlight_data:
     counts[f"{model}_{question}_{image_filename}"] = counts.get(f"{model}_{question}_{image_filename}", 0) + 1
 
 # Save the data to a JSON file
-read_write_json.write_json('survey_highlight_data_updated_v4.json', highlight_data_processed)
+read_write_json.write_json('survey_highlight_data_updated_v5.json', highlight_data_processed)
 
-read_write_json.write_json('survey_pinterest_data_hightlighted_updated_v4.js', json_data_pinterest)
-read_write_json.write_json('survey_renaissance_data_hightlighted_updated_v4.js', json_data_renaissance)
+read_write_json.write_json('survey_pinterest_data_hightlighted_updated_v5.js', json_data_pinterest)
+read_write_json.write_json('survey_renaissance_data_hightlighted_updated_v5.js', json_data_renaissance)
 
 # Write all the stories to a text file
 # with open('survey_highlight_stories_updated.txt', 'w') as file:

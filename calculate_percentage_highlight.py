@@ -234,7 +234,7 @@ import read_write_json
 # ];
 
 # Load the Pinterest data
-pinterest_data = read_write_json.read_json("survey_pinterest_data_hightlighted_updated_v4 copy.js")
+pinterest_data = read_write_json.read_json("survey_pinterest_data_hightlighted_updated_v5 copy.js")
 
 # write html to file
 html_pinterest, latex_pinterest = create_html_latex(pinterest_data, "Pinterest highlights")
@@ -247,7 +247,7 @@ with open('survey_highlight_latex_table_pinterest_v4.txt', 'w') as file:
 
 
 # Load the Renaissance data
-renaissance_data = read_write_json.read_json("survey_renaissance_data_hightlighted_updated_v4 copy.js")
+renaissance_data = read_write_json.read_json("survey_renaissance_data_hightlighted_updated_v5 copy.js")
 
 # write html to file
 html_renaissance, latex_renaissance = create_html_latex(renaissance_data, "Renaissance highlights")
@@ -259,7 +259,7 @@ with open('survey_highlight_latex_table_renaissance_v4.txt', 'w') as file:
     file.write(latex_renaissance)
 
 
-all_data = read_write_json.read_json("survey_all_data_hightlighted_updated_v4 copy.js")
+all_data = read_write_json.read_json("survey_all_data_hightlighted_updated_v5 copy.js")
 
 # write html to file
 html_all, latex_all = create_html_latex(all_data, "All highlights")
@@ -396,5 +396,5 @@ html_full = f"""
     </div>
 """
 
-with open('survey_highlight_html_table_full_v4.txt', 'w') as file:
+with open('survey_highlight_html_table_full_v5.txt', 'w') as file:
     file.write(html_full)

@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 # Path to the JSON file
-file_path = 'export_1720445297387_refined.json'
+file_path = 'export_1721421209861_refined.json'
 import read_write_json
 
 pinterest_data = read_write_json.read_json('survey_pinterest_data.js')
@@ -113,6 +113,11 @@ def create_table_entry(data, task, set):
     for item in data:
         if set == 'all' or item['data_type'] == set:
             if item['question'] == task or task == 'all':
+                loser = (item['contestant_1'] + item['contestant_2']).replace(item['model'], '')
+
+                if loser == '':
+                    continue
+
                 if item['model'] == 'llava':
                     llava_wins += 1
                     winner_rating = llava_rating
@@ -122,8 +127,6 @@ def create_table_entry(data, task, set):
                 elif item['model'] == 'deepseek':
                     deepseek_wins += 1
                     winner_rating = deepseek_rating
-
-                loser = (item['contestant_1'] + item['contestant_2']).replace(item['model'], '')
 
                 if loser == 'llava':
                     winner_rating, llava_rating = rate_1vs1(winner_rating, llava_rating)
@@ -337,5 +340,5 @@ for index, item in enumerate(two_options_data):
             json_data_renaissance[image_filename][f"{other}_answers"][question] = story_other
 
 
-# read_write_json.write_json('survey_pinterest_data_two_options_updates_v2.js', json_data_pinterest)
-# read_write_json.write_json('survey_renaissance_data_two_options_updated_v2.js', json_data_renaissance)
+read_write_json.write_json('survey_pinterest_data_two_options_updates_v3.js', json_data_pinterest)
+read_write_json.write_json('survey_renaissance_data_two_options_updated_v3.js', json_data_renaissance)
