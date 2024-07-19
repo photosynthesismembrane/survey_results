@@ -235,13 +235,22 @@ function openMainTab(tabId) {
 function openSubTab(tabId) {
     var i, tabContent, tabButtons;
 
+    // Get the index of the tab, replace the "sub-tab" part of the id with an empty string, cast to integer
+    var tab_index = parseInt(tabId.replace("sub-tab", ""));
+    var begin = 0;
+    var end = 4;
+    if (tab_index > 4) {
+        begin = 4;
+        end = 8;
+    }
+
     tabContent = document.getElementsByClassName("sub-tab-content");
-    for (i = 0; i < tabContent.length; i++) {
+    for (i = begin; i < end; i++) {
         tabContent[i].style.display = "none";
     }
 
     tabButtons = document.getElementsByClassName("sub-tab-button");
-    for (i = 0; i < tabButtons.length; i++) {
+    for (i = begin; i < end; i++) {
         tabButtons[i].classList.remove("active");
     }
 
