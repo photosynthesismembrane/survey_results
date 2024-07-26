@@ -1,76 +1,76 @@
 Model;Task;Item;highlight;total;percentage
 cogvlm;symmetry_asymmetry_1;317cbd7af35213a4a80e5d31e30368e8.jpg;32;201;15,92
 deepseek;proportion;317cbd7af35213a4a80e5d31e30368e8.jpg;25;946;2,64
-deepseek;foreground_background_4;317cbd7af35213a4a80e5d31e30368e8.jpg;0;1510;0,0
+deepseek;foreground_background_4;317cbd7af35213a4a80e5d31e30368e8.jpg;0;1000;0,0
 llava;proportion;a67ca6813835e5e58961d4336e46c197.jpg;162;484;33,47
-deepseek;balance_elements;a67ca6813835e5e58961d4336e46c197.jpg;50;1673;2,99
+deepseek;balance_elements;a67ca6813835e5e58961d4336e46c197.jpg;42;1000;4,2
 cogvlm;balance_elements;1c501095b675902362f6e9dcc8bab246.jpg;0;407;0,0
 cogvlm;proportion;1c501095b675902362f6e9dcc8bab246.jpg;0;453;0,0
-deepseek;balance_elements;1c501095b675902362f6e9dcc8bab246.jpg;15;1716;0,87
+deepseek;balance_elements;1c501095b675902362f6e9dcc8bab246.jpg;15;1000;1,5
 llava;contrast_elements;b0c8ad1947f1a30d4d746c963696f4ce.jpg;0;613;0,0
 llava;symmetry_asymmetry_1;b0c8ad1947f1a30d4d746c963696f4ce.jpg;10;492;2,03
 deepseek;focus_point;b0c8ad1947f1a30d4d746c963696f4ce.jpg;176;970;18,14
 cogvlm;balance_elements;2174b333c91d2fa7d936e97e4386d983.jpg;12;449;2,67
 cogvlm;contrast_elements;2174b333c91d2fa7d936e97e4386d983.jpg;0;336;0,0
-deepseek;composition;2174b333c91d2fa7d936e97e4386d983.jpg;0;1538;0,0
+deepseek;composition;2174b333c91d2fa7d936e97e4386d983.jpg;0;1000;0,0
 deepseek;balance_elements;2174b333c91d2fa7d936e97e4386d983.jpg;32;926;3,46
-deepseek;contrast_elements;2174b333c91d2fa7d936e97e4386d983.jpg;220;1930;11,4
+deepseek;contrast_elements;2174b333c91d2fa7d936e97e4386d983.jpg;220;1000;22,0
 deepseek;composition;72519c5ccf08e7533cfa5dc154d8a968.jpg;56;892;6,28
 deepseek;contrast_elements;72519c5ccf08e7533cfa5dc154d8a968.jpg;14;807;1,73
 llava;balance_elements;0875a6148f7da92df0fc6a258bf00c77.jpg;127;1164;10,91
 llava;contrast_elements;0875a6148f7da92df0fc6a258bf00c77.jpg;186;625;29,76
-deepseek;eye_movement_2;0875a6148f7da92df0fc6a258bf00c77.jpg;6;2295;0,26
+deepseek;eye_movement_2;0875a6148f7da92df0fc6a258bf00c77.jpg;6;1000;0,6
 cogvlm;balance_elements;aa63fcb5f3f054e41426727b2084dc2e.jpg;48;447;10,74
 deepseek;contrast_elements;aa63fcb5f3f054e41426727b2084dc2e.jpg;213;980;21,73
 llava;eye_movement_2;b3de88d2fa3fbf442749bcbf10bb8939.jpg;260;723;35,96
 cogvlm;contrast_elements;b3de88d2fa3fbf442749bcbf10bb8939.jpg;0;434;0,0
 cogvlm;eye_movement_2;b3de88d2fa3fbf442749bcbf10bb8939.jpg;56;416;13,46
-deepseek;balance_elements;b3de88d2fa3fbf442749bcbf10bb8939.jpg;16;1891;0,85
-deepseek;symmetry_asymmetry_1;b3de88d2fa3fbf442749bcbf10bb8939.jpg;97;2922;3,32
+deepseek;balance_elements;b3de88d2fa3fbf442749bcbf10bb8939.jpg;16;1000;1,6
+deepseek;symmetry_asymmetry_1;b3de88d2fa3fbf442749bcbf10bb8939.jpg;90;2000;4,5
 llava;balance_elements;d792700abadc24170124b8b01915d5f8.jpg;206;652;31,6
 cogvlm;focus_point;d792700abadc24170124b8b01915d5f8.jpg;75;324;23,15
 llava;balance_elements;39a2d1a7508ac84e097b717704ede66e.jpg;66;602;10,96
 llava;focus_point;39a2d1a7508ac84e097b717704ede66e.jpg;107;592;18,07
 cogvlm;balance_elements;39a2d1a7508ac84e097b717704ede66e.jpg;23;431;5,34
-deepseek;composition;39a2d1a7508ac84e097b717704ede66e.jpg;135;1708;7,9
+deepseek;composition;39a2d1a7508ac84e097b717704ede66e.jpg;135;1000;13,5
 llava;balance_elements;24c5eda44962442b432db52c7dfd5d1a.jpg;70;531;13,18
 cogvlm;composition;24c5eda44962442b432db52c7dfd5d1a.jpg;36;468;7,69
 llava;composition;6c21114880937e39b4bea10ce45567c2.jpg;64;1166;5,49
 cogvlm;contrast_elements;6c21114880937e39b4bea10ce45567c2.jpg;62;379;16,36
-deepseek;balance_elements;6c21114880937e39b4bea10ce45567c2.jpg;4;1382;0,29
+deepseek;balance_elements;6c21114880937e39b4bea10ce45567c2.jpg;4;1000;0,4
 cogvlm;symmetry_asymmetry_1;a25602e9ef1dc788c586c70081a442f2.jpg;8;165;4,85
 llava;symmetry_asymmetry_1;9fab78a3b8c1e0126dcc943baee8918d.jpg;230;491;46,84
-deepseek;eye_movement_2;8b2e6c3080203d4d1badfa56b753a6d3.jpg;4;1618;0,25
+deepseek;eye_movement_2;8b2e6c3080203d4d1badfa56b753a6d3.jpg;4;1000;0,4
 llava;eye_movement_2;fe52baad9432a25851278bfa7ec3a86f.jpg;92;873;10,54
 cogvlm;eye_movement_2;dd5d1b60db599be5e8c238bee8462a15.jpg;67;392;17,09
-deepseek;focus_point;dd5d1b60db599be5e8c238bee8462a15.jpg;198;1302;15,21
+deepseek;focus_point;dd5d1b60db599be5e8c238bee8462a15.jpg;198;1000;19,8
 llava;contrast_elements;0ed30ccd0baf1c1332e6e082c64455a4.jpg;159;600;26,5
 cogvlm;balance_elements;0ed30ccd0baf1c1332e6e082c64455a4.jpg;91;570;15,96
 cogvlm;composition;d8c5f661e9d5ffa8bffc814a3fc6e935.jpg;55;377;14,59
 cogvlm;symmetry_asymmetry_1;d8c5f661e9d5ffa8bffc814a3fc6e935.jpg;0;248;0,0
-deepseek;symmetry_asymmetry_1;d8c5f661e9d5ffa8bffc814a3fc6e935.jpg;169;1491;11,33
+deepseek;symmetry_asymmetry_1;d8c5f661e9d5ffa8bffc814a3fc6e935.jpg;94;1000;9,4
 llava;composition;7a566e1c05c0b42c118760aeecc47edb.jpg;210;557;37,7
 llava;symmetry_asymmetry_1;7a566e1c05c0b42c118760aeecc47edb.jpg;74;399;18,55
 cogvlm;focus_point;7a566e1c05c0b42c118760aeecc47edb.jpg;0;261;0,0
 llava;focus_point;9ecc59478f04350c181bb99b75a1e6c4.jpg;37;521;7,1
 llava;eye_movement_2;9ecc59478f04350c181bb99b75a1e6c4.jpg;159;1106;14,38
-deepseek;eye_movement_2;9ecc59478f04350c181bb99b75a1e6c4.jpg;89;1825;4,88
+deepseek;eye_movement_2;9ecc59478f04350c181bb99b75a1e6c4.jpg;89;1000;8,9
 llava;balance_elements;e2e69c417d307e48ed275826300dacbd.jpg;144;530;27,17
 cogvlm;balance_elements;e2e69c417d307e48ed275826300dacbd.jpg;116;529;21,93
-deepseek;balance_elements;e2e69c417d307e48ed275826300dacbd.jpg;149;1834;8,12
+deepseek;balance_elements;e2e69c417d307e48ed275826300dacbd.jpg;149;1000;14,9
 cogvlm;composition;1eb250ac61e9ffca969c5f528ead6b23.jpg;0;489;0,0
 cogvlm;eye_movement_2;1eb250ac61e9ffca969c5f528ead6b23.jpg;0;335;0,0
 cogvlm;symmetry_asymmetry_1;d64d133d79b7ad425c6f52a8e02a09f5.jpg;154;269;57,25
 llava;symmetry_asymmetry_1;26c521930dd73c0bf8a8675b08698b51.jpg;56;445;12,58
-deepseek;contrast_elements;26c521930dd73c0bf8a8675b08698b51.jpg;7;1987;0,35
-deepseek;symmetry_asymmetry_1;f78e6b6a97e7c5bb2d9b77952e43b428.jpg;167;1287;12,98
+deepseek;contrast_elements;26c521930dd73c0bf8a8675b08698b51.jpg;7;1000;0,7
+deepseek;symmetry_asymmetry_1;f78e6b6a97e7c5bb2d9b77952e43b428.jpg;167;1000;16,7
 llava;contrast_elements;b129f69309638fda34b7da2ebbfce83a.jpg;29;587;4,94
 cogvlm;symmetry_asymmetry_1;b129f69309638fda34b7da2ebbfce83a.jpg;19;192;9,9
 cogvlm;eye_movement_2;0cfe6cbc00ffd9c46c5ca805eedb14a5.jpg;51;387;13,18
-deepseek;eye_movement_2;437f14c6a2218e91d70e2ed77a05ee36.jpg;187;1827;10,24
+deepseek;eye_movement_2;437f14c6a2218e91d70e2ed77a05ee36.jpg;161;1000;16,1
 cogvlm;contrast_elements;178acaa395581f4c77c1510a253e3ced.jpg;0;352;0,0
 llava;symmetry_asymmetry_1;e8cad5095d378494dcfc41b2d33d8915.jpg;28;375;7,47
-deepseek;symmetry_asymmetry_1;fe4c7983efd3242e7322ecee9c665e68.jpg;133;1404;9,47
+deepseek;symmetry_asymmetry_1;fe4c7983efd3242e7322ecee9c665e68.jpg;128;1000;12,8
 llava;foreground_background_4;cb5b90942c93eb6688aaa0b633df56a9.jpg;0;534;0,0
 cogvlm;foreground_background_4;4dceb2db532d3e56bfadf5b1a28713c2.jpg;0;454;0,0
 llava;composition;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;208;612;33,99
@@ -83,11 +83,11 @@ deepseek;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-
 llava;focus_point;pietro-perugino_the-vision-of-st-bernard.jpg;12;539;2,23
 deepseek;balance_elements;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;41;773;5,3
 deepseek;focus_point;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;326;640;50,94
-deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1448;10,5
+deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1000;15,2
 llava;balance_elements;andrea-mantegna_samson-and-delilah-1506.jpg;364;762;47,77
 llava;proportion;andrea-mantegna_samson-and-delilah-1506.jpg;24;497;4,83
 deepseek;composition;andrea-mantegna_samson-and-delilah-1506.jpg;109;874;12,47
-deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;76;2001;3,8
+deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;60;1000;6,0
 llava;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;19;515;3,69
 llava;foreground_background_4;raphael_the-marriage-of-the-virgin-1504-1.jpg;75;520;14,42
 cogvlm;balance_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;78;1317;5,92
@@ -97,17 +97,17 @@ cogvlm;focus_point;dosso-dossi_the-three-ages-of-man-1515.jpg;86;229;37,55
 llava;focus_point;andrea-del-sarto_the-annunciation-1513.jpg;196;1112;17,63
 cogvlm;foreground_background_4;andrea-del-sarto_the-annunciation-1513.jpg;56;415;13,49
 cogvlm;symmetry_asymmetry_1;andrea-del-sarto_the-annunciation-1513.jpg;72;285;25,26
-deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;400;1502;26,63
+deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;341;1000;34,1
 llava;proportion;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;7;577;1,21
 llava;symmetry_asymmetry_1;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;149;516;28,88
 cogvlm;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;16;403;3,97
 cogvlm;proportion;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;19;356;5,34
 deepseek;composition;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;111;718;15,46
-deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1960;9,54
+deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1000;18,7
 llava;composition;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;98;591;16,58
 cogvlm;composition;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;96;391;24,55
 cogvlm;symmetry_asymmetry_1;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;0;376;0,0
-deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1429;4,13
+deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1000;5,9
 llava;composition;andrea-del-sarto_stories-of-joseph-1.jpg;122;758;16,09
 llava;focus_point;andrea-del-sarto_stories-of-joseph-1.jpg;82;641;12,79
 llava;contrast_elements;andrea-del-sarto_stories-of-joseph-1.jpg;307;661;46,44
@@ -117,23 +117,23 @@ cogvlm;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;35;
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
 cogvlm;composition;andrea-mantegna_the-agony-in-the-garden.jpg;42;541;7,76
 cogvlm;symmetry_asymmetry_1;andrea-mantegna_the-agony-in-the-garden.jpg;19;290;6,55
-deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;3742;2,11
+deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;2000;3,95
 deepseek;proportion;andrea-mantegna_the-agony-in-the-garden.jpg;15;894;1,68
 llava;balance_elements;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;74;848;8,73
 cogvlm;balance_elements;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;87;380;22,89
 cogvlm;focus_point;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;0;313;0,0
 cogvlm;composition;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;0;374;0,0
 cogvlm;eye_movement_2;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;41;379;10,82
-deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1372;16,98
+deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1000;23,3
 llava;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;171;715;23,92
 cogvlm;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;91;459;19,83
 cogvlm;composition;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;80;403;19,85
 cogvlm;foreground_background_4;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;12;387;3,1
 llava;composition;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;169;573;29,49
 llava;focus_point;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;0;606;0,0
-deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;97;1526;6,36
+deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;76;1000;7,6
 cogvlm;focus_point;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;46;358;12,85
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1296;5,02
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1000;6,5
 cogvlm;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;60;930;6,45
 deepseek;focus_point;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;1160;720;161,11
 deepseek;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;65;625;10,4
@@ -141,27 +141,27 @@ llava;focus_point;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-
 cogvlm;focus_point;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-1500.jpg;80;326;24,54
 cogvlm;symmetry_asymmetry_1;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-1500.jpg;288;260;110,77
 cogvlm;proportion;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;0;388;0,0
-deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;101;1882;5,37
+deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;83;1000;8,3
 cogvlm;focus_point;vittore-carpaccio_the-virgin-reading-1510.jpg;34;276;12,32
 llava;symmetry_asymmetry_1;giorgione_the-sunset-1510(1).jpg;56;497;11,27
-deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;297;2508;11,84
-deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1323;3,93
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;450;1434;31,38
+deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;282;2000;14,1
+deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1000;5,2
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;405;1000;40,5
 llava;contrast_elements;andrea-mantegna_st-jacques-leads-to-martyrdom.jpg;148;753;19,65
-deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1576;0,0
-deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1452;25,55
-deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1474;10,38
+deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1000;0,0
+deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1000;37,1
+deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1000;15,3
 llava;balance_elements;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;262;733;35,74
-deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1386;9,16
+deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1000;12,7
 cogvlm;foreground_background_4;pietro-perugino_pala-di-corciano-annunciation.jpg;145;329;44,07
 llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
 deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
-deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1871;12,88
+deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
 llava;eye_movement_2;raphael_st-cecilia-with-saints-detail-1516-1.jpg;402;838;47,97
-deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1444;8,38
+deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1000;12,1
 cogvlm;foreground_background_4;lorenzo-lotto_altar-polyptych-of-san-bartolomeo-bergamo-foot-plate-entombment-1516.jpg;0;527;0,0
 llava;foreground_background_4;correggio_the-adoration-of-the-magi-1518(2).jpg;14;531;2,64
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;431;1383;31,16
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 llava;symmetry_asymmetry_1;correggio_adoration-of-the-christ-child(2).jpg;229;592;38,68
 
 
@@ -282,60 +282,60 @@ cogvlm;foreground_background_4;lorenzo-lotto_altar-polyptych-of-san-bartolomeo-b
 
 
 deepseek;proportion;317cbd7af35213a4a80e5d31e30368e8.jpg;25;946;2,64
-deepseek;foreground_background_4;317cbd7af35213a4a80e5d31e30368e8.jpg;0;1510;0,0
-deepseek;balance_elements;a67ca6813835e5e58961d4336e46c197.jpg;50;1673;2,99
-deepseek;balance_elements;1c501095b675902362f6e9dcc8bab246.jpg;15;1716;0,87
+deepseek;foreground_background_4;317cbd7af35213a4a80e5d31e30368e8.jpg;0;1000;0,0
+deepseek;balance_elements;a67ca6813835e5e58961d4336e46c197.jpg;42;1000;4,2
+deepseek;balance_elements;1c501095b675902362f6e9dcc8bab246.jpg;15;1000;1,5
 deepseek;focus_point;b0c8ad1947f1a30d4d746c963696f4ce.jpg;176;970;18,14
-deepseek;composition;2174b333c91d2fa7d936e97e4386d983.jpg;0;1538;0,0
+deepseek;composition;2174b333c91d2fa7d936e97e4386d983.jpg;0;1000;0,0
 deepseek;balance_elements;2174b333c91d2fa7d936e97e4386d983.jpg;32;926;3,46
-deepseek;contrast_elements;2174b333c91d2fa7d936e97e4386d983.jpg;220;1930;11,4
+deepseek;contrast_elements;2174b333c91d2fa7d936e97e4386d983.jpg;220;1000;22,0
 deepseek;composition;72519c5ccf08e7533cfa5dc154d8a968.jpg;56;892;6,28
 deepseek;contrast_elements;72519c5ccf08e7533cfa5dc154d8a968.jpg;14;807;1,73
-deepseek;eye_movement_2;0875a6148f7da92df0fc6a258bf00c77.jpg;6;2295;0,26
+deepseek;eye_movement_2;0875a6148f7da92df0fc6a258bf00c77.jpg;6;1000;0,6
 deepseek;contrast_elements;aa63fcb5f3f054e41426727b2084dc2e.jpg;213;980;21,73
-deepseek;balance_elements;b3de88d2fa3fbf442749bcbf10bb8939.jpg;16;1891;0,85
-deepseek;symmetry_asymmetry_1;b3de88d2fa3fbf442749bcbf10bb8939.jpg;97;2922;3,32
-deepseek;composition;39a2d1a7508ac84e097b717704ede66e.jpg;135;1708;7,9
-deepseek;balance_elements;6c21114880937e39b4bea10ce45567c2.jpg;4;1382;0,29
-deepseek;eye_movement_2;8b2e6c3080203d4d1badfa56b753a6d3.jpg;4;1618;0,25
-deepseek;focus_point;dd5d1b60db599be5e8c238bee8462a15.jpg;198;1302;15,21
-deepseek;symmetry_asymmetry_1;d8c5f661e9d5ffa8bffc814a3fc6e935.jpg;169;1491;11,33
-deepseek;eye_movement_2;9ecc59478f04350c181bb99b75a1e6c4.jpg;89;1825;4,88
-deepseek;balance_elements;e2e69c417d307e48ed275826300dacbd.jpg;149;1834;8,12
-deepseek;contrast_elements;26c521930dd73c0bf8a8675b08698b51.jpg;7;1987;0,35
-deepseek;symmetry_asymmetry_1;f78e6b6a97e7c5bb2d9b77952e43b428.jpg;167;1287;12,98
-deepseek;eye_movement_2;437f14c6a2218e91d70e2ed77a05ee36.jpg;187;1827;10,24
-deepseek;symmetry_asymmetry_1;fe4c7983efd3242e7322ecee9c665e68.jpg;133;1404;9,47
+deepseek;balance_elements;b3de88d2fa3fbf442749bcbf10bb8939.jpg;16;1000;1,6
+deepseek;symmetry_asymmetry_1;b3de88d2fa3fbf442749bcbf10bb8939.jpg;90;2000;4,5
+deepseek;composition;39a2d1a7508ac84e097b717704ede66e.jpg;135;1000;13,5
+deepseek;balance_elements;6c21114880937e39b4bea10ce45567c2.jpg;4;1000;0,4
+deepseek;eye_movement_2;8b2e6c3080203d4d1badfa56b753a6d3.jpg;4;1000;0,4
+deepseek;focus_point;dd5d1b60db599be5e8c238bee8462a15.jpg;198;1000;19,8
+deepseek;symmetry_asymmetry_1;d8c5f661e9d5ffa8bffc814a3fc6e935.jpg;94;1000;9,4
+deepseek;eye_movement_2;9ecc59478f04350c181bb99b75a1e6c4.jpg;89;1000;8,9
+deepseek;balance_elements;e2e69c417d307e48ed275826300dacbd.jpg;149;1000;14,9
+deepseek;contrast_elements;26c521930dd73c0bf8a8675b08698b51.jpg;7;1000;0,7
+deepseek;symmetry_asymmetry_1;f78e6b6a97e7c5bb2d9b77952e43b428.jpg;167;1000;16,7
+deepseek;eye_movement_2;437f14c6a2218e91d70e2ed77a05ee36.jpg;161;1000;16,1
+deepseek;symmetry_asymmetry_1;fe4c7983efd3242e7322ecee9c665e68.jpg;128;1000;12,8
 deepseek;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-whateley-in-fact-likely-to-be-girolamo-casio-1495.jpg;23;721;3,19
 deepseek;balance_elements;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;41;773;5,3
 deepseek;focus_point;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;326;640;50,94
-deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1448;10,5
+deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1000;15,2
 deepseek;composition;andrea-mantegna_samson-and-delilah-1506.jpg;109;874;12,47
-deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;76;2001;3,8
-deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;400;1502;26,63
+deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;60;1000;6,0
+deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;341;1000;34,1
 deepseek;composition;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;111;718;15,46
-deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1960;9,54
-deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1429;4,13
+deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1000;18,7
+deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1000;5,9
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
-deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;3742;2,11
+deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;2000;3,95
 deepseek;proportion;andrea-mantegna_the-agony-in-the-garden.jpg;15;894;1,68
-deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1372;16,98
-deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;97;1526;6,36
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1296;5,02
+deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1000;23,3
+deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;76;1000;7,6
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1000;6,5
 deepseek;focus_point;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;1160;720;161,11
 deepseek;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;65;625;10,4
-deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;101;1882;5,37
-deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;297;2508;11,84
-deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1323;3,93
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;450;1434;31,38
-deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1576;0,0
-deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1452;25,55
-deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1474;10,38
-deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1386;9,16
+deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;83;1000;8,3
+deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;282;2000;14,1
+deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1000;5,2
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;405;1000;40,5
+deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1000;0,0
+deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1000;37,1
+deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1000;15,3
+deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1000;12,7
 deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
-deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1871;12,88
-deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1444;8,38
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;431;1383;31,16
+deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
+deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1000;12,1
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 
 
 
@@ -511,25 +511,25 @@ cogvlm;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors
 
 
 
-deepseek;composition;2174b333c91d2fa7d936e97e4386d983.jpg;0;1538;0,0
+deepseek;composition;2174b333c91d2fa7d936e97e4386d983.jpg;0;1000;0,0
 deepseek;composition;72519c5ccf08e7533cfa5dc154d8a968.jpg;56;892;6,28
-deepseek;composition;39a2d1a7508ac84e097b717704ede66e.jpg;135;1708;7,9
+deepseek;composition;39a2d1a7508ac84e097b717704ede66e.jpg;135;1000;13,5
 deepseek;composition;andrea-mantegna_samson-and-delilah-1506.jpg;109;874;12,47
 deepseek;composition;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;111;718;15,46
-deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1576;0,0
-deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1452;25,55
+deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1000;0,0
+deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1000;37,1
 
 
 
-deepseek;balance_elements;a67ca6813835e5e58961d4336e46c197.jpg;50;1673;2,99
-deepseek;balance_elements;1c501095b675902362f6e9dcc8bab246.jpg;15;1716;0,87
+deepseek;balance_elements;a67ca6813835e5e58961d4336e46c197.jpg;42;1000;4,2
+deepseek;balance_elements;1c501095b675902362f6e9dcc8bab246.jpg;15;1000;1,5
 deepseek;balance_elements;2174b333c91d2fa7d936e97e4386d983.jpg;32;926;3,46
-deepseek;balance_elements;b3de88d2fa3fbf442749bcbf10bb8939.jpg;16;1891;0,85
-deepseek;balance_elements;6c21114880937e39b4bea10ce45567c2.jpg;4;1382;0,29
-deepseek;balance_elements;e2e69c417d307e48ed275826300dacbd.jpg;149;1834;8,12
+deepseek;balance_elements;b3de88d2fa3fbf442749bcbf10bb8939.jpg;16;1000;1,6
+deepseek;balance_elements;6c21114880937e39b4bea10ce45567c2.jpg;4;1000;0,4
+deepseek;balance_elements;e2e69c417d307e48ed275826300dacbd.jpg;149;1000;14,9
 deepseek;balance_elements;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;41;773;5,3
-deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;400;1502;26,63
-deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;3742;2,11
+deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;341;1000;34,1
+deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;2000;3,95
 
 
 
@@ -537,59 +537,59 @@ deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;3742;2,
 
 
 deepseek;focus_point;b0c8ad1947f1a30d4d746c963696f4ce.jpg;176;970;18,14
-deepseek;focus_point;dd5d1b60db599be5e8c238bee8462a15.jpg;198;1302;15,21
+deepseek;focus_point;dd5d1b60db599be5e8c238bee8462a15.jpg;198;1000;19,8
 deepseek;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-whateley-in-fact-likely-to-be-girolamo-casio-1495.jpg;23;721;3,19
 deepseek;focus_point;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;326;640;50,94
 deepseek;focus_point;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;1160;720;161,11
-deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;297;2508;11,84
-deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1474;10,38
+deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;282;2000;14,1
+deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1000;15,3
 deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
 
 
 
-deepseek;contrast_elements;2174b333c91d2fa7d936e97e4386d983.jpg;220;1930;11,4
+deepseek;contrast_elements;2174b333c91d2fa7d936e97e4386d983.jpg;220;1000;22,0
 deepseek;contrast_elements;72519c5ccf08e7533cfa5dc154d8a968.jpg;14;807;1,73
 deepseek;contrast_elements;aa63fcb5f3f054e41426727b2084dc2e.jpg;213;980;21,73
-deepseek;contrast_elements;26c521930dd73c0bf8a8675b08698b51.jpg;7;1987;0,35
-deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1960;9,54
+deepseek;contrast_elements;26c521930dd73c0bf8a8675b08698b51.jpg;7;1000;0,7
+deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1000;18,7
 deepseek;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;65;625;10,4
-deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1323;3,93
+deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1000;5,2
 
 
 
 deepseek;proportion;317cbd7af35213a4a80e5d31e30368e8.jpg;25;946;2,64
 deepseek;proportion;andrea-mantegna_the-agony-in-the-garden.jpg;15;894;1,68
-deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1444;8,38
+deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1000;12,1
 
 
 
-deepseek;foreground_background_4;317cbd7af35213a4a80e5d31e30368e8.jpg;0;1510;0,0
-deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1448;10,5
-deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1429;4,13
-deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1372;16,98
-deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;97;1526;6,36
+deepseek;foreground_background_4;317cbd7af35213a4a80e5d31e30368e8.jpg;0;1000;0,0
+deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1000;15,2
+deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1000;5,9
+deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1000;23,3
+deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;76;1000;7,6
 
 
 
-deepseek;symmetry_asymmetry_1;b3de88d2fa3fbf442749bcbf10bb8939.jpg;97;2922;3,32
-deepseek;symmetry_asymmetry_1;d8c5f661e9d5ffa8bffc814a3fc6e935.jpg;169;1491;11,33
-deepseek;symmetry_asymmetry_1;f78e6b6a97e7c5bb2d9b77952e43b428.jpg;167;1287;12,98
-deepseek;symmetry_asymmetry_1;fe4c7983efd3242e7322ecee9c665e68.jpg;133;1404;9,47
+deepseek;symmetry_asymmetry_1;b3de88d2fa3fbf442749bcbf10bb8939.jpg;90;2000;4,5
+deepseek;symmetry_asymmetry_1;d8c5f661e9d5ffa8bffc814a3fc6e935.jpg;94;1000;9,4
+deepseek;symmetry_asymmetry_1;f78e6b6a97e7c5bb2d9b77952e43b428.jpg;167;1000;16,7
+deepseek;symmetry_asymmetry_1;fe4c7983efd3242e7322ecee9c665e68.jpg;128;1000;12,8
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1296;5,02
-deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;101;1882;5,37
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;450;1434;31,38
-deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1386;9,16
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;431;1383;31,16
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1000;6,5
+deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;83;1000;8,3
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;405;1000;40,5
+deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1000;12,7
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 
 
 
-deepseek;eye_movement_2;0875a6148f7da92df0fc6a258bf00c77.jpg;6;2295;0,26
-deepseek;eye_movement_2;8b2e6c3080203d4d1badfa56b753a6d3.jpg;4;1618;0,25
-deepseek;eye_movement_2;9ecc59478f04350c181bb99b75a1e6c4.jpg;89;1825;4,88
-deepseek;eye_movement_2;437f14c6a2218e91d70e2ed77a05ee36.jpg;187;1827;10,24
-deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;76;2001;3,8
-deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1871;12,88
+deepseek;eye_movement_2;0875a6148f7da92df0fc6a258bf00c77.jpg;6;1000;0,6
+deepseek;eye_movement_2;8b2e6c3080203d4d1badfa56b753a6d3.jpg;4;1000;0,4
+deepseek;eye_movement_2;9ecc59478f04350c181bb99b75a1e6c4.jpg;89;1000;8,9
+deepseek;eye_movement_2;437f14c6a2218e91d70e2ed77a05ee36.jpg;161;1000;16,1
+deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;60;1000;6,0
+deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
 
 
 

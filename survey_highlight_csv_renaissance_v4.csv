@@ -9,11 +9,11 @@ deepseek;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-
 llava;focus_point;pietro-perugino_the-vision-of-st-bernard.jpg;12;539;2,23
 deepseek;balance_elements;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;41;773;5,3
 deepseek;focus_point;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;326;640;50,94
-deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1448;10,5
+deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1000;15,2
 llava;balance_elements;andrea-mantegna_samson-and-delilah-1506.jpg;364;762;47,77
 llava;proportion;andrea-mantegna_samson-and-delilah-1506.jpg;24;497;4,83
 deepseek;composition;andrea-mantegna_samson-and-delilah-1506.jpg;109;874;12,47
-deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;76;2001;3,8
+deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;60;1000;6,0
 llava;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;19;515;3,69
 llava;foreground_background_4;raphael_the-marriage-of-the-virgin-1504-1.jpg;75;520;14,42
 cogvlm;balance_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;78;1317;5,92
@@ -23,17 +23,17 @@ cogvlm;focus_point;dosso-dossi_the-three-ages-of-man-1515.jpg;86;229;37,55
 llava;focus_point;andrea-del-sarto_the-annunciation-1513.jpg;196;1112;17,63
 cogvlm;foreground_background_4;andrea-del-sarto_the-annunciation-1513.jpg;56;415;13,49
 cogvlm;symmetry_asymmetry_1;andrea-del-sarto_the-annunciation-1513.jpg;72;285;25,26
-deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;400;1502;26,63
+deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;341;1000;34,1
 llava;proportion;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;7;577;1,21
 llava;symmetry_asymmetry_1;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;149;516;28,88
 cogvlm;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;16;403;3,97
 cogvlm;proportion;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;19;356;5,34
 deepseek;composition;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;111;718;15,46
-deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1960;9,54
+deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1000;18,7
 llava;composition;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;98;591;16,58
 cogvlm;composition;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;96;391;24,55
 cogvlm;symmetry_asymmetry_1;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;0;376;0,0
-deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1429;4,13
+deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1000;5,9
 llava;composition;andrea-del-sarto_stories-of-joseph-1.jpg;122;758;16,09
 llava;focus_point;andrea-del-sarto_stories-of-joseph-1.jpg;82;641;12,79
 llava;contrast_elements;andrea-del-sarto_stories-of-joseph-1.jpg;307;661;46,44
@@ -43,23 +43,23 @@ cogvlm;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;35;
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
 cogvlm;composition;andrea-mantegna_the-agony-in-the-garden.jpg;42;541;7,76
 cogvlm;symmetry_asymmetry_1;andrea-mantegna_the-agony-in-the-garden.jpg;19;290;6,55
-deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;3742;2,11
+deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;2000;3,95
 deepseek;proportion;andrea-mantegna_the-agony-in-the-garden.jpg;15;894;1,68
 llava;balance_elements;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;74;848;8,73
 cogvlm;balance_elements;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;87;380;22,89
 cogvlm;focus_point;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;0;313;0,0
 cogvlm;composition;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;0;374;0,0
 cogvlm;eye_movement_2;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;41;379;10,82
-deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1372;16,98
+deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1000;23,3
 llava;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;171;715;23,92
 cogvlm;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;91;459;19,83
 cogvlm;composition;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;80;403;19,85
 cogvlm;foreground_background_4;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;12;387;3,1
 llava;composition;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;169;573;29,49
 llava;focus_point;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;0;606;0,0
-deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;97;1526;6,36
+deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;76;1000;7,6
 cogvlm;focus_point;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;46;358;12,85
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1296;5,02
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1000;6,5
 cogvlm;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;60;930;6,45
 deepseek;focus_point;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;1160;720;161,11
 deepseek;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;65;625;10,4
@@ -67,27 +67,27 @@ llava;focus_point;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-
 cogvlm;focus_point;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-1500.jpg;80;326;24,54
 cogvlm;symmetry_asymmetry_1;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-1500.jpg;288;260;110,77
 cogvlm;proportion;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;0;388;0,0
-deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;101;1882;5,37
+deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;83;1000;8,3
 cogvlm;focus_point;vittore-carpaccio_the-virgin-reading-1510.jpg;34;276;12,32
 llava;symmetry_asymmetry_1;giorgione_the-sunset-1510(1).jpg;56;497;11,27
-deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;297;2508;11,84
-deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1323;3,93
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;450;1434;31,38
+deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;282;2000;14,1
+deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1000;5,2
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;405;1000;40,5
 llava;contrast_elements;andrea-mantegna_st-jacques-leads-to-martyrdom.jpg;148;753;19,65
-deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1576;0,0
-deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1452;25,55
-deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1474;10,38
+deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1000;0,0
+deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1000;37,1
+deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1000;15,3
 llava;balance_elements;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;262;733;35,74
-deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1386;9,16
+deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1000;12,7
 cogvlm;foreground_background_4;pietro-perugino_pala-di-corciano-annunciation.jpg;145;329;44,07
 llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
 deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
-deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1871;12,88
+deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
 llava;eye_movement_2;raphael_st-cecilia-with-saints-detail-1516-1.jpg;402;838;47,97
-deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1444;8,38
+deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1000;12,1
 cogvlm;foreground_background_4;lorenzo-lotto_altar-polyptych-of-san-bartolomeo-bergamo-foot-plate-entombment-1516.jpg;0;527;0,0
 llava;foreground_background_4;correggio_the-adoration-of-the-magi-1518(2).jpg;14;531;2,64
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;431;1383;31,16
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 llava;symmetry_asymmetry_1;correggio_adoration-of-the-christ-child(2).jpg;229;592;38,68
 
 
@@ -161,33 +161,33 @@ cogvlm;foreground_background_4;lorenzo-lotto_altar-polyptych-of-san-bartolomeo-b
 deepseek;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-whateley-in-fact-likely-to-be-girolamo-casio-1495.jpg;23;721;3,19
 deepseek;balance_elements;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;41;773;5,3
 deepseek;focus_point;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;326;640;50,94
-deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1448;10,5
+deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1000;15,2
 deepseek;composition;andrea-mantegna_samson-and-delilah-1506.jpg;109;874;12,47
-deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;76;2001;3,8
-deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;400;1502;26,63
+deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;60;1000;6,0
+deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;341;1000;34,1
 deepseek;composition;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;111;718;15,46
-deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1960;9,54
-deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1429;4,13
+deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1000;18,7
+deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1000;5,9
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
-deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;3742;2,11
+deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;2000;3,95
 deepseek;proportion;andrea-mantegna_the-agony-in-the-garden.jpg;15;894;1,68
-deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1372;16,98
-deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;97;1526;6,36
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1296;5,02
+deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1000;23,3
+deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;76;1000;7,6
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1000;6,5
 deepseek;focus_point;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;1160;720;161,11
 deepseek;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;65;625;10,4
-deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;101;1882;5,37
-deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;297;2508;11,84
-deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1323;3,93
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;450;1434;31,38
-deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1576;0,0
-deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1452;25,55
-deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1474;10,38
-deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1386;9,16
+deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;83;1000;8,3
+deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;282;2000;14,1
+deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1000;5,2
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;405;1000;40,5
+deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1000;0,0
+deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1000;37,1
+deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1000;15,3
+deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1000;12,7
 deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
-deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1871;12,88
-deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1444;8,38
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;431;1383;31,16
+deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
+deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1000;12,1
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 
 
 
@@ -316,14 +316,14 @@ cogvlm;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors
 
 deepseek;composition;andrea-mantegna_samson-and-delilah-1506.jpg;109;874;12,47
 deepseek;composition;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;111;718;15,46
-deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1576;0,0
-deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1452;25,55
+deepseek;composition;pietro-perugino_marriage-of-the-virgin-1504.jpg;0;1000;0,0
+deepseek;composition;cima-da-conegliano_the-healing-of-anianus.jpg;371;1000;37,1
 
 
 
 deepseek;balance_elements;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;41;773;5,3
-deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;400;1502;26,63
-deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;3742;2,11
+deepseek;balance_elements;andrea-del-sarto_the-annunciation-1513.jpg;341;1000;34,1
+deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;2000;3,95
 
 
 
@@ -333,41 +333,41 @@ deepseek;balance_elements;andrea-mantegna_the-agony-in-the-garden.jpg;79;3742;2,
 deepseek;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-whateley-in-fact-likely-to-be-girolamo-casio-1495.jpg;23;721;3,19
 deepseek;focus_point;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;326;640;50,94
 deepseek;focus_point;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;1160;720;161,11
-deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;297;2508;11,84
-deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1474;10,38
+deepseek;focus_point;giorgione_the-sunset-1510(1).jpg;282;2000;14,1
+deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1000;15,3
 deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
 
 
 
-deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1960;9,54
+deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1000;18,7
 deepseek;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;65;625;10,4
-deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1323;3,93
+deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1000;5,2
 
 
 
 deepseek;proportion;andrea-mantegna_the-agony-in-the-garden.jpg;15;894;1,68
-deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1444;8,38
+deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1000;12,1
 
 
 
-deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1448;10,5
-deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1429;4,13
-deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1372;16,98
-deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;97;1526;6,36
+deepseek;foreground_background_4;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;152;1000;15,2
+deepseek;foreground_background_4;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;59;1000;5,9
+deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1000;23,3
+deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;76;1000;7,6
 
 
 
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1296;5,02
-deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;101;1882;5,37
-deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;450;1434;31,38
-deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1386;9,16
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;431;1383;31,16
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1000;6,5
+deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;83;1000;8,3
+deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;405;1000;40,5
+deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1000;12,7
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 
 
 
-deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;76;2001;3,8
-deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1871;12,88
+deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;60;1000;6,0
+deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
 
 
 

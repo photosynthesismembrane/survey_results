@@ -311,6 +311,7 @@ for item in highlight_data:
         print('Story:', story)
         print('Highlights:', hightlight_list)
         print('Data Type:', data_type)
+        story = story[:1000]
 
         for hightlight in hightlight_list:
             if hightlight in story:
