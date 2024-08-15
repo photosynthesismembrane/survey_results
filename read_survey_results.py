@@ -263,6 +263,7 @@ counts = {}
 
 json_data_pinterest = {}
 json_data_renaissance = {}
+json_all_data = {}
 
 print('Highlight Data')
 for item in highlight_data:
@@ -360,14 +361,32 @@ for item in highlight_data:
             # Answer the question and update the data
             json_data_renaissance[image_filename][f"{model}_answers"][question] = story
 
+    # Check if the image filename is in the data, if not, add it
+    if image_filename not in json_all_data:
+        json_all_data[image_filename] = {f"{model}_answers": {}}
+
+    # Check if the model is not yet in the data structure
+    if f"{model}_answers" not in json_all_data[image_filename]:
+        json_all_data[image_filename][f"{model}_answers"] = {}
+
+    # Check if the question is already answered
+    if question in json_all_data[image_filename][f"{model}_answers"]:
+        json_all_data[image_filename][f"{model}_answers"][question] = json_all_data[image_filename][f"{model}_answers"][question] + "<br\><br\>" + story
+    else:
+        # Answer the question and update the data
+        json_all_data[image_filename][f"{model}_answers"][question] = story
+
 
     counts[f"{model}_{question}_{image_filename}"] = counts.get(f"{model}_{question}_{image_filename}", 0) + 1
 
 # Save the data to a JSON file
 read_write_json.write_json('survey_highlight_data_updated_v5.json', highlight_data_processed)
 
-read_write_json.write_json('survey_pinterest_data_hightlighted_updated_v5.js', json_data_pinterest)
-read_write_json.write_json('survey_renaissance_data_hightlighted_updated_v5.js', json_data_renaissance)
+read_write_json.write_json('survey_pinterest_data_hightlighted_updated_v5.js', json_data_pinterest, 'survey_pinterest_highlighted_data')
+read_write_json.write_json('survey_pinterest_data_hightlighted_updated_v5 copy.js', json_data_pinterest)
+read_write_json.write_json('survey_renaissance_data_hightlighted_updated_v5.js', json_data_renaissance, 'survey_renaissance_highlighted_data')
+read_write_json.write_json('survey_renaissance_data_hightlighted_updated_v5 copy.js', json_data_renaissance)
+read_write_json.write_json('survey_all_data_hightlighted_updated_v5 copy.js', json_all_data)
 
 # Write all the stories to a text file
 # with open('survey_highlight_stories_updated.txt', 'w') as file:

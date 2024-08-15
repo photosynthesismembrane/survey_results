@@ -1,4 +1,20 @@
 Model;Task;Item;highlight;total;percentage
+llava;symmetry_asymmetry_1;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;48;497;9,66
+cogvlm;eye_movement_2;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;30;365;8,22
+llava;eye_movement_2;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;18;594;3,03
+cogvlm;composition;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;80;403;19,85
+cogvlm;foreground_background_4;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;12;387;3,1
+llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
+deepseek;eye_movement_2;giorgione_musical-instruments-music-1510(1).jpg;65;875;7,43
+llava;symmetry_asymmetry_1;correggio_adoration-of-the-christ-child(2).jpg;229;592;38,68
+deepseek;contrast_elements;correggio_adoration-of-the-christ-child(2).jpg;54;924;5,84
+llava;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;19;515;3,69
+llava;foreground_background_4;raphael_the-marriage-of-the-virgin-1504-1.jpg;75;520;14,42
+cogvlm;balance_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;78;1317;5,92
+cogvlm;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;18;343;5,25
+cogvlm;symmetry_asymmetry_1;raphael_the-marriage-of-the-virgin-1504-1.jpg;0;260;0,0
+llava;contrast_elements;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;381;922;41,32
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 llava;composition;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;208;612;33,99
 llava;balance_elements;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;0;912;0,0
 llava;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;14;578;2,42
@@ -14,10 +30,6 @@ llava;balance_elements;andrea-mantegna_samson-and-delilah-1506.jpg;364;762;47,77
 llava;proportion;andrea-mantegna_samson-and-delilah-1506.jpg;24;497;4,83
 deepseek;composition;andrea-mantegna_samson-and-delilah-1506.jpg;109;874;12,47
 deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;60;1000;6,0
-llava;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;19;515;3,69
-llava;foreground_background_4;raphael_the-marriage-of-the-virgin-1504-1.jpg;75;520;14,42
-cogvlm;balance_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;78;1317;5,92
-cogvlm;symmetry_asymmetry_1;raphael_the-marriage-of-the-virgin-1504-1.jpg;0;260;0,0
 llava;symmetry_asymmetry_1;dosso-dossi_the-three-ages-of-man-1515.jpg;103;589;17,49
 cogvlm;focus_point;dosso-dossi_the-three-ages-of-man-1515.jpg;86;229;37,55
 llava;focus_point;andrea-del-sarto_the-annunciation-1513.jpg;196;1112;17,63
@@ -38,7 +50,6 @@ llava;composition;andrea-del-sarto_stories-of-joseph-1.jpg;122;758;16,09
 llava;focus_point;andrea-del-sarto_stories-of-joseph-1.jpg;82;641;12,79
 llava;contrast_elements;andrea-del-sarto_stories-of-joseph-1.jpg;307;661;46,44
 llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;27;488;5,53
-llava;symmetry_asymmetry_1;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;48;497;9,66
 cogvlm;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;35;246;14,23
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
 cogvlm;composition;andrea-mantegna_the-agony-in-the-garden.jpg;42;541;7,76
@@ -53,8 +64,6 @@ cogvlm;eye_movement_2;raphael_the-death-of-ananias-cartoon-for-the-sistine-chape
 deepseek;foreground_background_4;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;233;1000;23,3
 llava;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;171;715;23,92
 cogvlm;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;91;459;19,83
-cogvlm;composition;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;80;403;19,85
-cogvlm;foreground_background_4;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;12;387;3,1
 llava;composition;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;169;573;29,49
 llava;focus_point;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;0;606;0,0
 deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;76;1000;7,6
@@ -80,18 +89,22 @@ deepseek;focus_point;cima-da-conegliano_the-healing-of-anianus.jpg;153;1000;15,3
 llava;balance_elements;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;262;733;35,74
 deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1000;12,7
 cogvlm;foreground_background_4;pietro-perugino_pala-di-corciano-annunciation.jpg;145;329;44,07
-llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
 deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
 deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
 llava;eye_movement_2;raphael_st-cecilia-with-saints-detail-1516-1.jpg;402;838;47,97
 deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1000;12,1
 cogvlm;foreground_background_4;lorenzo-lotto_altar-polyptych-of-san-bartolomeo-bergamo-foot-plate-entombment-1516.jpg;0;527;0,0
 llava;foreground_background_4;correggio_the-adoration-of-the-magi-1518(2).jpg;14;531;2,64
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
+
+
+
+llava;symmetry_asymmetry_1;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;48;497;9,66
+llava;eye_movement_2;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;18;594;3,03
+llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
 llava;symmetry_asymmetry_1;correggio_adoration-of-the-christ-child(2).jpg;229;592;38,68
-
-
-
+llava;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;19;515;3,69
+llava;foreground_background_4;raphael_the-marriage-of-the-virgin-1504-1.jpg;75;520;14,42
+llava;contrast_elements;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;381;922;41,32
 llava;composition;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;208;612;33,99
 llava;balance_elements;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;0;912;0,0
 llava;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;14;578;2,42
@@ -99,8 +112,6 @@ llava;symmetry_asymmetry_1;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;35;44
 llava;focus_point;pietro-perugino_the-vision-of-st-bernard.jpg;12;539;2,23
 llava;balance_elements;andrea-mantegna_samson-and-delilah-1506.jpg;364;762;47,77
 llava;proportion;andrea-mantegna_samson-and-delilah-1506.jpg;24;497;4,83
-llava;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;19;515;3,69
-llava;foreground_background_4;raphael_the-marriage-of-the-virgin-1504-1.jpg;75;520;14,42
 llava;symmetry_asymmetry_1;dosso-dossi_the-three-ages-of-man-1515.jpg;103;589;17,49
 llava;focus_point;andrea-del-sarto_the-annunciation-1513.jpg;196;1112;17,63
 llava;proportion;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;7;577;1,21
@@ -110,7 +121,6 @@ llava;composition;andrea-del-sarto_stories-of-joseph-1.jpg;122;758;16,09
 llava;focus_point;andrea-del-sarto_stories-of-joseph-1.jpg;82;641;12,79
 llava;contrast_elements;andrea-del-sarto_stories-of-joseph-1.jpg;307;661;46,44
 llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;27;488;5,53
-llava;symmetry_asymmetry_1;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;48;497;9,66
 llava;balance_elements;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;74;848;8,73
 llava;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;171;715;23,92
 llava;composition;andrea-mantegna_captured-statues-and-siege-equipment-1506.jpg;169;573;29,49
@@ -119,17 +129,19 @@ llava;focus_point;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-
 llava;symmetry_asymmetry_1;giorgione_the-sunset-1510(1).jpg;56;497;11,27
 llava;contrast_elements;andrea-mantegna_st-jacques-leads-to-martyrdom.jpg;148;753;19,65
 llava;balance_elements;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;262;733;35,74
-llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
 llava;eye_movement_2;raphael_st-cecilia-with-saints-detail-1516-1.jpg;402;838;47,97
 llava;foreground_background_4;correggio_the-adoration-of-the-magi-1518(2).jpg;14;531;2,64
-llava;symmetry_asymmetry_1;correggio_adoration-of-the-christ-child(2).jpg;229;592;38,68
 
 
 
+cogvlm;eye_movement_2;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;30;365;8,22
+cogvlm;composition;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;80;403;19,85
+cogvlm;foreground_background_4;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;12;387;3,1
+cogvlm;balance_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;78;1317;5,92
+cogvlm;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;18;343;5,25
+cogvlm;symmetry_asymmetry_1;raphael_the-marriage-of-the-virgin-1504-1.jpg;0;260;0,0
 cogvlm;focus_point;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;63;375;16,8
 cogvlm;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-whateley-in-fact-likely-to-be-girolamo-casio-1495.jpg;0;289;0,0
-cogvlm;balance_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;78;1317;5,92
-cogvlm;symmetry_asymmetry_1;raphael_the-marriage-of-the-virgin-1504-1.jpg;0;260;0,0
 cogvlm;focus_point;dosso-dossi_the-three-ages-of-man-1515.jpg;86;229;37,55
 cogvlm;foreground_background_4;andrea-del-sarto_the-annunciation-1513.jpg;56;415;13,49
 cogvlm;symmetry_asymmetry_1;andrea-del-sarto_the-annunciation-1513.jpg;72;285;25,26
@@ -145,8 +157,6 @@ cogvlm;focus_point;raphael_isaac-and-rebecca-spied-upon-by-abimelech-1519.jpg;0;
 cogvlm;composition;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;0;374;0,0
 cogvlm;eye_movement_2;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;41;379;10,82
 cogvlm;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;91;459;19,83
-cogvlm;composition;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;80;403;19,85
-cogvlm;foreground_background_4;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;12;387;3,1
 cogvlm;focus_point;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;46;358;12,85
 cogvlm;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;60;930;6,45
 cogvlm;focus_point;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-1500.jpg;80;326;24,54
@@ -158,6 +168,9 @@ cogvlm;foreground_background_4;lorenzo-lotto_altar-polyptych-of-san-bartolomeo-b
 
 
 
+deepseek;eye_movement_2;giorgione_musical-instruments-music-1510(1).jpg;65;875;7,43
+deepseek;contrast_elements;correggio_adoration-of-the-christ-child(2).jpg;54;924;5,84
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 deepseek;focus_point;giovanni-antonio-boltraffio_portrait-alleged-to-be-of-anne-whateley-in-fact-likely-to-be-girolamo-casio-1495.jpg;23;721;3,19
 deepseek;balance_elements;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;41;773;5,3
 deepseek;focus_point;raphael_the-blinding-of-elymas-cartoon-for-the-sistine-chapel.jpg;326;640;50,94
@@ -187,7 +200,6 @@ deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-
 deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
 deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
 deepseek;proportion;raphael_st-cecilia-with-saints-detail-1516-1.jpg;121;1000;12,1
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 
 
 
@@ -221,6 +233,7 @@ llava;focus_point;vittore-carpaccio_the-repatriation-of-the-english-ambassadors-
 
 
 llava;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;19;515;3,69
+llava;contrast_elements;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;381;922;41,32
 llava;contrast_elements;andrea-del-sarto_stories-of-joseph-1.jpg;307;661;46,44
 llava;contrast_elements;andrea-mantegna_st-jacques-leads-to-martyrdom.jpg;148;753;19,65
 
@@ -231,22 +244,23 @@ llava;proportion;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;7;577;1,21
 
 
 
+llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
 llava;foreground_background_4;raphael_the-marriage-of-the-virgin-1504-1.jpg;75;520;14,42
 llava;foreground_background_4;andrea-del-sarto_stories-of-joseph-1.jpg;27;488;5,53
-llava;foreground_background_4;giorgione_musical-instruments-music-1510(1).jpg;148;511;28,96
 llava;foreground_background_4;correggio_the-adoration-of-the-magi-1518(2).jpg;14;531;2,64
 
 
 
+llava;symmetry_asymmetry_1;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;48;497;9,66
+llava;symmetry_asymmetry_1;correggio_adoration-of-the-christ-child(2).jpg;229;592;38,68
 llava;symmetry_asymmetry_1;andrea-mantegna_the-martyrdom-of-st-jacques.jpg;35;445;7,87
 llava;symmetry_asymmetry_1;dosso-dossi_the-three-ages-of-man-1515.jpg;103;589;17,49
 llava;symmetry_asymmetry_1;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;149;516;28,88
-llava;symmetry_asymmetry_1;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;48;497;9,66
 llava;symmetry_asymmetry_1;giorgione_the-sunset-1510(1).jpg;56;497;11,27
-llava;symmetry_asymmetry_1;correggio_adoration-of-the-christ-child(2).jpg;229;592;38,68
 
 
 
+llava;eye_movement_2;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;18;594;3,03
 llava;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;171;715;23,92
 llava;eye_movement_2;raphael_st-cecilia-with-saints-detail-1516-1.jpg;402;838;47,97
 
@@ -255,10 +269,10 @@ llava;eye_movement_2;raphael_st-cecilia-with-saints-detail-1516-1.jpg;402;838;47
 
 
 
+cogvlm;composition;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;80;403;19,85
 cogvlm;composition;cima-da-conegliano_st-peter-enthroned-with-saints.jpg;96;391;24,55
 cogvlm;composition;andrea-mantegna_the-agony-in-the-garden.jpg;42;541;7,76
 cogvlm;composition;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;0;374;0,0
-cogvlm;composition;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;80;403;19,85
 
 
 
@@ -280,6 +294,7 @@ cogvlm;focus_point;vittore-carpaccio_the-virgin-reading-1510.jpg;34;276;12,32
 
 
 
+cogvlm;contrast_elements;raphael_the-marriage-of-the-virgin-1504-1.jpg;18;343;5,25
 cogvlm;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;16;403;3,97
 cogvlm;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;60;930;6,45
 
@@ -290,8 +305,8 @@ cogvlm;proportion;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judge
 
 
 
-cogvlm;foreground_background_4;andrea-del-sarto_the-annunciation-1513.jpg;56;415;13,49
 cogvlm;foreground_background_4;correggio_four-saints-from-left-st-peter-st-martha-st-mary-magdalene-st-leonard-1517.jpg;12;387;3,1
+cogvlm;foreground_background_4;andrea-del-sarto_the-annunciation-1513.jpg;56;415;13,49
 cogvlm;foreground_background_4;pietro-perugino_pala-di-corciano-annunciation.jpg;145;329;44,07
 cogvlm;foreground_background_4;lorenzo-lotto_altar-polyptych-of-san-bartolomeo-bergamo-foot-plate-entombment-1516.jpg;0;527;0,0
 
@@ -306,6 +321,7 @@ cogvlm;symmetry_asymmetry_1;vittore-carpaccio_the-repatriation-of-the-english-am
 
 
 
+cogvlm;eye_movement_2;vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg;30;365;8,22
 cogvlm;eye_movement_2;raphael_the-death-of-ananias-cartoon-for-the-sistine-chapel.jpg;41;379;10,82
 cogvlm;eye_movement_2;vittore-carpaccio_the-departure-of-the-english-ambassadors-1498.jpg;91;459;19,83
 
@@ -339,6 +355,7 @@ deepseek;focus_point;andrea-del-sarto_stories-of-joseph.jpg;110;732;15,03
 
 
 
+deepseek;contrast_elements;correggio_adoration-of-the-christ-child(2).jpg;54;924;5,84
 deepseek;contrast_elements;pietro-perugino_pala-di-fano-nativity-of-mary.jpg;187;1000;18,7
 deepseek;contrast_elements;cima-da-conegliano_presentation-of-the-virgin-at-the-temple.jpg;65;625;10,4
 deepseek;contrast_elements;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;52;1000;5,2
@@ -357,15 +374,16 @@ deepseek;foreground_background_4;andrea-mantegna_captured-statues-and-siege-equi
 
 
 
+deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_christ-s-farewell-to-mary-1521.jpg;27;877;3,08
 deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-miracle-of-the-relic-of-the-true-cross-on-the-rialto-bridge-1494.jpg;65;1000;6,5
 deepseek;symmetry_asymmetry_1;lorenzo-lotto_altar-of-st-lucia-st-lucia-in-front-of-the-judges-1532.jpg;83;1000;8,3
 deepseek;symmetry_asymmetry_1;vittore-carpaccio_the-glory-of-st-vidal-1514.jpg;405;1000;40,5
 deepseek;symmetry_asymmetry_1;correggio_departure-of-christ-from-mary-with-mary-and-martha-the-sisters-of-lazarus-1518.jpg;127;1000;12,7
-deepseek;symmetry_asymmetry_1;raphael_the-guards-outside-the-prison-detail-from-the-liberation-of-st-peter-in-the-stanza-d-eliodoro-1514.jpg;365;1000;36,5
 
 
 
+deepseek;eye_movement_2;giorgione_musical-instruments-music-1510(1).jpg;65;875;7,43
 deepseek;eye_movement_2;andrea-mantegna_samson-and-delilah-1506.jpg;60;1000;6,0
 deepseek;eye_movement_2;andrea-del-sarto_stories-of-joseph.jpg;241;1000;24,1
 
