@@ -145,9 +145,9 @@ def get_highlight_data():
     print('Fours:', fours)
 
     # Save the data to a JSON file
-    read_write_json.write_json('pinterest_data_highlight.js', json_data_pinterest, 'pinterest_data_highlighted')
-    read_write_json.write_json('renaissance_data_highlight.js', json_data_renaissance, 'renaissance_data_highlighted')
-    read_write_json.write_json('all_data_highlight.js', json_all_data, 'all_data_highlighted')
+    read_write_json.write_json('pinterest_data_highlight.js', json_data_pinterest, 'pinterest_data_highlight')
+    read_write_json.write_json('renaissance_data_highlight.js', json_data_renaissance, 'renaissance_data_highlight')
+    read_write_json.write_json('all_data_highlight.js', json_all_data, 'all_data_highlight')
 
     return json_data_pinterest, json_data_renaissance, json_all_data
 

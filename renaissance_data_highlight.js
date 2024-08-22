@@ -1,4 +1,4 @@
-const renaissance_data_highlighted = {
+const renaissance_data_highlight = {
     "vittore-carpaccio_virgin-mary-and-john-the-baptist-praying-to-the-child-christ.jpg": {
         "cogvlm_answers": {
             "eye_movement_2": "The viewer's eye movement is guided in this composition through the use of leading lines and focal points. The <span class=\"highlighted\">curtain</span><span class=\"highlighted\"> acts as a leading line</span>, drawing the viewer's gaze towards the central figures. The central figures themselves, especially the woman's hands and the child's book, serve as focal points, drawing attention and creating a sense of depth in the image."
