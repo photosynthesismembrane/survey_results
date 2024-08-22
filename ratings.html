@@ -1,142 +1,143 @@
 
-    <div class="sub-tabs">
-        <button class="sub-tab-button active" onclick="openSubTab('sub-tab1')">All</button>
-        <button class="sub-tab-button" onclick="openSubTab('sub-tab2')">Pinterest</button>
-        <button class="sub-tab-button" onclick="openSubTab('sub-tab3')">Renaissance</button>
-        <button class="sub-tab-button" onclick="openSubTab('sub-tab4')">Sets</button>
-        <div class="horizontal-fill-sub-tab-buttons"></div>
-    </div>
-
-    <div id="sub-tab1" class="sub-tab-content" style="display: block;">
-    <div class="survey-comparison-data-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Task</th>
-                    <th>Llava wins</th>
-                    <th>Cogvlm wins</th>
-                    <th>Deepseek wins</th>
-                    <th>Llava rating</th>
-                    <th>Cogvlm rating</th>
-                    <th>Deepseek rating</th>
-                </tr>
-            </thead>
-            <tbody>
-    <tr><td>all</td><td>24 / 60</td><td>28 / 60</td><td>38 / 60</td><td>25.25 &pm; 1.08</td><td>26.36 &pm; 1.07</td><td>27.93 &pm; 1.08</td></tr><tr><td>composition</td><td>5 / 10</td><td>5 / 10</td><td>5 / 10</td><td>26.05 &pm; 2.92</td><td>27.90 &pm; 2.91</td><td>24.60 &pm; 2.97</td></tr><tr><td>balance</td><td>5 / 14</td><td>8 / 14</td><td>8 / 14</td><td>24.91 &pm; 2.48</td><td>25.75 &pm; 2.40</td><td>26.86 &pm; 2.40</td></tr><tr><td>eye</td><td>6 / 10</td><td>2 / 10</td><td>7 / 10</td><td>26.95 &pm; 3.12</td><td>23.07 &pm; 3.30</td><td>28.92 &pm; 3.09</td></tr><tr><td>movement</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>contrast</td><td>2 / 6</td><td>4 / 6</td><td>3 / 6</td><td>18.87 &pm; 4.07</td><td>28.02 &pm; 4.03</td><td>25.45 &pm; 3.97</td></tr><tr><td>foreground</td><td>0 / 8</td><td>5 / 8</td><td>7 / 8</td><td>14.92 &pm; 4.78</td><td>26.74 &pm; 4.00</td><td>34.35 &pm; 4.09</td></tr><tr><td>symmetry</td><td>5 / 8</td><td>3 / 8</td><td>4 / 8</td><td>27.07 &pm; 3.45</td><td>27.05 &pm; 3.56</td><td>23.46 &pm; 3.46</td></tr><tr><td>focus</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>proportion</td><td>1 / 4</td><td>1 / 4</td><td>4 / 4</td><td>20.08 &pm; 5.11</td><td>22.20 &pm; 5.14</td><td>34.43 &pm; 5.43</td></tr></tbody></table>"
-            <div class="main-plot-container">
-                <img src="all_all_ratings.png" alt="all all ratings">
+        <div class="sub-tabs">
+            <button class="sub-tab-button active" onclick="openSubTab('sub-tab1')">All</button>
+            <button class="sub-tab-button" onclick="openSubTab('sub-tab2')">Pinterest</button>
+            <button class="sub-tab-button" onclick="openSubTab('sub-tab3')">Renaissance</button>
+            <button class="sub-tab-button" onclick="openSubTab('sub-tab4')">Sets</button>
+            <div class="horizontal-fill-sub-tab-buttons"></div>
+        </div>
+    
+        <div id="sub-tab1" class="sub-tab-content" style="display: block;">
+        <div class="survey-comparison-data-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Llava wins</th>
+                        <th>Cogvlm wins</th>
+                        <th>Deepseek wins</th>
+                        <th>Llava rating</th>
+                        <th>Cogvlm rating</th>
+                        <th>Deepseek rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr><td>all</td><td>24 / 60</td><td>28 / 60</td><td>38 / 60</td><td>25.25 &pm; 1.08</td><td>26.36 &pm; 1.07</td><td>27.93 &pm; 1.08</td></tr><tr><td>composition</td><td>5 / 10</td><td>5 / 10</td><td>5 / 10</td><td>26.05 &pm; 2.92</td><td>27.90 &pm; 2.91</td><td>24.60 &pm; 2.97</td></tr><tr><td>balance</td><td>5 / 14</td><td>8 / 14</td><td>8 / 14</td><td>24.91 &pm; 2.48</td><td>25.75 &pm; 2.40</td><td>26.86 &pm; 2.40</td></tr><tr><td>eye</td><td>6 / 10</td><td>2 / 10</td><td>7 / 10</td><td>26.95 &pm; 3.12</td><td>23.07 &pm; 3.30</td><td>28.92 &pm; 3.09</td></tr><tr><td>movement</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>contrast</td><td>2 / 6</td><td>4 / 6</td><td>3 / 6</td><td>18.87 &pm; 4.07</td><td>28.02 &pm; 4.03</td><td>25.45 &pm; 3.97</td></tr><tr><td>foreground</td><td>0 / 8</td><td>5 / 8</td><td>7 / 8</td><td>14.92 &pm; 4.78</td><td>26.74 &pm; 4.00</td><td>34.35 &pm; 4.09</td></tr><tr><td>symmetry</td><td>5 / 8</td><td>3 / 8</td><td>4 / 8</td><td>27.07 &pm; 3.45</td><td>27.05 &pm; 3.56</td><td>23.46 &pm; 3.46</td></tr><tr><td>focus</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>proportion</td><td>1 / 4</td><td>1 / 4</td><td>4 / 4</td><td>20.08 &pm; 5.11</td><td>22.20 &pm; 5.14</td><td>34.43 &pm; 5.43</td></tr></tbody></table>"
+                <div class="main-plot-container">
+                    <img src="plots/all_all_ratings.png" alt="all all ratings">
+                </div>
+            </div>
+            <div class="sub-plot-container">
+                <img src="plots/all_composition_ratings.png" alt="all composition ratings">
+                <img src="plots/all_balance_elements_ratings.png" alt="all balance elements ratings">
+                <img src="plots/all_eye_movement_2_ratings.png" alt="all eye movement 2 ratings">
+                <img src="plots/all_movement_ratings.png" alt="all movement ratings">
+                <img src="plots/all_contrast_elements_ratings.png" alt="all contrast elements ratings">
+                <img src="plots/all_foreground_background_4_ratings.png" alt="all foreground background 4 ratings">
+                <img src="plots/all_symmetry_asymmetry_1_ratings.png" alt="all symmetry asymmetry 1 ratings">
+                <img src="plots/all_focus_point_ratings.png" alt="all focus point ratings">
+                <img src="plots/all_proportion_ratings.png" alt="all proportion ratings">
             </div>
         </div>
-        <div class="sub-plot-container">
-            <img src="all_composition_ratings.png" alt="all composition ratings">
-            <img src="all_balance_elements_ratings.png" alt="all balance elements ratings">
-            <img src="all_eye_movement_2_ratings.png" alt="all eye movement 2 ratings">
-            <img src="all_movement_ratings.png" alt="all movement ratings">
-            <img src="all_contrast_elements_ratings.png" alt="all contrast elements ratings">
-            <img src="all_foreground_background_4_ratings.png" alt="all foreground background 4 ratings">
-            <img src="all_symmetry_asymmetry_1_ratings.png" alt="all symmetry asymmetry 1 ratings">
-            <img src="all_focus_point_ratings.png" alt="all focus point ratings">
-            <img src="all_proportion_ratings.png" alt="all proportion ratings">
-        </div>
-    </div>
-    
-    <div id="sub-tab2" class="sub-tab-content" style="display: none;">
-    <div class="survey-comparison-data-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Task</th>
-                    <th>Llava wins</th>
-                    <th>Cogvlm wins</th>
-                    <th>Deepseek wins</th>
-                    <th>Llava rating</th>
-                    <th>Cogvlm rating</th>
-                    <th>Deepseek rating</th>
-                </tr>
-            </thead>
-            <tbody>
-    <tr><td>all</td><td>16 / 32</td><td>14 / 32</td><td>18 / 32</td><td>26.67 &pm; 1.47</td><td>26.15 &pm; 1.46</td><td>26.86 &pm; 1.47</td></tr><tr><td>composition</td><td>3 / 6</td><td>2 / 6</td><td>4 / 6</td><td>25.84 &pm; 3.82</td><td>24.08 &pm; 4.00</td><td>28.93 &pm; 4.09</td></tr><tr><td>balance</td><td>4 / 10</td><td>6 / 10</td><td>5 / 10</td><td>26.12 &pm; 3.11</td><td>25.59 &pm; 2.91</td><td>25.42 &pm; 3.00</td></tr><tr><td>eye</td><td>5 / 8</td><td>2 / 8</td><td>5 / 8</td><td>27.07 &pm; 3.42</td><td>23.42 &pm; 3.50</td><td>28.21 &pm; 3.35</td></tr><tr><td>movement</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>contrast</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>foreground</td><td>0 / 2</td><td>1 / 2</td><td>2 / 2</td><td>19.03 &pm; 6.57</td><td>24.95 &pm; 6.27</td><td>32.44 &pm; 6.34</td></tr><tr><td>symmetry</td><td>4 / 6</td><td>3 / 6</td><td>2 / 6</td><td>26.35 &pm; 3.92</td><td>27.44 &pm; 3.94</td><td>21.54 &pm; 3.98</td></tr><tr><td>focus</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>proportion</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr></tbody></table>"
-            <div class="main-plot-container">
-                <img src="pinterest_all_ratings.png" alt="pinterest all ratings">
+        
+        <div id="sub-tab2" class="sub-tab-content" style="display: none;">
+        <div class="survey-comparison-data-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Llava wins</th>
+                        <th>Cogvlm wins</th>
+                        <th>Deepseek wins</th>
+                        <th>Llava rating</th>
+                        <th>Cogvlm rating</th>
+                        <th>Deepseek rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr><td>all</td><td>16 / 32</td><td>14 / 32</td><td>18 / 32</td><td>26.67 &pm; 1.47</td><td>26.15 &pm; 1.46</td><td>26.86 &pm; 1.47</td></tr><tr><td>composition</td><td>3 / 6</td><td>2 / 6</td><td>4 / 6</td><td>25.84 &pm; 3.82</td><td>24.08 &pm; 4.00</td><td>28.93 &pm; 4.09</td></tr><tr><td>balance</td><td>4 / 10</td><td>6 / 10</td><td>5 / 10</td><td>26.12 &pm; 3.11</td><td>25.59 &pm; 2.91</td><td>25.42 &pm; 3.00</td></tr><tr><td>eye</td><td>5 / 8</td><td>2 / 8</td><td>5 / 8</td><td>27.07 &pm; 3.42</td><td>23.42 &pm; 3.50</td><td>28.21 &pm; 3.35</td></tr><tr><td>movement</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>contrast</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>foreground</td><td>0 / 2</td><td>1 / 2</td><td>2 / 2</td><td>19.03 &pm; 6.57</td><td>24.95 &pm; 6.27</td><td>32.44 &pm; 6.34</td></tr><tr><td>symmetry</td><td>4 / 6</td><td>3 / 6</td><td>2 / 6</td><td>26.35 &pm; 3.92</td><td>27.44 &pm; 3.94</td><td>21.54 &pm; 3.98</td></tr><tr><td>focus</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>proportion</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr></tbody></table>"
+                <div class="main-plot-container">
+                    <img src="plots/pinterest_all_ratings.png" alt="pinterest all ratings">
+                </div>
+            </div>
+            <div class="sub-plot-container">
+                <img src="plots/pinterest_composition_ratings.png" alt="pinterest composition ratings">
+                <img src="plots/pinterest_balance_elements_ratings.png" alt="pinterest balance elements ratings">
+                <img src="plots/pinterest_eye_movement_2_ratings.png" alt="pinterest eye movement 2 ratings">
+                <img src="plots/pinterest_movement_ratings.png" alt="pinterest movement ratings">
+                <img src="plots/pinterest_contrast_elements_ratings.png" alt="pinterest contrast elements ratings">
+                <img src="plots/pinterest_foreground_background_4_ratings.png" alt="pinterest foreground background 4 ratings">
+                <img src="plots/pinterest_symmetry_asymmetry_1_ratings.png" alt="pinterest symmetry asymmetry 1 ratings">
+                <img src="plots/pinterest_focus_point_ratings.png" alt="pinterest focus point ratings">
+                <img src="plots/pinterest_proportion_ratings.png" alt="pinterest proportion ratings">
             </div>
         </div>
-        <div class="sub-plot-container">
-            <img src="pinterest_composition_ratings.png" alt="pinterest composition ratings">
-            <img src="pinterest_balance_elements_ratings.png" alt="pinterest balance elements ratings">
-            <img src="pinterest_eye_movement_2_ratings.png" alt="pinterest eye movement 2 ratings">
-            <img src="pinterest_movement_ratings.png" alt="pinterest movement ratings">
-            <img src="pinterest_contrast_elements_ratings.png" alt="pinterest contrast elements ratings">
-            <img src="pinterest_foreground_background_4_ratings.png" alt="pinterest foreground background 4 ratings">
-            <img src="pinterest_symmetry_asymmetry_1_ratings.png" alt="pinterest symmetry asymmetry 1 ratings">
-            <img src="pinterest_focus_point_ratings.png" alt="pinterest focus point ratings">
-            <img src="pinterest_proportion_ratings.png" alt="pinterest proportion ratings">
-        </div>
-    </div>
-    
-    <div id="sub-tab3" class="sub-tab-content" style="display: none;">
-    <div class="survey-comparison-data-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Task</th>
-                    <th>Llava wins</th>
-                    <th>Cogvlm wins</th>
-                    <th>Deepseek wins</th>
-                    <th>Llava rating</th>
-                    <th>Cogvlm rating</th>
-                    <th>Deepseek rating</th>
-                </tr>
-            </thead>
-            <tbody>
-    <tr><td>all</td><td>8 / 28</td><td>14 / 28</td><td>20 / 28</td><td>22.31 &pm; 1.65</td><td>25.77 &pm; 1.60</td><td>29.06 &pm; 1.64</td></tr><tr><td>composition</td><td>2 / 4</td><td>3 / 4</td><td>1 / 4</td><td>24.55 &pm; 4.94</td><td>29.80 &pm; 4.70</td><td>18.72 &pm; 4.91</td></tr><tr><td>balance</td><td>1 / 4</td><td>2 / 4</td><td>3 / 4</td><td>21.38 &pm; 4.64</td><td>24.96 &pm; 4.80</td><td>29.89 &pm; 4.71</td></tr><tr><td>eye</td><td>1 / 2</td><td>0 / 2</td><td>2 / 2</td><td>24.98 &pm; 6.29</td><td>18.04 &pm; 6.46</td><td>32.84 &pm; 6.27</td></tr><tr><td>movement</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>contrast</td><td>2 / 6</td><td>4 / 6</td><td>3 / 6</td><td>18.87 &pm; 4.07</td><td>28.02 &pm; 4.03</td><td>25.45 &pm; 3.97</td></tr><tr><td>foreground</td><td>0 / 6</td><td>4 / 6</td><td>5 / 6</td><td>15.12 &pm; 5.06</td><td>27.34 &pm; 4.43</td><td>32.97 &pm; 4.39</td></tr><tr><td>symmetry</td><td>1 / 2</td><td>0 / 2</td><td>2 / 2</td><td>24.95 &pm; 6.27</td><td>19.03 &pm; 6.57</td><td>32.44 &pm; 6.34</td></tr><tr><td>focus</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>proportion</td><td>1 / 4</td><td>1 / 4</td><td>4 / 4</td><td>20.08 &pm; 5.11</td><td>22.20 &pm; 5.14</td><td>34.43 &pm; 5.43</td></tr></tbody></table>"
-            <div class="main-plot-container">
-                <img src="renaissance_all_ratings.png" alt="renaissance all ratings">
+        
+        <div id="sub-tab3" class="sub-tab-content" style="display: none;">
+        <div class="survey-comparison-data-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Llava wins</th>
+                        <th>Cogvlm wins</th>
+                        <th>Deepseek wins</th>
+                        <th>Llava rating</th>
+                        <th>Cogvlm rating</th>
+                        <th>Deepseek rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr><td>all</td><td>8 / 28</td><td>14 / 28</td><td>20 / 28</td><td>22.31 &pm; 1.65</td><td>25.77 &pm; 1.60</td><td>29.06 &pm; 1.64</td></tr><tr><td>composition</td><td>2 / 4</td><td>3 / 4</td><td>1 / 4</td><td>24.55 &pm; 4.94</td><td>29.80 &pm; 4.70</td><td>18.72 &pm; 4.91</td></tr><tr><td>balance</td><td>1 / 4</td><td>2 / 4</td><td>3 / 4</td><td>21.38 &pm; 4.64</td><td>24.96 &pm; 4.80</td><td>29.89 &pm; 4.71</td></tr><tr><td>eye</td><td>1 / 2</td><td>0 / 2</td><td>2 / 2</td><td>24.98 &pm; 6.29</td><td>18.04 &pm; 6.46</td><td>32.84 &pm; 6.27</td></tr><tr><td>movement</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>contrast</td><td>2 / 6</td><td>4 / 6</td><td>3 / 6</td><td>18.87 &pm; 4.07</td><td>28.02 &pm; 4.03</td><td>25.45 &pm; 3.97</td></tr><tr><td>foreground</td><td>0 / 6</td><td>4 / 6</td><td>5 / 6</td><td>15.12 &pm; 5.06</td><td>27.34 &pm; 4.43</td><td>32.97 &pm; 4.39</td></tr><tr><td>symmetry</td><td>1 / 2</td><td>0 / 2</td><td>2 / 2</td><td>24.95 &pm; 6.27</td><td>19.03 &pm; 6.57</td><td>32.44 &pm; 6.34</td></tr><tr><td>focus</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td><td>25.00 &pm; 8.33</td></tr><tr><td>proportion</td><td>1 / 4</td><td>1 / 4</td><td>4 / 4</td><td>20.08 &pm; 5.11</td><td>22.20 &pm; 5.14</td><td>34.43 &pm; 5.43</td></tr></tbody></table>"
+                <div class="main-plot-container">
+                    <img src="plots/renaissance_all_ratings.png" alt="renaissance all ratings">
+                </div>
+            </div>
+            <div class="sub-plot-container">
+                <img src="plots/renaissance_composition_ratings.png" alt="renaissance composition ratings">
+                <img src="plots/renaissance_balance_elements_ratings.png" alt="renaissance balance elements ratings">
+                <img src="plots/renaissance_eye_movement_2_ratings.png" alt="renaissance eye movement 2 ratings">
+                <img src="plots/renaissance_movement_ratings.png" alt="renaissance movement ratings">
+                <img src="plots/renaissance_contrast_elements_ratings.png" alt="renaissance contrast elements ratings">
+                <img src="plots/renaissance_foreground_background_4_ratings.png" alt="renaissance foreground background 4 ratings">
+                <img src="plots/renaissance_symmetry_asymmetry_1_ratings.png" alt="renaissance symmetry asymmetry 1 ratings">
+                <img src="plots/renaissance_focus_point_ratings.png" alt="renaissance focus point ratings">
+                <img src="plots/renaissance_proportion_ratings.png" alt="renaissance proportion ratings">
             </div>
         </div>
-        <div class="sub-plot-container">
-            <img src="renaissance_composition_ratings.png" alt="renaissance composition ratings">
-            <img src="renaissance_balance_elements_ratings.png" alt="renaissance balance elements ratings">
-            <img src="renaissance_eye_movement_2_ratings.png" alt="renaissance eye movement 2 ratings">
-            <img src="renaissance_movement_ratings.png" alt="renaissance movement ratings">
-            <img src="renaissance_contrast_elements_ratings.png" alt="renaissance contrast elements ratings">
-            <img src="renaissance_foreground_background_4_ratings.png" alt="renaissance foreground background 4 ratings">
-            <img src="renaissance_symmetry_asymmetry_1_ratings.png" alt="renaissance symmetry asymmetry 1 ratings">
-            <img src="renaissance_focus_point_ratings.png" alt="renaissance focus point ratings">
-            <img src="renaissance_proportion_ratings.png" alt="renaissance proportion ratings">
+        
+        <div id="sub-tab4" class="sub-tab-content">
+            <div class="sub-plot-container">
+                <img src="plots/combined_sets_llava_all_ratings.png" alt="combined sets llava all ratings">
+                <img src="plots/combined_sets_cogvlm_all_ratings.png" alt="combined sets cogvlm all ratings">
+                <img src="plots/combined_sets_deepseek_all_ratings.png" alt="combined sets deepseek all ratings">
+                <img src="plots/combined_sets_llava_composition_ratings.png" alt="combined sets llava composition ratings">
+                <img src="plots/combined_sets_cogvlm_composition_ratings.png" alt="combined sets cogvlm composition ratings">
+                <img src="plots/combined_sets_deepseek_composition_ratings.png" alt="combined sets deepseek composition ratings">
+                <img src="plots/combined_sets_llava_balance_elements_ratings.png" alt="combined sets llava balance elements ratings">
+                <img src="plots/combined_sets_cogvlm_balance_elements_ratings.png" alt="combined sets cogvlm balance elements ratings">
+                <img src="plots/combined_sets_deepseek_balance_elements_ratings.png" alt="combined sets deepseek balance elements ratings">
+                <img src="plots/combined_sets_llava_eye_movement_2_ratings.png" alt="combined sets llava eye movement 2 ratings">
+                <img src="plots/combined_sets_cogvlm_eye_movement_2_ratings.png" alt="combined sets cogvlm eye movement 2 ratings">
+                <img src="plots/combined_sets_deepseek_eye_movement_2_ratings.png" alt="combined sets deepseek eye movement 2 ratings">
+                <img src="plots/combined_sets_llava_movement_ratings.png" alt="combined sets llava movement ratings">
+                <img src="plots/combined_sets_cogvlm_movement_ratings.png" alt="combined sets cogvlm movement ratings">
+                <img src="plots/combined_sets_deepseek_movement_ratings.png" alt="combined sets deepseek movement ratings">
+                <img src="plots/combined_sets_llava_contrast_elements_ratings.png" alt="combined sets llava contrast elements ratings">
+                <img src="plots/combined_sets_cogvlm_contrast_elements_ratings.png" alt="combined sets cogvlm contrast elements ratings">
+                <img src="plots/combined_sets_deepseek_contrast_elements_ratings.png" alt="combined sets deepseek contrast elements ratings">
+                <img src="plots/combined_sets_llava_foreground_background_4_ratings.png" alt="combined sets llava foreground background 4 ratings">
+                <img src="plots/combined_sets_cogvlm_foreground_background_4_ratings.png" alt="combined sets cogvlm foreground background 4 ratings">
+                <img src="plots/combined_sets_deepseek_foreground_background_4_ratings.png" alt="combined sets deepseek foreground background 4 ratings">
+                <img src="plots/combined_sets_llava_symmetry_asymmetry_1_ratings.png" alt="combined sets llava symmetry asymmetry 1 ratings">
+                <img src="plots/combined_sets_cogvlm_symmetry_asymmetry_1_ratings.png" alt="combined sets cogvlm symmetry asymmetry 1 ratings">
+                <img src="plots/combined_sets_deepseek_symmetry_asymmetry_1_ratings.png" alt="combined sets deepseek symmetry asymmetry 1 ratings">
+                <img src="plots/combined_sets_llava_focus_point_ratings.png" alt="combined sets llava focus point ratings">
+                <img src="plots/combined_sets_cogvlm_focus_point_ratings.png" alt="combined sets cogvlm focus point ratings">
+                <img src="plots/combined_sets_deepseek_focus_point_ratings.png" alt="combined sets deepseek focus point ratings">
+                <img src="plots/combined_sets_llava_proportion_ratings.png" alt="combined sets llava proportion ratings">
+                <img src="plots/combined_sets_cogvlm_proportion_ratings.png" alt="combined sets cogvlm proportion ratings">
+                <img src="plots/combined_sets_deepseek_proportion_ratings.png" alt="combined sets deepseek proportion ratings">
+            </div>
         </div>
-    </div>
     
-    <div id="sub-tab4" class="sub-tab-content">
-        <div class="sub-plot-container">
-            <img src="combined_sets_llava_all_ratings.png" alt="combined sets llava all ratings">
-            <img src="combined_sets_cogvlm_all_ratings.png" alt="combined sets cogvlm all ratings">
-            <img src="combined_sets_deepseek_all_ratings.png" alt="combined sets deepseek all ratings">
-            <img src="combined_sets_llava_composition_ratings.png" alt="combined sets llava composition ratings">
-            <img src="combined_sets_cogvlm_composition_ratings.png" alt="combined sets cogvlm composition ratings">
-            <img src="combined_sets_deepseek_composition_ratings.png" alt="combined sets deepseek composition ratings">
-            <img src="combined_sets_llava_balance_elements_ratings.png" alt="combined sets llava balance elements ratings">
-            <img src="combined_sets_cogvlm_balance_elements_ratings.png" alt="combined sets cogvlm balance elements ratings">
-            <img src="combined_sets_deepseek_balance_elements_ratings.png" alt="combined sets deepseek balance elements ratings">
-            <img src="combined_sets_llava_eye_movement_2_ratings.png" alt="combined sets llava eye movement 2 ratings">
-            <img src="combined_sets_cogvlm_eye_movement_2_ratings.png" alt="combined sets cogvlm eye movement 2 ratings">
-            <img src="combined_sets_deepseek_eye_movement_2_ratings.png" alt="combined sets deepseek eye movement 2 ratings">
-            <img src="combined_sets_llava_movement_ratings.png" alt="combined sets llava movement ratings">
-            <img src="combined_sets_cogvlm_movement_ratings.png" alt="combined sets cogvlm movement ratings">
-            <img src="combined_sets_deepseek_movement_ratings.png" alt="combined sets deepseek movement ratings">
-            <img src="combined_sets_llava_contrast_elements_ratings.png" alt="combined sets llava contrast elements ratings">
-            <img src="combined_sets_cogvlm_contrast_elements_ratings.png" alt="combined sets cogvlm contrast elements ratings">
-            <img src="combined_sets_deepseek_contrast_elements_ratings.png" alt="combined sets deepseek contrast elements ratings">
-            <img src="combined_sets_llava_foreground_background_4_ratings.png" alt="combined sets llava foreground background 4 ratings">
-            <img src="combined_sets_cogvlm_foreground_background_4_ratings.png" alt="combined sets cogvlm foreground background 4 ratings">
-            <img src="combined_sets_deepseek_foreground_background_4_ratings.png" alt="combined sets deepseek foreground background 4 ratings">
-            <img src="combined_sets_llava_symmetry_asymmetry_1_ratings.png" alt="combined sets llava symmetry asymmetry 1 ratings">
-            <img src="combined_sets_cogvlm_symmetry_asymmetry_1_ratings.png" alt="combined sets cogvlm symmetry asymmetry 1 ratings">
-            <img src="combined_sets_deepseek_symmetry_asymmetry_1_ratings.png" alt="combined sets deepseek symmetry asymmetry 1 ratings">
-            <img src="combined_sets_llava_focus_point_ratings.png" alt="combined sets llava focus point ratings">
-            <img src="combined_sets_cogvlm_focus_point_ratings.png" alt="combined sets cogvlm focus point ratings">
-            <img src="combined_sets_deepseek_focus_point_ratings.png" alt="combined sets deepseek focus point ratings">
-            <img src="combined_sets_llava_proportion_ratings.png" alt="combined sets llava proportion ratings">
-            <img src="combined_sets_cogvlm_proportion_ratings.png" alt="combined sets cogvlm proportion ratings">
-            <img src="combined_sets_deepseek_proportion_ratings.png" alt="combined sets deepseek proportion ratings">
-        </div>
-    </div>

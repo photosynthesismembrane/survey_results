@@ -2,7 +2,7 @@ let currentIndex = 0;
 const imagesPerPage = 10;
 let selectedQuestions = [];
 let image_folder = 'pinterest';
-let image_data = survey_pinterest_two_options_data;
+let image_data = pinterest_data_comparison;
 let questions = survey_questions;
 
 // Load the image data
@@ -68,16 +68,16 @@ function changeDataSource() {
     if (dataSource === 'pinterest') {
         image_folder = 'pinterest';
         if (task === 'two_options') {
-            image_data = survey_pinterest_two_options_data;
+            image_data = pinterest_data_comparison;
         } else if (task === 'highlights') {
-            image_data = survey_pinterest_highlighted_data;
+            image_data = pinterest_data_highlight;
         }
     } else if (dataSource === 'renaissance') {
         image_folder = 'renaissance';
         if (task === 'two_options') {
-            image_data = survey_renaissance_two_options_data;
+            image_data = renaissance_data_comparison;
         } else if (task === 'highlights') {
-            image_data = survey_renaissance_highlighted_data;
+            image_data = renaissance_data_highlight;
         }
     }
     populateQuestions();
@@ -96,13 +96,13 @@ function loadImages(startIndex) {
     }
     const dataSource = document.getElementById('data-source').value;
     if (task === 'two_options' && dataSource === 'pinterest') {
-        image_data = survey_pinterest_two_options_data;
+        image_data = pinterest_data_comparison;
     } else if (task === 'highlights' && dataSource === 'pinterest') {
-        image_data = survey_pinterest_highlighted_data;
+        image_data = pinterest_data_highlight;
     } else if (task === 'two_options' && dataSource === 'renaissance') {
-        image_data = survey_renaissance_two_options_data;
+        image_data = renaissance_data_comparison;
     } else if (task === 'highlights' && dataSource === 'renaissance') {
-        image_data = survey_renaissance_highlighted_data;
+        image_data = renaissance_data_highlight;
     }
     
 

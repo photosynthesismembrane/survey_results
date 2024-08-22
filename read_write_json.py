@@ -11,6 +11,7 @@ def read_json(file_path, variable_name='image_data'):
             content = file.read()
             json_data = content.split(f'const {variable_name} = ')[1].rstrip(';')
             data = json.loads(json_data)
+        print(f"Data successfully read from {file_path}")
         return data
     except Exception as e:
         print(f"An error occurred while reading the file: {e}")
